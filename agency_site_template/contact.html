@@ -1,0 +1,951 @@
+<!-- Built with SleekCMS @ 2025-11-19T14:18:42.670Z -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>tester</title>
+    <meta name="generator" content="SleekCMS" />
+  </head>
+  <body class="bg-slate-950 text-white">
+    <style>
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: #8b5cf6 #1e293b;
+      }
+
+      ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #8b5cf6 0%, #3b82f6 100%);
+        border-radius: 10px;
+        border: 2px solid #0f172a;
+        transition: all 0.3s ease;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #9333ea 0%, #2563eb 100%);
+        box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+      }
+
+      ::-webkit-scrollbar-thumb:active {
+        background: linear-gradient(180deg, #7c3aed 0%, #1d4ed8 100%);
+      }
+
+      ::-webkit-scrollbar-corner {
+        background: #0f172a;
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .glass {
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .glow {
+        box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+      }
+      #mobile-menu {
+        transition: all 0.3s ease;
+      }
+    </style>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo -->
+          <a href="/" class="text-2xl font-bold gradient-text"> CREATIVE </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="/" class="text-sm font-medium transition-colors hover:text-purple-400 text-white/80"> Home </a>
+            <a href="/portfolio" class="text-sm font-medium transition-colors hover:text-purple-400 text-white/80"> Portfolio </a>
+            <a href="/services" class="text-sm font-medium transition-colors hover:text-purple-400 text-white/80"> Services </a>
+            <a href="/about" class="text-sm font-medium transition-colors hover:text-purple-400 text-white/80"> About </a>
+            <a href="/contact" class="text-sm font-medium transition-colors hover:text-purple-400 text-white/80"> Contact </a>
+            <a href="/contact" class="px-6 py-2 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg font-medium glow hover:scale-105 transition-transform"> Hire Us </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle menu">
+            <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden glass border-t border-white/10">
+        <div class="container mx-auto px-4 py-6 space-y-4">
+          <a href="/" class="block text-lg font-medium text-white/80 hover:text-purple-400 transition-colors"> Home </a>
+          <a href="/portfolio" class="block text-lg font-medium text-white/80 hover:text-purple-400 transition-colors"> Portfolio </a>
+          <a href="/services" class="block text-lg font-medium text-white/80 hover:text-purple-400 transition-colors"> Services </a>
+          <a href="/about" class="block text-lg font-medium text-white/80 hover:text-purple-400 transition-colors"> About </a>
+          <a href="/contact" class="block text-lg font-medium text-white/80 hover:text-purple-400 transition-colors"> Contact </a>
+          <a href="/contact" class="block w-full text-center px-6 py-2 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg font-medium glow"> Hire Us </a>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      // Sticky navbar on scroll
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 20) {
+          navbar.classList.add("glass", "shadow-lg");
+        } else {
+          navbar.classList.remove("glass", "shadow-lg");
+        }
+      });
+
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking on a link
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        });
+      });
+
+      // Highlight active page
+      const currentPath = window.location.pathname;
+      const navLinks = document.querySelectorAll("nav a[href]");
+      navLinks.forEach((link) => {
+        if (link.getAttribute("href") === currentPath) {
+          link.classList.add("text-purple-400");
+          link.classList.remove("text-white/80");
+        }
+      });
+    </script>
+
+    <main>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Contact Us</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+        .glass {
+          background: rgba(15, 23, 42, 0.8);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+          background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+        select {
+          background-color: rgba(15, 23, 42, 0.8) !important;
+          color: white !important;
+        }
+        select option {
+          background-color: rgba(15, 23, 42, 0.95) !important;
+          color: white !important;
+        }
+        .select-wrapper {
+          position: relative;
+        }
+        .select-wrapper::after {
+          content: "";
+          position: absolute;
+          right: 1rem;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 0;
+          height: 0;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 8px solid white;
+          pointer-events: none;
+        }
+      </style>
+
+      <!-- Hero Section -->
+      <section class="pt-32 pb-16">
+        <div class="container mx-auto px-4 text-center">
+          <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white">Let's Work Together</h1>
+          <p class="text-xl text-white/70 max-w-2xl mx-auto">Tell us about your project and let's create something amazing</p>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="pb-20">
+        <div class="container mx-auto px-4">
+          <div class="grid md:grid-cols-2 gap-12">
+            <!-- Form -->
+            <div class="glass p-8 rounded-3xl">
+              <form id="contact-form" action="https://form.sleekcms.com/1ez8c-mi5ie67g" method="POST" data-sleekcms="true" class="space-y-6">
+                <div>
+                  <label for="name" class="block text-sm font-medium mb-2 text-white"> Your Name * </label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="John Doe"
+                    required=""
+                    class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
+                  />
+                  <p id="name-error" class="text-sm text-red-400 mt-1 hidden"></p>
+                </div>
+
+                <div>
+                  <label for="email" class="block text-sm font-medium mb-2 text-white"> Email Address * </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="john@example.com"
+                    required=""
+                    class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
+                  />
+                  <p id="email-error" class="text-sm text-red-400 mt-1 hidden"></p>
+                </div>
+
+                <div>
+                  <label for="projectType" class="block text-sm font-medium mb-2 text-white"> Project Type * </label>
+                  <div class="select-wrapper">
+                    <select
+                      id="projectType"
+                      name="projectType"
+                      required=""
+                      class="w-full px-4 py-3 pr-10 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 appearance-none"
+                      style="background-color: rgba(15, 23, 42, 0.8); color: white"
+                    >
+                      <option value="">Select a project type</option>
+
+                      <option value="web-design">Web Design</option>
+
+                      <option value="web-development">Web Development</option>
+
+                      <option value="branding">Branding</option>
+
+                      <option value="ui-ux">UI/UX Design</option>
+
+                      <option value="mobile-app">Mobile App</option>
+
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <p id="projectType-error" class="text-sm text-red-400 mt-1 hidden"></p>
+                </div>
+
+                <div>
+                  <label for="budget" class="block text-sm font-medium mb-2 text-white"> Budget Range * </label>
+                  <div class="select-wrapper">
+                    <select
+                      id="budget"
+                      name="budget"
+                      required=""
+                      class="w-full px-4 py-3 pr-10 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 appearance-none"
+                      style="background-color: rgba(15, 23, 42, 0.8); color: white"
+                    >
+                      <option value="">Select a budget range</option>
+
+                      <option value="5k-10k">$5,000 - $10,000</option>
+
+                      <option value="10k-25k">$10,000 - $25,000</option>
+
+                      <option value="25k-50k">$25,000 - $50,000</option>
+
+                      <option value="50k+">$50,000+</option>
+                    </select>
+                  </div>
+                  <p id="budget-error" class="text-sm text-red-400 mt-1 hidden"></p>
+                </div>
+
+                <div>
+                  <label for="message" class="block text-sm font-medium mb-2 text-white"> Tell us about your project * </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Describe your project, goals, and timeline..."
+                    rows="5"
+                    required=""
+                    class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 resize-none"
+                  ></textarea>
+                  <p id="message-error" class="text-sm text-red-400 mt-1 hidden"></p>
+                </div>
+
+                <button
+                  type="submit"
+                  id="submit-btn"
+                  class="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold hover:scale-105 transition-transform disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <span id="submit-text">Send Message</span>
+                  <span id="submit-loading" class="hidden">Sending...</span>
+                </button>
+              </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-8">
+              <!-- Email -->
+              <div class="glass p-6 rounded-3xl">
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-white">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-bold mb-1 text-white">Email</h3>
+
+                    <a href="mailto:hello@creative.com" class="text-white/70 hover:text-purple-400 transition-colors"> hello@creative.com </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="glass p-6 rounded-3xl">
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-white">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-bold mb-1 text-white">Phone</h3>
+
+                    <a href="tel:+15551234567" class="text-white/70 hover:text-purple-400 transition-colors"> +1 (555) 123-4567 </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="glass p-6 rounded-3xl">
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-white">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-bold mb-1 text-white">Location</h3>
+                    <p class="text-white/70">San Francisco, CA&lt;br&gt;United States</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="glass p-6 rounded-3xl">
+                <h3 class="font-bold mb-4 text-white">Connect With Us</h3>
+                <div class="flex gap-4">
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center hover:scale-110 transition-transform text-white"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                      <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center hover:scale-110 transition-transform text-white"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                      <path
+                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center hover:scale-110 transition-transform text-white"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="https://dribbble.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center hover:scale-110 transition-transform text-white"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.246-.052-.196-.112-.39-.17-.59-.303-1.169-.695-2.318-1.17-3.433a8.505 8.505 0 015.36 1.955z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Availability -->
+              <div class="glass p-6 rounded-3xl bg-gradient-to-br from-purple-600/10 to-blue-600/10">
+                <h3 class="font-bold mb-2 text-white">Currently Available</h3>
+                <p class="text-white/70 mb-4">We're taking on new projects! Expect a response within 24 hours.</p>
+                <p class="text-sm text-white/70">PST (UTC-8)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Success Message Modal -->
+      <div id="success-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/95 backdrop-blur-sm">
+        <div class="glass p-8 text-center max-w-md rounded-3xl">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-16 h-16 mx-auto mb-4 text-purple-400">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <h3 class="text-2xl font-bold mb-2 text-white">Message Sent!</h3>
+          <p class="text-white/70 mb-6">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+          <button id="close-success" class="px-6 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold hover:scale-105 transition-transform">Close</button>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const form = document.getElementById("contact-form");
+          const submitBtn = document.getElementById("submit-btn");
+          const submitText = document.getElementById("submit-text");
+          const submitLoading = document.getElementById("submit-loading");
+          const successModal = document.getElementById("success-modal");
+          const closeSuccess = document.getElementById("close-success");
+
+          const showError = (fieldId, message) => {
+            const field = document.getElementById(fieldId);
+            const errorEl = document.getElementById(fieldId + "-error");
+            if (errorEl) {
+              errorEl.textContent = message;
+              errorEl.classList.remove("hidden");
+            }
+            if (field) {
+              field.classList.add("border-red-500");
+            }
+          };
+
+          const clearError = (fieldId) => {
+            const field = document.getElementById(fieldId);
+            const errorEl = document.getElementById(fieldId + "-error");
+            if (errorEl) {
+              errorEl.classList.add("hidden");
+            }
+            if (field) {
+              field.classList.remove("border-red-500");
+            }
+          };
+
+          const validateForm = () => {
+            let isValid = true;
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const projectType = document.getElementById("projectType").value;
+            const budget = document.getElementById("budget").value;
+            const message = document.getElementById("message").value.trim();
+
+            clearError("name");
+            clearError("email");
+            clearError("projectType");
+            clearError("budget");
+            clearError("message");
+
+            if (!name) {
+              showError("name", "Name is required");
+              isValid = false;
+            }
+
+            if (!email) {
+              showError("email", "Email is required");
+              isValid = false;
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+              showError("email", "Invalid email address");
+              isValid = false;
+            }
+
+            if (!projectType) {
+              showError("projectType", "Please select a project type");
+              isValid = false;
+            }
+
+            if (!budget) {
+              showError("budget", "Please select a budget range");
+              isValid = false;
+            }
+
+            if (!message) {
+              showError("message", "Message is required");
+              isValid = false;
+            } else if (message.length < 10) {
+              showError("message", "Message must be at least 10 characters");
+              isValid = false;
+            }
+
+            return isValid;
+          };
+
+          // Listen for SleekCMS form success event
+          form.addEventListener("submit", (e) => {
+            if (!validateForm()) {
+              e.preventDefault();
+              return;
+            }
+
+            submitBtn.disabled = true;
+            submitText.classList.add("hidden");
+            submitLoading.classList.remove("hidden");
+          });
+
+          // Listen for form submission success
+          form.addEventListener("sleekcms:success", () => {
+            submitBtn.disabled = false;
+            submitText.classList.remove("hidden");
+            submitLoading.classList.add("hidden");
+            form.reset();
+            successModal.classList.remove("hidden");
+            successModal.classList.add("flex");
+
+            setTimeout(() => {
+              successModal.classList.add("hidden");
+              successModal.classList.remove("flex");
+            }, 5000);
+          });
+
+          // Listen for form submission error
+          form.addEventListener("sleekcms:error", (e) => {
+            submitBtn.disabled = false;
+            submitText.classList.remove("hidden");
+            submitLoading.classList.add("hidden");
+            alert("There was an error sending your message. Please try again.");
+            console.error("Form error:", e.detail);
+          });
+
+          closeSuccess.addEventListener("click", () => {
+            successModal.classList.add("hidden");
+            successModal.classList.remove("flex");
+          });
+
+          // Clear errors on input
+          ["name", "email", "projectType", "budget", "message"].forEach((fieldId) => {
+            const field = document.getElementById(fieldId);
+            if (field) {
+              field.addEventListener("input", () => clearError(fieldId));
+              field.addEventListener("change", () => clearError(fieldId));
+            }
+          });
+        });
+      </script>
+    </main>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    </style>
+
+    <footer class="mt-auto border-t border-white/10 bg-slate-950 text-white">
+      <div class="max-w-6xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+          <!-- Brand -->
+          <div class="space-y-4">
+            <h3 class="text-2xl font-bold gradient-text">CREATIVE</h3>
+            <p class="text-sm text-white/70 leading-relaxed">We create digital experiences that matter. Turning ideas into reality since 2025.</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="font-semibold mb-4 tracking-wide uppercase text-xs text-white/70">Quick Links</h4>
+            <ul class="space-y-2 text-sm text-white/70">
+              <li><a href="/" class="hover:text-purple-400 transition-colors">Home</a></li>
+              <li><a href="/portfolio" class="hover:text-purple-400 transition-colors">Portfolio</a></li>
+              <li><a href="/services" class="hover:text-purple-400 transition-colors">Services</a></li>
+              <li><a href="/about" class="hover:text-purple-400 transition-colors">About</a></li>
+              <li><a href="/contact" class="hover:text-purple-400 transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Links -->
+          <div>
+            <h4 class="font-semibold mb-4 tracking-wide uppercase text-xs text-white/70">Connect</h4>
+            <div class="flex flex-wrap gap-3">
+              <a
+                href="https://github.com"
+                class="group flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm text-white/70 transition-all hover:border-purple-500 hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span
+                  class="flex h-8 w-8 items-center justify-center rounded-full bg-white/5 text-xs font-semibold uppercase tracking-wide transition-colors group-hover:bg-purple-500 group-hover:text-white"
+                >
+                  G
+                </span>
+                <span>GitHub</span>
+              </a>
+
+              <a
+                href="https://linkedin.com"
+                class="group flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm text-white/70 transition-all hover:border-purple-500 hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span
+                  class="flex h-8 w-8 items-center justify-center rounded-full bg-white/5 text-xs font-semibold uppercase tracking-wide transition-colors group-hover:bg-purple-500 group-hover:text-white"
+                >
+                  L
+                </span>
+                <span>LinkedIn</span>
+              </a>
+
+              <a
+                href="https://twitter.com"
+                class="group flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm text-white/70 transition-all hover:border-purple-500 hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span
+                  class="flex h-8 w-8 items-center justify-center rounded-full bg-white/5 text-xs font-semibold uppercase tracking-wide transition-colors group-hover:bg-purple-500 group-hover:text-white"
+                >
+                  T
+                </span>
+                <span>Twitter</span>
+              </a>
+
+              <a
+                href="mailto:hello@creative.com"
+                class="group flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm text-white/70 transition-all hover:border-purple-500 hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span
+                  class="flex h-8 w-8 items-center justify-center rounded-full bg-white/5 text-xs font-semibold uppercase tracking-wide transition-colors group-hover:bg-purple-500 group-hover:text-white"
+                >
+                  E
+                </span>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h4 class="font-semibold mb-4 tracking-wide uppercase text-xs text-white/70">Newsletter</h4>
+            <form class="space-y-3" onsubmit="event.preventDefault();">
+              <div class="rounded-lg border border-white/10 bg-white/5 px-3 py-2 focus-within:border-purple-500 focus-within:ring-1 focus-within:ring-purple-500">
+                <label class="block text-xs uppercase tracking-wide text-white/50">Email</label>
+                <input type="email" required="" placeholder="you@example.com" class="w-full bg-transparent text-sm text-white placeholder:text-white/40 focus:outline-none" />
+              </div>
+              <button
+                type="submit"
+                class="inline-flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 px-4 py-2 text-sm font-semibold tracking-wide text-white shadow-lg shadow-purple-500/30 transition hover:scale-[1.02]"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="mt-12 border-t border-white/10 pt-6 text-center text-sm text-white/60">
+          <p>© 2025 Creative Agency. All rights reserved.</p>
+          <p class="mt-1 text-white/70">Made with ❤️ by Arin Jain</p>
+        </div>
+      </div>
+    </footer>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Cursor Component</title>
+
+    <style>
+      /* Hide default cursor when custom cursor is enabled */
+      body,
+      a,
+      button,
+      input,
+      textarea,
+      select {
+        cursor: none !important;
+      }
+
+      /* Custom Cursor Styles */
+      .custom-cursor {
+        position: fixed;
+        width: 24px;
+        height: 24px;
+        border: 2px solid #3b82f6;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transition:
+          transform 0.15s ease,
+          opacity 0.15s ease;
+        mix-blend-mode: difference;
+
+        box-shadow:
+          0 0 20px #3b82f6,
+          0 0 40px #3b82f6;
+      }
+
+      .custom-cursor.cursor-hover {
+        transform: scale(1.5);
+        background: #3b82f633;
+      }
+
+      .cursor-trail {
+        position: fixed;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9998;
+        background: #3b82f6;
+        mix-blend-mode: screen;
+      }
+
+      /* Mobile: Show default cursor */
+      @media (max-width: 768px) {
+        body,
+        a,
+        button,
+        input,
+        textarea,
+        select {
+          cursor: auto !important;
+        }
+        .custom-cursor,
+        .cursor-trail {
+          display: none !important;
+        }
+      }
+    </style>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <script>
+      (function () {
+        // Configuration from CMS with defaults
+        const config = {
+          size: 24,
+          color: "#3B82F6",
+          trailEnabled: true,
+          trailLength: 10,
+          trailSize: 15,
+          trailFade: true,
+          glowEnabled: true,
+        };
+
+        // Only run on desktop
+        if (window.innerWidth <= 768) return;
+
+        const cursor = document.getElementById("customCursor");
+        let mouseX = 0;
+        let mouseY = 0;
+        let cursorX = 0;
+        let cursorY = 0;
+
+        // Trail dots array
+        const trailDots = [];
+        const trailHistory = [];
+
+        // Create trail dots if enabled
+        if (config.trailEnabled) {
+          for (let i = 0; i < config.trailLength; i++) {
+            const dot = document.createElement("div");
+            dot.className = "cursor-trail";
+            dot.style.width = config.trailSize + "px";
+            dot.style.height = config.trailSize + "px";
+
+            if (config.trailFade) {
+              const opacity = (config.trailLength - i) / config.trailLength;
+              dot.style.opacity = opacity * 0.6;
+            } else {
+              dot.style.opacity = "0.4";
+            }
+
+            document.body.appendChild(dot);
+            trailDots.push(dot);
+            trailHistory.push({ x: 0, y: 0 });
+          }
+        }
+
+        // Track mouse position
+        document.addEventListener("mousemove", (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+        });
+
+        // Smooth cursor movement
+        function animateCursor() {
+          // Smooth interpolation
+          const speed = 0.15;
+          cursorX += (mouseX - cursorX) * speed;
+          cursorY += (mouseY - cursorY) * speed;
+
+          // Update main cursor position
+          cursor.style.left = cursorX - config.size / 2 + "px";
+          cursor.style.top = cursorY - config.size / 2 + "px";
+
+          // Update trail
+          if (config.trailEnabled) {
+            // Add current position to history
+            trailHistory.unshift({ x: cursorX, y: cursorY });
+            trailHistory.pop();
+
+            // Update trail dots positions
+            trailDots.forEach((dot, index) => {
+              const delay = index * 2;
+              const historyIndex = Math.min(delay, trailHistory.length - 1);
+              const pos = trailHistory[historyIndex];
+
+              dot.style.left = pos.x - config.trailSize / 2 + "px";
+              dot.style.top = pos.y - config.trailSize / 2 + "px";
+            });
+          }
+
+          requestAnimationFrame(animateCursor);
+        }
+
+        animateCursor();
+
+        // Hover effects on interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, input, textarea, select, [role="button"]');
+
+        interactiveElements.forEach((el) => {
+          el.addEventListener("mouseenter", () => {
+            cursor.classList.add("cursor-hover");
+          });
+
+          el.addEventListener("mouseleave", () => {
+            cursor.classList.remove("cursor-hover");
+          });
+        });
+
+        // Hide cursor when leaving window
+        document.addEventListener("mouseleave", () => {
+          cursor.style.opacity = "0";
+          if (config.trailEnabled) {
+            trailDots.forEach((dot) => (dot.style.opacity = "0"));
+          }
+        });
+
+        document.addEventListener("mouseenter", () => {
+          cursor.style.opacity = "1";
+          if (config.trailEnabled) {
+            trailDots.forEach((dot, index) => {
+              if (config.trailFade) {
+                const opacity = (config.trailLength - index) / config.trailLength;
+                dot.style.opacity = opacity * 0.6;
+              } else {
+                dot.style.opacity = "0.4";
+              }
+            });
+          }
+        });
+
+        // Click effect
+        document.addEventListener("mousedown", () => {
+          cursor.style.transform = "scale(0.8)";
+        });
+
+        document.addEventListener("mouseup", () => {
+          cursor.style.transform = "scale(1)";
+        });
+      })();
+    </script>
+
+    <button
+      id="scroll-to-top"
+      class="fixed bottom-8 right-8 z-50 flex w-12 h-12 items-center justify-center rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg transition-all duration-500 hover:scale-110 hover:shadow-xl opacity-0 translate-y-4 pointer-events-none"
+      aria-label="Scroll to top"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+      </svg>
+    </button>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const scrollToTopBtn = document.getElementById("scroll-to-top");
+
+        if (!scrollToTopBtn) return;
+
+        window.addEventListener("scroll", () => {
+          if (window.pageYOffset > 300) {
+            scrollToTopBtn.classList.remove("opacity-0", "translate-y-4", "pointer-events-none");
+            scrollToTopBtn.classList.add("opacity-100", "translate-y-0");
+          } else {
+            scrollToTopBtn.classList.add("opacity-0", "translate-y-4", "pointer-events-none");
+            scrollToTopBtn.classList.remove("opacity-100", "translate-y-0");
+          }
+        });
+
+        scrollToTopBtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+
+    <script src="https://unpkg.com/@sleekcms/ajaxed-forms"></script>
+  </body>
+</html>
+<!-- Scroll to Top Button -->

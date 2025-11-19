@@ -1,0 +1,1264 @@
+<!-- Built with SleekCMS @ 2025-11-19T18:34:32.978Z -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>test</title>
+    <meta name="generator" content="SleekCMS" />
+    <link rel="stylesheet" href="/tailwind-1ez81.css" />
+  </head>
+  <body class="bg-gray-900 text-gray-100 font-sans overflow-x-hidden">
+    <main class="relative min-h-screen overflow-hidden">
+      <!-- Animated Background -->
+      <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <!-- Technical Grid Pattern -->
+        <svg class="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="0.5" class="text-cyan-400"></path>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid)"></rect>
+        </svg>
+
+        <!-- Animated Bubbles -->
+        <div class="absolute inset-0">
+          <div class="bubble absolute w-64 h-64 bg-gradient-to-br from-cyan-400/20 to-blue-500/20 rounded-full blur-3xl animate-float-1"></div>
+          <div class="bubble absolute w-80 h-80 bg-gradient-to-br from-purple-400/20 to-cyan-500/20 rounded-full blur-3xl animate-float-2"></div>
+          <div class="bubble absolute w-72 h-72 bg-gradient-to-br from-blue-400/20 to-indigo-500/20 rounded-full blur-3xl animate-float-3"></div>
+          <div class="bubble absolute w-96 h-96 bg-gradient-to-br from-cyan-500/15 to-teal-500/15 rounded-full blur-3xl animate-float-4"></div>
+          <div class="bubble absolute w-56 h-56 bg-gradient-to-br from-indigo-400/20 to-purple-500/20 rounded-full blur-3xl animate-float-5"></div>
+          <div class="bubble absolute w-48 h-48 bg-gradient-to-br from-cyan-300/25 to-teal-400/20 rounded-full blur-3xl animate-float-6"></div>
+          <div class="bubble absolute w-40 h-40 bg-gradient-to-br from-blue-500/20 to-indigo-400/15 rounded-full blur-3xl animate-float-7"></div>
+          <div class="bubble absolute w-52 h-52 bg-gradient-to-br from-purple-400/18 to-pink-400/18 rounded-full blur-3xl animate-float-8"></div>
+        </div>
+
+        <!-- Floating Particles -->
+        <div class="absolute inset-0">
+          <div class="particle absolute w-2 h-2 bg-cyan-400/30 rounded-full animate-particle-1"></div>
+          <div class="particle absolute w-1.5 h-1.5 bg-blue-400/40 rounded-full animate-particle-2"></div>
+          <div class="particle absolute w-1 h-1 bg-purple-400/40 rounded-full animate-particle-3"></div>
+          <div class="particle absolute w-2 h-2 bg-indigo-400/30 rounded-full animate-particle-4"></div>
+          <div class="particle absolute w-1.5 h-1.5 bg-cyan-400/40 rounded-full animate-particle-5"></div>
+          <div class="particle absolute w-1 h-1 bg-blue-400/40 rounded-full animate-particle-6"></div>
+        </div>
+
+        <!-- Technical Lines -->
+        <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="20%" x2="100%" y2="20%" stroke="currentColor" stroke-width="1" class="text-cyan-400 animate-line-1"></line>
+          <line x1="0" y1="50%" x2="100%" y2="50%" stroke="currentColor" stroke-width="1" class="text-blue-400 animate-line-2"></line>
+          <line x1="0" y1="80%" x2="100%" y2="80%" stroke="currentColor" stroke-width="1" class="text-purple-400 animate-line-3"></line>
+        </svg>
+      </div>
+
+      <nav class="fixed top-0 w-full shadow-lg z-50 bg-gray-900 text-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+          <!-- Brand -->
+          <a href="/" class="flex items-center gap-3 font-bold text-2xl transition-colors duration-300 text-cyan-400">
+            <img src="https://img.sleekcms.com/1ez81/mi30129c.webp" alt="MyLogo" class="w-9 h-9 object-cover" loading="lazy" />
+            <span>Arin Jain</span>
+          </a>
+
+          <!-- Desktop Links -->
+          <ul class="hidden md:flex gap-8 font-medium">
+            <li>
+              <a href="/" class="nav-link-glow">
+                <span class="nav-link-cursor"></span>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="/about" class="nav-link-glow">
+                <span class="nav-link-cursor"></span>
+                <span>About</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="/project" class="nav-link-glow">
+                <span class="nav-link-cursor"></span>
+                <span>Projects</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="/contact" class="nav-link-glow">
+                <span class="nav-link-cursor"></span>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- CTA Button -->
+          <a
+            href="mailto:70001933arin@gmail.com"
+            class="hidden md:inline-flex ml-4 px-5 py-2 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transform hover:scale-105 transition-all duration-300"
+          >
+            Hire Me
+          </a>
+
+          <!-- Mobile Toggle -->
+          <button
+            id="mobile-nav-toggle"
+            class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-white/20 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+          >
+            <svg id="burger-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+            </svg>
+            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Sidebar -->
+      <div id="mobile-nav-drawer" class="fixed inset-0 z-50 md:hidden hidden">
+        <!-- Overlay -->
+        <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300"></div>
+
+        <!-- Sidebar Panel -->
+        <aside class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-gray-900 shadow-2xl transform transition-transform duration-300 ease-in-out translate-x-full">
+          <div class="flex flex-col h-full">
+            <!-- Sidebar Header -->
+            <div class="flex items-center justify-between p-6 border-b border-white/10">
+              <a href="/" class="flex items-center gap-3 font-bold text-xl transition-colors duration-300 text-cyan-400">
+                <img src="https://img.sleekcms.com/1ez81/mi30129c.webp" alt="MyLogo" class="w-8 h-8 object-cover" loading="lazy" />
+                <span>Arin Jain</span>
+              </a>
+              <button id="sidebar-close" class="p-2 rounded-lg hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400" aria-label="Close menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Sidebar Navigation Links -->
+            <nav class="flex-1 overflow-y-auto px-6 py-6">
+              <ul class="flex flex-col gap-4">
+                <li>
+                  <a href="/" class="nav-link-glow nav-link-mobile block py-3 px-4 rounded-lg font-medium text-white">
+                    <span class="nav-link-cursor"></span>
+                    <span>Home</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/about" class="nav-link-glow nav-link-mobile block py-3 px-4 rounded-lg font-medium text-white">
+                    <span class="nav-link-cursor"></span>
+                    <span>About</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/project" class="nav-link-glow nav-link-mobile block py-3 px-4 rounded-lg font-medium text-white">
+                    <span class="nav-link-cursor"></span>
+                    <span>Projects</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/contact" class="nav-link-glow nav-link-mobile block py-3 px-4 rounded-lg font-medium text-white">
+                    <span class="nav-link-cursor"></span>
+                    <span>Contact</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Sidebar Footer with CTA -->
+            <div class="p-6 border-t border-white/10">
+              <a
+                href="mailto:70001933arin@gmail.com"
+                class="block w-full text-center px-5 py-3 bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-semibold rounded-lg transform hover:scale-105 transition-all duration-300"
+              >
+                Hire Me
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <script>
+        (function () {
+          const toggleButton = document.getElementById("mobile-nav-toggle");
+          const sidebar = document.getElementById("mobile-nav-drawer");
+          const sidebarOverlay = document.getElementById("sidebar-overlay");
+          const sidebarClose = document.getElementById("sidebar-close");
+          const burgerIcon = document.getElementById("burger-icon");
+          const closeIcon = document.getElementById("close-icon");
+          const sidebarPanel = sidebar.querySelector("aside");
+
+          function openSidebar() {
+            sidebar.classList.remove("hidden");
+            // Force reflow
+            void sidebar.offsetWidth;
+            // Remove translate-x-full to slide in
+            sidebarPanel.classList.remove("translate-x-full");
+            // Show close icon, hide burger
+            burgerIcon.classList.add("hidden");
+            closeIcon.classList.remove("hidden");
+            toggleButton.setAttribute("aria-expanded", "true");
+            // Prevent body scroll
+            document.body.style.overflow = "hidden";
+          }
+
+          function closeSidebar() {
+            // Add translate-x-full to slide out
+            sidebarPanel.classList.add("translate-x-full");
+            // Hide sidebar after animation
+            setTimeout(() => {
+              sidebar.classList.add("hidden");
+              burgerIcon.classList.remove("hidden");
+              closeIcon.classList.add("hidden");
+              toggleButton.setAttribute("aria-expanded", "false");
+              // Restore body scroll
+              document.body.style.overflow = "";
+            }, 300);
+          }
+
+          // Toggle sidebar when burger/close button is clicked
+          toggleButton.addEventListener("click", function () {
+            const isExpanded = toggleButton.getAttribute("aria-expanded") === "true";
+            if (isExpanded) {
+              closeSidebar();
+            } else {
+              openSidebar();
+            }
+          });
+
+          // Close sidebar when close button inside sidebar is clicked
+          sidebarClose.addEventListener("click", closeSidebar);
+
+          // Close sidebar when overlay is clicked
+          sidebarOverlay.addEventListener("click", closeSidebar);
+
+          // Close sidebar on escape key
+          document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && !sidebar.classList.contains("hidden")) {
+              closeSidebar();
+            }
+          });
+        })();
+      </script>
+
+      <style>
+        .nav-link-glow {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          padding: 0.25rem 0;
+          color: inherit;
+          transition:
+            color 0.3s ease,
+            transform 0.3s ease;
+        }
+        .nav-link-glow::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -6px;
+          width: 100%;
+          height: 2px;
+          border-radius: 999px;
+          background: linear-gradient(90deg, rgba(34, 211, 238, 0), rgba(34, 211, 238, 0.7), rgba(34, 211, 238, 0));
+          opacity: 0;
+          transform: translateY(6px);
+          transition:
+            opacity 0.3s ease,
+            transform 0.3s ease;
+        }
+        .nav-link-cursor {
+          width: 6px;
+          height: 6px;
+          border-radius: 999px;
+          background: rgba(34, 211, 238, 0.5);
+          box-shadow: 0 0 6px rgba(34, 211, 238, 0.6);
+          transform: scale(0.6);
+          transition:
+            transform 0.3s ease,
+            background 0.3s ease,
+            box-shadow 0.3s ease;
+        }
+        .nav-link-glow:hover,
+        .nav-link-glow:focus-visible {
+          color: #a5f3fc;
+        }
+        .nav-link-glow:hover::after,
+        .nav-link-glow:focus-visible::after {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .nav-link-glow:hover .nav-link-cursor,
+        .nav-link-glow:focus-visible .nav-link-cursor {
+          transform: scale(1);
+          background: #22d3ee;
+          box-shadow: 0 0 12px rgba(34, 211, 238, 0.9);
+        }
+        .nav-link-mobile {
+          width: 100%;
+          border: 1px solid transparent;
+          transition:
+            border-color 0.3s ease,
+            background 0.3s ease,
+            color 0.3s ease;
+        }
+        .nav-link-mobile:hover,
+        .nav-link-mobile:focus-visible {
+          background: rgba(255, 255, 255, 0.05);
+          border-color: rgba(34, 211, 238, 0.4);
+          color: #a5f3fc;
+        }
+        .nav-link-mobile::after {
+          bottom: 0;
+        }
+      </style>
+
+      <div class="relative z-10">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About | About Me</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          .neon-title {
+            position: relative;
+            display: inline-block;
+            overflow: visible;
+          }
+
+          .neon-title span {
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+            background: repeating-linear-gradient(
+              135deg,
+              transparent 0px,
+              transparent 8px,
+              rgba(6, 182, 212, 0.5) 8px,
+              rgba(6, 182, 212, 0.8) 10px,
+              rgba(6, 182, 212, 0.5) 12px,
+              transparent 12px,
+              transparent 20px
+            );
+            background-size: 60px 60px;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            animation: diagonalLine 2.5s linear infinite;
+            -webkit-text-stroke: 2px #06b6d4;
+            filter: drop-shadow(0 0 2px rgba(6, 182, 212, 0.5));
+          }
+
+          .neon-title::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            color: transparent;
+            -webkit-text-stroke: 2px #06b6d4;
+            pointer-events: none;
+          }
+          @keyframes diagonalLine {
+            0% {
+              background-position: -60px -60px;
+            }
+            100% {
+              background-position: 60px 60px;
+            }
+          }
+          .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+          }
+          .fade-in-delay {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+            animation-delay: 0.2s;
+          }
+          .fade-in-delay-2 {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+            animation-delay: 0.4s;
+          }
+          @keyframes fadeInUp {
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          .card-glow {
+            box-shadow:
+              0 0 20px rgba(6, 182, 212, 0.3),
+              0 0 40px rgba(6, 182, 212, 0.1);
+          }
+          .card-glow:hover {
+            box-shadow:
+              0 0 30px rgba(6, 182, 212, 0.5),
+              0 0 60px rgba(6, 182, 212, 0.2);
+          }
+          .skill-tag {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(6, 182, 212, 0.1) 100%);
+            border: 1px solid rgba(6, 182, 212, 0.4);
+          }
+          .skill-tag:hover {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.3) 0%, rgba(6, 182, 212, 0.2) 100%);
+            border-color: rgba(6, 182, 212, 0.6);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+          }
+          .skill-box {
+            position: relative;
+            overflow: hidden;
+            background: rgba(31, 41, 55, 0.6);
+            border: 1px solid transparent;
+          }
+
+          .skill-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: rgba(6, 182, 212, 0.9);
+            z-index: 1;
+            transition: width 0.4s ease;
+          }
+
+          .skill-box::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 0;
+            background: rgba(6, 182, 212, 0.9);
+            z-index: 1;
+            transition: height 0.4s ease 0.4s;
+          }
+
+          .border-bottom {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: rgba(6, 182, 212, 0.9);
+            z-index: 1;
+            transition: width 0.4s ease 0.8s;
+          }
+
+          .border-left-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            height: 0;
+            background: rgba(6, 182, 212, 0.9);
+            z-index: 1;
+            transition: height 0.4s ease 1.2s;
+          }
+          .skill-box:hover::before {
+            width: 100%;
+          }
+          .skill-box:hover::after {
+            height: 100%;
+          }
+          .skill-box:hover .border-bottom {
+            width: 100%;
+          }
+          .skill-box:hover .border-left-line {
+            height: 100%;
+          }
+          .skill-box-content {
+            position: relative;
+            z-index: 2;
+          }
+
+          .detail-card {
+            position: relative;
+            overflow: hidden;
+            background: rgba(31, 41, 55, 0.8);
+            border: 1px solid transparent;
+          }
+
+          .detail-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: rgba(6, 182, 212, 0.9);
+            z-index: 1;
+            transition: width 0.4s ease;
+          }
+
+          .detail-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 0;
+            background: rgba(6, 182, 212, 0.9);
+            z-index: 1;
+            transition: height 0.4s ease 0.4s;
+          }
+
+          .detail-border-bottom {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: rgba(6, 182, 212, 0.9);
+            z-index: 1;
+            transition: width 0.4s ease 0.8s;
+          }
+
+          .detail-border-left {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            height: 0;
+            background: rgba(6, 182, 212, 0.9);
+            z-index: 1;
+            transition: height 0.4s ease 1.2s;
+          }
+          .detail-card:hover::before {
+            width: 100%;
+          }
+          .detail-card:hover::after {
+            height: 100%;
+          }
+          .detail-card:hover .detail-border-bottom {
+            width: 100%;
+          }
+          .detail-card:hover .detail-border-left {
+            height: 100%;
+          }
+          .detail-card-content {
+            position: relative;
+            z-index: 2;
+          }
+          .profile-frame {
+            position: relative;
+            padding: 1.5rem;
+            border-radius: 1.75rem;
+            background: radial-gradient(circle at top, rgba(6, 182, 212, 0.18), rgba(15, 23, 42, 0.95));
+            border: 1px solid rgba(6, 182, 212, 0.25);
+            box-shadow: 0 25px 60px rgba(6, 182, 212, 0.25);
+            overflow: visible;
+            transition:
+              border-color 0.4s ease,
+              box-shadow 0.4s ease;
+            transform-style: preserve-3d;
+            will-change: transform;
+          }
+          .profile-frame::before {
+            content: "";
+            position: absolute;
+            inset: 10px;
+            border-radius: 1.35rem;
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            opacity: 0.5;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+          }
+          .profile-frame::after {
+            content: "";
+            position: absolute;
+            inset: -25%;
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.15), transparent 60%);
+            filter: blur(50px);
+            z-index: -1;
+            opacity: 0.6;
+            transition: opacity 0.4s ease;
+          }
+          .profile-frame:hover {
+            border-color: rgba(6, 182, 212, 0.5);
+            box-shadow: 0 35px 80px rgba(6, 182, 212, 0.4);
+          }
+          .profile-frame:hover::before,
+          .profile-frame:hover::after {
+            opacity: 0.9;
+          }
+          .profile-photo {
+            border-radius: 1.2rem;
+            border: 2px solid rgba(6, 182, 212, 0.4);
+            transition:
+              transform 0.6s ease,
+              filter 0.6s ease,
+              border-color 0.4s ease;
+            display: block;
+            position: relative;
+            z-index: 1;
+          }
+          .profile-frame:hover .profile-photo {
+            transform: translateY(-8px);
+            filter: drop-shadow(0 20px 25px rgba(6, 182, 212, 0.35));
+            border-color: rgba(255, 255, 255, 0.7);
+          }
+        </style>
+
+        <!-- ABOUT page -->
+        <section class="min-h-screen px-6 md:px-8 lg:px-12 xl:px-16 pt-32 pb-20 relative overflow-hidden">
+          <!-- Centered Content Container -->
+          <div class="max-w-7xl w-full mx-auto relative z-10 space-y-12">
+            <!-- 1. Top Center - Heading -->
+            <div class="text-center fade-in">
+              <h1 class="text-5xl md:text-7xl font-extrabold mb-0 neon-title leading-tight inline-block" data-text="About Me">
+                <span>About Me</span>
+              </h1>
+            </div>
+
+            <!-- 2. Row: Subheading (Left) + Image (Right) -->
+            <div class="flex max-w-5xl mx-auto flex-col md:flex-row items-center justify-between gap-8 md:gap-12 fade-in-delay">
+              <!-- Left: Subheading -->
+              <div class="md:w-1/2 flex items-center justify-center md:justify-start">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-200 leading-tight text-center md:text-left">
+                  Full-Stack Developer focused on scalable systems, AI-driven products, and end-to-end execution.
+                </h2>
+              </div>
+
+              <!-- Right: Profile Image -->
+              <div class="md:w-1/2 flex justify-center md:justify-end">
+                <div class="profile-frame tilt-interactive" data-tilt-max="12" data-tilt-perspective="1000">
+                  <img src="https://img.sleekcms.com/1ez81/mi2vghx4.webp" alt="Profile photo of Arin Jain" class="profile-photo w-40 md:w-64 lg:w-80" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Bio Section - Full Width -->
+            <div class="fade-in-delay text-center md:text-left">
+              <div class="text-gray-200 leading-relaxed text-base md:text-lg lg:text-xl max-w-full">
+                <p>
+                  I'm a full-stack developer who builds real-world, production-grade systems from responsive frontends to scalable backends and AI-powered workflows. I work across React/Next.js,
+                  FastAPI/Node.js, MongoDB/PostgreSQL, and cloud deployment stacks, delivering products that handle real-time updates, high concurrency, and large-scale data.
+                </p>
+                <p>
+                  I’ve shipped complex platforms including real-time Kanban tools, AI interview simulators, document-processing engines for 100MB+ files, and multi-disease diagnostic systems powered
+                  by deep learning models. I enjoy taking ownership of projects: planning architecture, coordinating with teams, refining UX flows, and delivering clean, reliable systems.
+                </p>
+                <p>
+                  I’ve interned with multiple companies from SaaS to AI tooling where I contributed to frontend performance, backend APIs, cloud pipelines, and UI/UX improvements. I also lead The
+                  Coding Era!, a tech community empowering students through workshops, hackathons, and hands-on learning.
+                </p>
+              </div>
+            </div>
+
+            <!-- 4. Details Cards - 4 in one line -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 fade-in-delay-2">
+              <div class="detail-card rounded-xl backdrop-blur-sm hover:bg-gray-800/90 transition-all duration-300 card-glow">
+                <div class="detail-border-bottom"></div>
+                <div class="detail-border-left"></div>
+                <div class="detail-card-content flex flex-col p-6">
+                  <span class="font-semibold text-cyan-400 mb-3 text-xs uppercase tracking-wide"> Location </span>
+                  <span class="text-gray-200 text-lg md:text-xl font-medium"> Jabalpur, Madhya Pradesh </span>
+                </div>
+              </div>
+
+              <div class="detail-card rounded-xl backdrop-blur-sm hover:bg-gray-800/90 transition-all duration-300 card-glow">
+                <div class="detail-border-bottom"></div>
+                <div class="detail-border-left"></div>
+                <div class="detail-card-content flex flex-col p-6">
+                  <span class="font-semibold text-cyan-400 mb-3 text-xs uppercase tracking-wide"> Education </span>
+                  <span class="text-gray-200 text-lg md:text-xl font-medium"> B.Tech CSE, BGIEM (RGPV) — CGPA 7.88 </span>
+                </div>
+              </div>
+
+              <div class="detail-card rounded-xl backdrop-blur-sm hover:bg-gray-800/90 transition-all duration-300 card-glow">
+                <div class="detail-border-bottom"></div>
+                <div class="detail-border-left"></div>
+                <div class="detail-card-content flex flex-col p-6">
+                  <span class="font-semibold text-cyan-400 mb-3 text-xs uppercase tracking-wide"> Experience </span>
+                  <span class="text-gray-200 text-lg md:text-xl font-medium"> Web Developer Intern @ SleekSky, EliteTech, IBM SkillsBuild </span>
+                </div>
+              </div>
+
+              <div class="detail-card rounded-xl backdrop-blur-sm hover:bg-gray-800/90 transition-all duration-300 card-glow">
+                <div class="detail-border-bottom"></div>
+                <div class="detail-border-left"></div>
+                <div class="detail-card-content flex flex-col p-6">
+                  <span class="font-semibold text-cyan-400 mb-3 text-xs uppercase tracking-wide"> Interests </span>
+                  <span class="text-gray-200 text-lg md:text-xl font-medium"> AI systems, scalable architectures, cloud tooling, developer communities </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Skills Section - Displayed Properly -->
+            <div class="fade-in-delay-2">
+              <h3 class="font-bold text-cyan-400 mb-6 text-2xl md:text-3xl flex items-center gap-3 justify-center md:justify-start">
+                <span class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
+                Skills &amp; Technologies
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+                  <div class="border-bottom"></div>
+                  <div class="border-left-line"></div>
+                  <div class="skill-box-content flex items-center gap-3 p-4">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                    <span class="text-cyan-300 text-base md:text-lg font-medium"> JavaScript / TypeScript </span>
+                  </div>
+                </div>
+
+                <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+                  <div class="border-bottom"></div>
+                  <div class="border-left-line"></div>
+                  <div class="skill-box-content flex items-center gap-3 p-4">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                    <span class="text-cyan-300 text-base md:text-lg font-medium"> React.js / Next.js </span>
+                  </div>
+                </div>
+
+                <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+                  <div class="border-bottom"></div>
+                  <div class="border-left-line"></div>
+                  <div class="skill-box-content flex items-center gap-3 p-4">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                    <span class="text-cyan-300 text-base md:text-lg font-medium"> Node.js / Express.js / FastAPI </span>
+                  </div>
+                </div>
+
+                <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+                  <div class="border-bottom"></div>
+                  <div class="border-left-line"></div>
+                  <div class="skill-box-content flex items-center gap-3 p-4">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                    <span class="text-cyan-300 text-base md:text-lg font-medium"> MongoDB / PostgreSQL </span>
+                  </div>
+                </div>
+
+                <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+                  <div class="border-bottom"></div>
+                  <div class="border-left-line"></div>
+                  <div class="skill-box-content flex items-center gap-3 p-4">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                    <span class="text-cyan-300 text-base md:text-lg font-medium"> REST APIs / WebSockets </span>
+                  </div>
+                </div>
+
+                <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+                  <div class="border-bottom"></div>
+                  <div class="border-left-line"></div>
+                  <div class="skill-box-content flex items-center gap-3 p-4">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                    <span class="text-cyan-300 text-base md:text-lg font-medium"> CI/CD (GitHub Actions) </span>
+                  </div>
+                </div>
+
+                <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+                  <div class="border-bottom"></div>
+                  <div class="border-left-line"></div>
+                  <div class="skill-box-content flex items-center gap-3 p-4">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                    <span class="text-cyan-300 text-base md:text-lg font-medium"> TensorFlow / Sentence Transformers </span>
+                  </div>
+                </div>
+
+                <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+                  <div class="border-bottom"></div>
+                  <div class="border-left-line"></div>
+                  <div class="skill-box-content flex items-center gap-3 p-4">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                    <span class="text-cyan-300 text-base md:text-lg font-medium"> Distributed Systems &amp; Scalable Architectures </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="relative mt-0 text-gray-100 tilt-interactive" data-tilt-max="6" data-tilt-perspective="1200">
+        <!-- Glow + Gradient Backdrop -->
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-900/95 via-slate-900/90 to-black/90"></div>
+
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="footer-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="0.5" class="text-cyan-400/40"></path>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#footer-grid)"></rect>
+          </svg>
+        </div>
+
+        <!-- Accent Orbs -->
+        <div class="absolute -top-20 -right-10 w-72 h-72 bg-cyan-500/20 blur-3xl rounded-full pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-60 h-60 bg-purple-500/10 blur-3xl rounded-full pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 py-16">
+          <div class="border border-white/5 bg-white/5 backdrop-blur-xl rounded-3xl p-10 md:p-12 shadow-[0_0_40px_rgba(6,182,212,0.15)]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <!-- Brand Section -->
+              <div class="space-y-4">
+                <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-cyan-400/40 text-xs uppercase tracking-[0.3em] text-cyan-300">
+                  <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></span>
+                  <span>Portfolio</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white tracking-tight">Arin Jain</h2>
+                <p class="text-gray-300 leading-relaxed">Full Stack Developer • MERN | FastAPI | AI Systems</p>
+              </div>
+
+              <!-- Quick Links -->
+              <div>
+                <h3 class="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">Navigate</h3>
+                <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                  <a href="/" class="group flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5 hover:border-cyan-400/60 hover:bg-cyan-400/10 transition-all duration-200">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 group-hover:bg-white transition-colors"></span>
+                    <span class="font-medium text-gray-200 group-hover:text-white">Home</span>
+                  </a>
+
+                  <a href="/about" class="group flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5 hover:border-cyan-400/60 hover:bg-cyan-400/10 transition-all duration-200">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 group-hover:bg-white transition-colors"></span>
+                    <span class="font-medium text-gray-200 group-hover:text-white">About</span>
+                  </a>
+
+                  <a href="/projects" class="group flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5 hover:border-cyan-400/60 hover:bg-cyan-400/10 transition-all duration-200">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 group-hover:bg-white transition-colors"></span>
+                    <span class="font-medium text-gray-200 group-hover:text-white">Projects</span>
+                  </a>
+
+                  <a href="/contact" class="group flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5 hover:border-cyan-400/60 hover:bg-cyan-400/10 transition-all duration-200">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 group-hover:bg-white transition-colors"></span>
+                    <span class="font-medium text-gray-200 group-hover:text-white">Contact</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div>
+                <h3 class="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">Connect</h3>
+                <ul class="mt-4 space-y-3">
+                  <li>
+                    <a
+                      href="https://github.com/Lancerhawk"
+                      target="_blank"
+                      class="flex items-center gap-4 px-4 py-3 rounded-xl border border-white/5 hover:border-cyan-400/60 hover:bg-cyan-400/10 transition-all duration-200"
+                    >
+                      <span class="w-10 h-10 flex items-center justify-center text-xl overflow-hidden">
+                        <img src="https://img.sleekcms.com/1ez81/mi3bjio9.webp" alt="GitHub icon" class="w-full h-full object-contain" loading="lazy" />
+                      </span>
+                      <span class="text-gray-200 font-medium tracking-wide">GitHub</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://linkedin.com/in/arin-jain-782098258"
+                      target="_blank"
+                      class="flex items-center gap-4 px-4 py-3 rounded-xl border border-white/5 hover:border-cyan-400/60 hover:bg-cyan-400/10 transition-all duration-200"
+                    >
+                      <span class="w-10 h-10 flex items-center justify-center text-xl overflow-hidden">
+                        <img src="https://img.sleekcms.com/1ez81/mi3bjh1s.webp" alt="LinkedIn icon" class="w-full h-full object-contain" loading="lazy" />
+                      </span>
+                      <span class="text-gray-200 font-medium tracking-wide">LinkedIn</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.arinjain.xyz"
+                      target="_blank"
+                      class="flex items-center gap-4 px-4 py-3 rounded-xl border border-white/5 hover:border-cyan-400/60 hover:bg-cyan-400/10 transition-all duration-200"
+                    >
+                      <span class="w-10 h-10 flex items-center justify-center text-xl overflow-hidden">
+                        <img src="https://img.sleekcms.com/1ez81/mi3bjsgt.webp" alt="Portfolio icon" class="w-full h-full object-contain" loading="lazy" />
+                      </span>
+                      <span class="text-gray-200 font-medium tracking-wide">Portfolio</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-12 flex flex-col lg:flex-row items-center justify-between gap-6 border-t border-white/10 pt-8 text-sm text-gray-400">
+              <div class="flex items-center gap-3">
+                <span class="inline-flex w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                <span>© 2025 Arin Jain. All rights reserved.</span>
+              </div>
+              <p class="text-gray-500">Crafted with luminescent precision.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        (function () {
+          if (window.__sleekTiltInitialized) return;
+          window.__sleekTiltInitialized = true;
+
+          const SELECTOR = ".tilt-interactive";
+
+          function setupTilt(el) {
+            const maxTilt = parseFloat(el.getAttribute("data-tilt-max")) || 10;
+            const perspective = parseFloat(el.getAttribute("data-tilt-perspective")) || 800;
+            const dampen = parseFloat(el.getAttribute("data-tilt-dampen")) || 0.15;
+            let rafId = null;
+
+            function applyTransform(rotX, rotY) {
+              el.style.transform = `perspective(${perspective}px) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+            }
+
+            function handleMove(event) {
+              const point = event instanceof PointerEvent ? event : null;
+              if (!point || (point.pointerType && point.pointerType !== "mouse")) return;
+              const rect = el.getBoundingClientRect();
+              const x = (point.clientX - rect.left) / rect.width;
+              const y = (point.clientY - rect.top) / rect.height;
+              const rotateX = (0.5 - y) * 2 * maxTilt;
+              const rotateY = (x - 0.5) * 2 * maxTilt;
+
+              if (rafId) cancelAnimationFrame(rafId);
+              rafId = requestAnimationFrame(() => applyTransform(rotateX, rotateY));
+            }
+
+            function resetTilt() {
+              if (rafId) cancelAnimationFrame(rafId);
+              rafId = requestAnimationFrame(() => applyTransform(0, 0));
+            }
+
+            el.style.transition = `transform ${dampen}s ease`;
+            el.style.transformStyle = "preserve-3d";
+            el.style.willChange = "transform";
+
+            el.addEventListener("pointermove", handleMove);
+            el.addEventListener("pointerenter", handleMove);
+            el.addEventListener("pointerleave", resetTilt);
+          }
+
+          function initTilts() {
+            document.querySelectorAll(SELECTOR).forEach(setupTilt);
+          }
+
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", initTilts);
+          } else {
+            initTilts();
+          }
+        })();
+      </script>
+    </main>
+
+    <style>
+      /* Bubble Animations */
+      @keyframes float-1 {
+        0%,
+        100% {
+          transform: translate(0, 0) scale(1);
+        }
+        33% {
+          transform: translate(30px, -30px) scale(1.1);
+        }
+        66% {
+          transform: translate(-20px, 20px) scale(0.9);
+        }
+      }
+      @keyframes float-2 {
+        0%,
+        100% {
+          transform: translate(0, 0) scale(1);
+        }
+        33% {
+          transform: translate(-40px, 40px) scale(0.9);
+        }
+        66% {
+          transform: translate(25px, -25px) scale(1.1);
+        }
+      }
+      @keyframes float-3 {
+        0%,
+        100% {
+          transform: translate(0, 0) scale(1);
+        }
+        50% {
+          transform: translate(20px, 30px) scale(1.05);
+        }
+      }
+      @keyframes float-4 {
+        0%,
+        100% {
+          transform: translate(0, 0) scale(1);
+        }
+        25% {
+          transform: translate(-30px, -20px) scale(1.1);
+        }
+        75% {
+          transform: translate(35px, 25px) scale(0.95);
+        }
+      }
+      @keyframes float-5 {
+        0%,
+        100% {
+          transform: translate(0, 0) scale(1);
+        }
+        40% {
+          transform: translate(25px, -35px) scale(0.9);
+        }
+        80% {
+          transform: translate(-25px, 30px) scale(1.1);
+        }
+      }
+      @keyframes float-6 {
+        0%,
+        100% {
+          transform: translate(0, 0) scale(1);
+        }
+        30% {
+          transform: translate(-20px, 15px) scale(1.05);
+        }
+        60% {
+          transform: translate(35px, -25px) scale(0.95);
+        }
+      }
+      @keyframes float-7 {
+        0%,
+        100% {
+          transform: translate(0, 0) scale(1);
+        }
+        50% {
+          transform: translate(-35px, 20px) scale(1.1);
+        }
+      }
+      @keyframes float-8 {
+        0%,
+        100% {
+          transform: translate(0, 0) scale(1);
+        }
+        25% {
+          transform: translate(40px, -15px) scale(0.9);
+        }
+        75% {
+          transform: translate(-30px, 25px) scale(1.08);
+        }
+      }
+
+      .animate-float-1 {
+        animation: float-1 20s ease-in-out infinite;
+        top: 10%;
+        left: 10%;
+      }
+      .animate-float-2 {
+        animation: float-2 25s ease-in-out infinite;
+        top: 60%;
+        right: 15%;
+      }
+      .animate-float-3 {
+        animation: float-3 18s ease-in-out infinite;
+        bottom: 20%;
+        left: 20%;
+      }
+      .animate-float-4 {
+        animation: float-4 22s ease-in-out infinite;
+        top: 30%;
+        right: 30%;
+      }
+      .animate-float-5 {
+        animation: float-5 24s ease-in-out infinite;
+        bottom: 40%;
+        right: 10%;
+      }
+      .animate-float-6 {
+        animation: float-6 20s ease-in-out infinite;
+        top: 15%;
+        right: 5%;
+      }
+      .animate-float-7 {
+        animation: float-7 26s ease-in-out infinite;
+        bottom: 10%;
+        right: 35%;
+      }
+      .animate-float-8 {
+        animation: float-8 23s ease-in-out infinite;
+        top: 70%;
+        left: 5%;
+      }
+
+      /* Particle Animations */
+      @keyframes particle-1 {
+        0% {
+          transform: translate(0, 100vh) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translate(100px, -100px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+      @keyframes particle-2 {
+        0% {
+          transform: translate(0, 100vh) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translate(-150px, -100px) rotate(-360deg);
+          opacity: 0;
+        }
+      }
+      @keyframes particle-3 {
+        0% {
+          transform: translate(0, 100vh) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translate(200px, -100px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+      @keyframes particle-4 {
+        0% {
+          transform: translate(0, 100vh) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translate(-80px, -100px) rotate(-360deg);
+          opacity: 0;
+        }
+      }
+      @keyframes particle-5 {
+        0% {
+          transform: translate(0, 100vh) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translate(120px, -100px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+      @keyframes particle-6 {
+        0% {
+          transform: translate(0, 100vh) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translate(-200px, -100px) rotate(-360deg);
+          opacity: 0;
+        }
+      }
+
+      .animate-particle-1 {
+        animation: particle-1 15s linear infinite;
+        left: 10%;
+        animation-delay: 0s;
+      }
+      .animate-particle-2 {
+        animation: particle-2 18s linear infinite;
+        left: 25%;
+        animation-delay: 2s;
+      }
+      .animate-particle-3 {
+        animation: particle-3 20s linear infinite;
+        left: 50%;
+        animation-delay: 4s;
+      }
+      .animate-particle-4 {
+        animation: particle-4 16s linear infinite;
+        left: 70%;
+        animation-delay: 1s;
+      }
+      .animate-particle-5 {
+        animation: particle-5 19s linear infinite;
+        left: 85%;
+        animation-delay: 3s;
+      }
+      .animate-particle-6 {
+        animation: particle-6 17s linear infinite;
+        left: 40%;
+        animation-delay: 5s;
+      }
+
+      /* Line Animations */
+      @keyframes line-1 {
+        0%,
+        100% {
+          opacity: 0.1;
+        }
+        50% {
+          opacity: 0.2;
+        }
+      }
+      @keyframes line-2 {
+        0%,
+        100% {
+          opacity: 0.15;
+        }
+        50% {
+          opacity: 0.25;
+        }
+      }
+      @keyframes line-3 {
+        0%,
+        100% {
+          opacity: 0.1;
+        }
+        50% {
+          opacity: 0.2;
+        }
+      }
+
+      .animate-line-1 {
+        animation: line-1 4s ease-in-out infinite;
+      }
+      .animate-line-2 {
+        animation: line-2 5s ease-in-out infinite;
+        animation-delay: 1s;
+      }
+      .animate-line-3 {
+        animation: line-3 4.5s ease-in-out infinite;
+        animation-delay: 2s;
+      }
+    </style>
+
+    <script src="https://unpkg.com/@sleekcms/ajaxed-forms"></script>
+  </body>
+</html>

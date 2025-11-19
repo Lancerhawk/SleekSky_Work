@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .glass {
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .glow {
+      box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes pulse-glow {
+      0%, 100% { 
+        box-shadow: 0 0 20px rgba(139, 92, 246, 0.4), 0 0 40px rgba(59, 130, 246, 0.2);
+      }
+      50% { 
+        box-shadow: 0 0 30px rgba(139, 92, 246, 0.6), 0 0 60px rgba(59, 130, 246, 0.4);
+      }
+    }
+    @keyframes gradient-shift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    .years-box {
+      animation: float 6s ease-in-out infinite, pulse-glow 3s ease-in-out infinite;
+      border: 2px solid transparent;
+      background-image: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), 
+                        linear-gradient(135deg, rgba(139, 92, 246, 0.5), rgba(59, 130, 246, 0.5));
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-white min-h-screen">
+
+
+
+<!-- Hero Section -->
+<section class="pt-32 pb-16">
+  <div class="container mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white">
+          About Us
+        </h1>
+        <p class="text-xl text-white/70 mb-6">
+          We&#39;re a team of passionate designers and developers dedicated to creating exceptional digital experiences.
+        </p>
+        <p class="text-lg text-white/70">
+          Founded in 2020, Creative Agency has grown from a small startup to a recognized leader in digital design and development. Our mission is simple: transform ideas into stunning digital realities that make a lasting impact.
+        </p>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <div class="years-box p-8 md:p-10 w-full max-w-xs flex items-center justify-center rounded-2xl relative overflow-hidden">
+          <div class="text-center relative z-10">
+            <div class="text-5xl md:text-6xl font-bold gradient-text mb-3">
+              5+
+            </div>
+            <div class="text-lg md:text-xl text-white/80 font-medium">
+              Years of Excellence
+            </div>
+          </div>
+          <!-- Animated gradient overlay -->
+          <div class="absolute inset-0 opacity-20 bg-gradient-to-br from-purple-600/30 via-blue-600/30 to-purple-600/30 animate-pulse"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Story Section -->
+<section class="py-20 bg-slate-900/50">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-8 text-center text-white">
+        Our Story
+      </h2>
+      <div class="space-y-6 text-lg text-white/70">
+        
+          
+            <p>Creative Agency was born from a simple idea: that great design and innovative technology could transform businesses. What started as a small team of three has grown into a full-service digital agency serving clients worldwide.</p>
+          
+            <p>Our journey has been marked by countless late nights, breakthrough moments, and the satisfaction of seeing our clients succeed. We&#39;ve worked with startups finding their voice, established brands evolving their presence, and everything in between.</p>
+          
+            <p>Today, we&#39;re proud to have completed over 150 projects, worked with 80+ clients, and won 12 industry awards. But what we&#39;re most proud of is the lasting relationships we&#39;ve built and the impact our work has made.</p>
+          
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="py-20">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+        Meet the Team
+      </h2>
+      <p class="text-xl text-white/70">
+        The creative minds behind our success
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+        
+          <div class="glass p-6 text-center card-hover rounded-3xl">
+            
+              <img 
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHwzfHxodW1hbnxlbnwwfHx8fDE3NjM0OTEzNjd8MA&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+                alt="Alex Rivera"
+                class="w-32 h-32 mx-auto mb-4 rounded-full object-cover"
+                loading="lazy"
+              />
+            
+            <h3 class="text-xl font-bold mb-1 text-white">Alex Rivera</h3>
+            <p class="text-purple-400 mb-2">Founder &amp; CEO</p>
+            <p class="text-sm text-white/70">Visionary leader with 10+ years in digital</p>
+          </div>
+        
+          <div class="glass p-6 text-center card-hover rounded-3xl">
+            
+              <img 
+                src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHw5fHxodW1hbnxlbnwwfHx8fDE3NjM0OTEzNjd8MA&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+                alt="Sarah Chen"
+                class="w-32 h-32 mx-auto mb-4 rounded-full object-cover"
+                loading="lazy"
+              />
+            
+            <h3 class="text-xl font-bold mb-1 text-white">Sarah Chen</h3>
+            <p class="text-purple-400 mb-2">Creative Director</p>
+            <p class="text-sm text-white/70">Award-winning designer and strategist</p>
+          </div>
+        
+          <div class="glass p-6 text-center card-hover rounded-3xl">
+            
+              <img 
+                src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHw4fHxodW1hbnxlbnwwfHx8fDE3NjM0OTEzNjd8MA&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+                alt="Michael Brown"
+                class="w-32 h-32 mx-auto mb-4 rounded-full object-cover"
+                loading="lazy"
+              />
+            
+            <h3 class="text-xl font-bold mb-1 text-white">Michael Brown</h3>
+            <p class="text-purple-400 mb-2">Lead Developer</p>
+            <p class="text-sm text-white/70">Full-stack expert and tech enthusiast</p>
+          </div>
+        
+      
+    </div>
+  </div>
+</section>
+
+<!-- Values Section -->
+<section class="py-20 bg-slate-900/50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+        Our Values
+      </h2>
+      <p class="text-xl text-white/70">
+        The principles that guide everything we do
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+        
+          <div class="glass p-8 text-center rounded-3xl">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-white">Passion</h3>
+            <p class="text-white/70">We&#39;re passionate about design and technology. Every project is an opportunity to create something extraordinary.</p>
+          </div>
+        
+          <div class="glass p-8 text-center rounded-3xl">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-white">Collaboration</h3>
+            <p class="text-white/70">We believe in the power of collaboration. Great results come from working together with our clients.</p>
+          </div>
+        
+          <div class="glass p-8 text-center rounded-3xl">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-white">Excellence</h3>
+            <p class="text-white/70">We&#39;re committed to excellence in everything we do. Quality is never an accident.</p>
+          </div>
+        
+      
+    </div>
+  </div>
+</section>
+
+<!-- Awards Section -->
+<section class="py-20">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+        Awards &amp; Recognition
+      </h2>
+      <p class="text-xl text-white/70">
+        Celebrating our achievements
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+      
+        
+          <div class="glass p-6 text-center card-hover rounded-3xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 mx-auto mb-4 text-purple-400">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+            <h3 class="font-bold mb-1 text-white">Awwwards Site of the Day</h3>
+            <p class="text-sm text-white/70">2024</p>
+          </div>
+        
+          <div class="glass p-6 text-center card-hover rounded-3xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 mx-auto mb-4 text-purple-400">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+            <h3 class="font-bold mb-1 text-white">CSS Design Awards Winner</h3>
+            <p class="text-sm text-white/70">2024</p>
+          </div>
+        
+          <div class="glass p-6 text-center card-hover rounded-3xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 mx-auto mb-4 text-purple-400">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+            <h3 class="font-bold mb-1 text-white">Best Digital Agency</h3>
+            <p class="text-sm text-white/70">2023</p>
+          </div>
+        
+          <div class="glass p-6 text-center card-hover rounded-3xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 mx-auto mb-4 text-purple-400">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+            <h3 class="font-bold mb-1 text-white">FWA of the Month</h3>
+            <p class="text-sm text-white/70">2023</p>
+          </div>
+        
+          <div class="glass p-6 text-center card-hover rounded-3xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 mx-auto mb-4 text-purple-400">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+            <h3 class="font-bold mb-1 text-white">Webby Awards Nominee</h3>
+            <p class="text-sm text-white/70">2022</p>
+          </div>
+        
+      
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

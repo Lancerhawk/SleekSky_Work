@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-white">
+
+
+
+<section class="bg-slate-950 px-6 pt-32 pb-12 text-center text-white">
+  <div class="mx-auto max-w-3xl space-y-4">
+    <h1 class="text-4xl font-bold leading-tight md:text-5xl">
+      Our Work
+    </h1>
+    <p class="text-lg text-white/70">
+      Projects we are proud of.
+    </p>
+  </div>
+</section>
+
+
+  <section class="bg-slate-950 px-6 pb-10">
+    <div class="mx-auto flex max-w-4xl flex-wrap justify-center gap-3">
+      <button 
+        type="button"
+        class="filter-button rounded-full border border-white/10 px-5 py-2 text-sm font-semibold text-white transition bg-gradient-to-r from-purple-600 to-blue-600 border-transparent"
+        data-filter-button
+        data-category="all"
+      >
+        All
+      </button>
+      
+        <button 
+          type="button"
+          class="filter-button rounded-full border border-white/10 px-5 py-2 text-sm font-semibold text-white/80 transition hover:text-white"
+          data-filter-button
+          data-category="web_design"
+        >
+          Web Design
+        </button>
+      
+        <button 
+          type="button"
+          class="filter-button rounded-full border border-white/10 px-5 py-2 text-sm font-semibold text-white/80 transition hover:text-white"
+          data-filter-button
+          data-category="branding"
+        >
+          Branding
+        </button>
+      
+        <button 
+          type="button"
+          class="filter-button rounded-full border border-white/10 px-5 py-2 text-sm font-semibold text-white/80 transition hover:text-white"
+          data-filter-button
+          data-category="ui_design"
+        >
+          UI Design
+        </button>
+      
+        <button 
+          type="button"
+          class="filter-button rounded-full border border-white/10 px-5 py-2 text-sm font-semibold text-white/80 transition hover:text-white"
+          data-filter-button
+          data-category="mobile_app"
+        >
+          Mobile App
+        </button>
+      
+    </div>
+  </section>
+
+
+<section class="bg-slate-950 px-6 pb-20 text-white">
+  <div class="mx-auto max-w-6xl">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-text {
+      background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Optimize hover transitions */
+    [data-project-card] {
+      will-change: transform;
+    }
+
+    [data-project-card] img {
+      will-change: transform;
+    }
+
+    /* Smoother transitions */
+    [data-project-card] {
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                  border-color 0.3s ease,
+                  background-color 0.3s ease;
+    }
+
+    [data-project-card] img {
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Reduce repaints */
+    .project-overlay {
+      transition: opacity 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-white">
+
+
+
+<div id="projects-grid" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+  
+    
+      <article 
+        class="project-card group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl shadow-black/40"
+        data-project-card
+        data-category="web_design"
+      >
+        <button 
+          type="button"
+          class="project-button relative block w-full overflow-hidden focus:outline-none"
+          data-modal-open="project-modal-0"
+          aria-label="Open details for E-commerce Platform"
+        >
+          
+            <img 
+              src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHwzfHx0cmF2ZWx8ZW58MHx8fHwxNzYzNDU4MDMxfDA&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+              alt="E-commerce Platform" 
+              class="project-image h-64 w-full object-cover"
+              loading="lazy"
+            />
+          
+          <div class="project-overlay pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent opacity-0"></div>
+          <span class="pointer-events-none absolute bottom-4 left-4 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            View details
+          </span>
+        </button>
+
+        <div class="space-y-3 px-6 py-5">
+          <span class="text-xs font-semibold uppercase tracking-wide text-purple-300">Web Design</span>
+          <h3 class="text-xl font-semibold text-white">E-commerce Platform</h3>
+          <p class="text-sm text-white/70 h-16 overflow-hidden text-ellipsis">
+            A complete redesign of a luxury fashion e-commerce site
+          </p>
+          <div class="flex items-center gap-4 text-sm text-white/60">
+            
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-white hover:text-purple-300 transition-colors duration-200">
+                Live ↗
+              </a>
+            
+            
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-white/80 hover:text-purple-300 transition-colors duration-200">
+                Code ↗
+              </a>
+            
+          </div>
+        </div>
+      </article>
+
+      <!-- Modal -->
+      <div 
+        id="project-modal-0" 
+        class="project-modal fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 px-4 py-8 backdrop-blur"
+        aria-hidden="true"
+      >
+        <div class="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-3xl border border-white/10 bg-slate-950">
+          <button 
+            type="button"
+            class="absolute right-4 top-4 rounded-full border border-white/10 bg-white/5 p-2 text-white/60 transition-colors duration-200 hover:border-purple-500 hover:text-white"
+            data-modal-close
+            aria-label="Close details for E-commerce Platform"
+          >
+            ✕
+          </button>
+
+          
+            <img 
+              src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHwzfHx0cmF2ZWx8ZW58MHx8fHwxNzYzNDU4MDMxfDA&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+              alt="E-commerce Platform" 
+              class="h-80 w-full rounded-t-3xl object-cover"
+            />
+          
+
+          <div class="space-y-6 px-8 py-8">
+            <div>
+              <span class="text-sm font-semibold uppercase tracking-wide text-purple-300">Web Design</span>
+              <h2 class="mt-2 text-3xl font-bold text-white">E-commerce Platform</h2>
+            </div>
+
+            <p class="text-base text-white/80 leading-relaxed">
+              A complete redesign of a luxury fashion e-commerce site
+            </p>
+
+            
+              <div class="flex flex-wrap gap-4">
+                
+                  <a 
+                    href="https://example.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-purple-500/30 transition-transform duration-200 hover:scale-[1.02]"
+                  >
+                    View Live Site
+                  </a>
+                
+                
+                  <a 
+                    href="https://example.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-2 text-sm font-semibold text-white transition-colors duration-200 hover:border-purple-500"
+                  >
+                    View Code
+                  </a>
+                
+              </div>
+            
+
+            
+              <div class="rounded-2xl border border-white/5 bg-white/5 p-4 text-xs text-white/60">
+                <p class="font-semibold text-white/80">Image credits</p>
+                
+                  <p>By Luca Bravo</p>
+                
+                
+                  <a href="https://unsplash.com/@lucabravo?utm_source=sleekcms" target="_blank" rel="noopener noreferrer" class="text-purple-300 underline">
+                    Source
+                  </a>
+                
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    
+      <article 
+        class="project-card group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl shadow-black/40"
+        data-project-card
+        data-category="branding"
+      >
+        <button 
+          type="button"
+          class="project-button relative block w-full overflow-hidden focus:outline-none"
+          data-modal-open="project-modal-1"
+          aria-label="Open details for TechCo Brand Identity"
+        >
+          
+            <img 
+              src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHwxMHx8b2ZmaWNlfGVufDB8fHx8MTc2MzQ4NTIyMXww&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+              alt="TechCo Brand Identity" 
+              class="project-image h-64 w-full object-cover"
+              loading="lazy"
+            />
+          
+          <div class="project-overlay pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent opacity-0"></div>
+          <span class="pointer-events-none absolute bottom-4 left-4 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            View details
+          </span>
+        </button>
+
+        <div class="space-y-3 px-6 py-5">
+          <span class="text-xs font-semibold uppercase tracking-wide text-purple-300">Branding</span>
+          <h3 class="text-xl font-semibold text-white">TechCo Brand Identity</h3>
+          <p class="text-sm text-white/70 h-16 overflow-hidden text-ellipsis">
+            Full brand identity for an innovative tech startup
+          </p>
+          <div class="flex items-center gap-4 text-sm text-white/60">
+            
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-white hover:text-purple-300 transition-colors duration-200">
+                Live ↗
+              </a>
+            
+            
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-white/80 hover:text-purple-300 transition-colors duration-200">
+                Code ↗
+              </a>
+            
+          </div>
+        </div>
+      </article>
+
+      <!-- Modal -->
+      <div 
+        id="project-modal-1" 
+        class="project-modal fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 px-4 py-8 backdrop-blur"
+        aria-hidden="true"
+      >
+        <div class="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-3xl border border-white/10 bg-slate-950">
+          <button 
+            type="button"
+            class="absolute right-4 top-4 rounded-full border border-white/10 bg-white/5 p-2 text-white/60 transition-colors duration-200 hover:border-purple-500 hover:text-white"
+            data-modal-close
+            aria-label="Close details for TechCo Brand Identity"
+          >
+            ✕
+          </button>
+
+          
+            <img 
+              src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHwxMHx8b2ZmaWNlfGVufDB8fHx8MTc2MzQ4NTIyMXww&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+              alt="TechCo Brand Identity" 
+              class="h-80 w-full rounded-t-3xl object-cover"
+            />
+          
+
+          <div class="space-y-6 px-8 py-8">
+            <div>
+              <span class="text-sm font-semibold uppercase tracking-wide text-purple-300">Branding</span>
+              <h2 class="mt-2 text-3xl font-bold text-white">TechCo Brand Identity</h2>
+            </div>
+
+            <p class="text-base text-white/80 leading-relaxed">
+              Full brand identity for an innovative tech startup
+            </p>
+
+            
+              <div class="flex flex-wrap gap-4">
+                
+                  <a 
+                    href="https://example.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-purple-500/30 transition-transform duration-200 hover:scale-[1.02]"
+                  >
+                    View Live Site
+                  </a>
+                
+                
+                  <a 
+                    href="https://example.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-2 text-sm font-semibold text-white transition-colors duration-200 hover:border-purple-500"
+                  >
+                    View Code
+                  </a>
+                
+              </div>
+            
+
+            
+              <div class="rounded-2xl border border-white/5 bg-white/5 p-4 text-xs text-white/60">
+                <p class="font-semibold text-white/80">Image credits</p>
+                
+                  <p>By Copernico</p>
+                
+                
+                  <a href="https://unsplash.com/@copernicowork?utm_source=sleekcms" target="_blank" rel="noopener noreferrer" class="text-purple-300 underline">
+                    Source
+                  </a>
+                
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    
+      <article 
+        class="project-card group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl shadow-black/40"
+        data-project-card
+        data-category="mobile_app"
+      >
+        <button 
+          type="button"
+          class="project-button relative block w-full overflow-hidden focus:outline-none"
+          data-modal-open="project-modal-2"
+          aria-label="Open details for NeoBank Mobile App"
+        >
+          
+            <img 
+              src="https://images.unsplash.com/photo-1651130537842-eec4720ba02c?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHw3fHxiYW5rJTIwYXBwfGVufDB8fHx8MTc2MzQ5NjA3MHww&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+              alt="NeoBank Mobile App" 
+              class="project-image h-64 w-full object-cover"
+              loading="lazy"
+            />
+          
+          <div class="project-overlay pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent opacity-0"></div>
+          <span class="pointer-events-none absolute bottom-4 left-4 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            View details
+          </span>
+        </button>
+
+        <div class="space-y-3 px-6 py-5">
+          <span class="text-xs font-semibold uppercase tracking-wide text-purple-300">Mobile App</span>
+          <h3 class="text-xl font-semibold text-white">NeoBank Mobile App</h3>
+          <p class="text-sm text-white/70 h-16 overflow-hidden text-ellipsis">
+            Complete mobile banking experience with biometric authentication, instant transfers, and AI-powered financial insights for modern users.
+          </p>
+          <div class="flex items-center gap-4 text-sm text-white/60">
+            
+              <a href="https://neobank-demo.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-white hover:text-purple-300 transition-colors duration-200">
+                Live ↗
+              </a>
+            
+            
+              <a href="https://neobank-demo.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-white/80 hover:text-purple-300 transition-colors duration-200">
+                Code ↗
+              </a>
+            
+          </div>
+        </div>
+      </article>
+
+      <!-- Modal -->
+      <div 
+        id="project-modal-2" 
+        class="project-modal fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 px-4 py-8 backdrop-blur"
+        aria-hidden="true"
+      >
+        <div class="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-3xl border border-white/10 bg-slate-950">
+          <button 
+            type="button"
+            class="absolute right-4 top-4 rounded-full border border-white/10 bg-white/5 p-2 text-white/60 transition-colors duration-200 hover:border-purple-500 hover:text-white"
+            data-modal-close
+            aria-label="Close details for NeoBank Mobile App"
+          >
+            ✕
+          </button>
+
+          
+            <img 
+              src="https://images.unsplash.com/photo-1651130537842-eec4720ba02c?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHw3fHxiYW5rJTIwYXBwfGVufDB8fHx8MTc2MzQ5NjA3MHww&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+              alt="NeoBank Mobile App" 
+              class="h-80 w-full rounded-t-3xl object-cover"
+            />
+          
+
+          <div class="space-y-6 px-8 py-8">
+            <div>
+              <span class="text-sm font-semibold uppercase tracking-wide text-purple-300">Mobile App</span>
+              <h2 class="mt-2 text-3xl font-bold text-white">NeoBank Mobile App</h2>
+            </div>
+
+            <p class="text-base text-white/80 leading-relaxed">
+              Complete mobile banking experience with biometric authentication, instant transfers, and AI-powered financial insights for modern users.
+            </p>
+
+            
+              <div class="flex flex-wrap gap-4">
+                
+                  <a 
+                    href="https://neobank-demo.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-purple-500/30 transition-transform duration-200 hover:scale-[1.02]"
+                  >
+                    View Live Site
+                  </a>
+                
+                
+                  <a 
+                    href="https://neobank-demo.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-2 text-sm font-semibold text-white transition-colors duration-200 hover:border-purple-500"
+                  >
+                    View Code
+                  </a>
+                
+              </div>
+            
+
+            
+              <div class="rounded-2xl border border-white/5 bg-white/5 p-4 text-xs text-white/60">
+                <p class="font-semibold text-white/80">Image credits</p>
+                
+                  <p>By PiggyBank</p>
+                
+                
+                  <a href="https://unsplash.com/@piggybank?utm_source=sleekcms" target="_blank" rel="noopener noreferrer" class="text-purple-300 underline">
+                    Source
+                  </a>
+                
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    
+      <article 
+        class="project-card group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl shadow-black/40"
+        data-project-card
+        data-category="web_design"
+      >
+        <button 
+          type="button"
+          class="project-button relative block w-full overflow-hidden focus:outline-none"
+          data-modal-open="project-modal-3"
+          aria-label="Open details for Luxe Fashion E-commerce"
+        >
+          
+            <img 
+              src="https://images.unsplash.com/photo-1688561808434-886a6dd97b8c?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2V8ZW58MHx8fHwxNzYzNDk2MjY1fDA&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+              alt="Luxe Fashion E-commerce" 
+              class="project-image h-64 w-full object-cover"
+              loading="lazy"
+            />
+          
+          <div class="project-overlay pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent opacity-0"></div>
+          <span class="pointer-events-none absolute bottom-4 left-4 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            View details
+          </span>
+        </button>
+
+        <div class="space-y-3 px-6 py-5">
+          <span class="text-xs font-semibold uppercase tracking-wide text-purple-300">Web Design</span>
+          <h3 class="text-xl font-semibold text-white">Luxe Fashion E-commerce</h3>
+          <p class="text-sm text-white/70 h-16 overflow-hidden text-ellipsis">
+            High-end fashion marketplace featuring 3D product previews, virtual try-on, and personalized shopping recommendations.
+          </p>
+          <div class="flex items-center gap-4 text-sm text-white/60">
+            
+              <a href="https://luxefashion.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-white hover:text-purple-300 transition-colors duration-200">
+                Live ↗
+              </a>
+            
+            
+              <a href="https://luxefashion.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-white/80 hover:text-purple-300 transition-colors duration-200">
+                Code ↗
+              </a>
+            
+          </div>
+        </div>
+      </article>
+
+      <!-- Modal -->
+      <div 
+        id="project-modal-3" 
+        class="project-modal fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 px-4 py-8 backdrop-blur"
+        aria-hidden="true"
+      >
+        <div class="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-3xl border border-white/10 bg-slate-950">
+          <button 
+            type="button"
+            class="absolute right-4 top-4 rounded-full border border-white/10 bg-white/5 p-2 text-white/60 transition-colors duration-200 hover:border-purple-500 hover:text-white"
+            data-modal-close
+            aria-label="Close details for Luxe Fashion E-commerce"
+          >
+            ✕
+          </button>
+
+          
+            <img 
+              src="https://images.unsplash.com/photo-1688561808434-886a6dd97b8c?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2V8ZW58MHx8fHwxNzYzNDk2MjY1fDA&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+              alt="Luxe Fashion E-commerce" 
+              class="h-80 w-full rounded-t-3xl object-cover"
+            />
+          
+
+          <div class="space-y-6 px-8 py-8">
+            <div>
+              <span class="text-sm font-semibold uppercase tracking-wide text-purple-300">Web Design</span>
+              <h2 class="mt-2 text-3xl font-bold text-white">Luxe Fashion E-commerce</h2>
+            </div>
+
+            <p class="text-base text-white/80 leading-relaxed">
+              High-end fashion marketplace featuring 3D product previews, virtual try-on, and personalized shopping recommendations.
+            </p>
+
+            
+              <div class="flex flex-wrap gap-4">
+                
+                  <a 
+                    href="https://luxefashion.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-purple-500/30 transition-transform duration-200 hover:scale-[1.02]"
+                  >
+                    View Live Site
+                  </a>
+                
+                
+                  <a 
+                    href="https://luxefashion.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-2 text-sm font-semibold text-white transition-colors duration-200 hover:border-purple-500"
+                  >
+                    View Code
+                  </a>
+                
+              </div>
+            
+
+            
+              <div class="rounded-2xl border border-white/5 bg-white/5 p-4 text-xs text-white/60">
+                <p class="font-semibold text-white/80">Image credits</p>
+                
+                  <p>By Shoper</p>
+                
+                
+                  <a href="https://unsplash.com/@shoperpl?utm_source=sleekcms" target="_blank" rel="noopener noreferrer" class="text-purple-300 underline">
+                    Source
+                  </a>
+                
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    
+  
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const body = document.body;
+    
+    // Use passive listeners for better performance
+    const openButtons = document.querySelectorAll('[data-modal-open]');
+    const modals = document.querySelectorAll('.project-modal');
+
+    const closeModal = (modal) => {
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      body.classList.remove('overflow-hidden');
+    };
+
+    openButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const modalId = button.getAttribute('data-modal-open');
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+          body.classList.add('overflow-hidden');
+        }
+      }, { passive: true });
+    });
+
+    modals.forEach((modal) => {
+      modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+          closeModal(modal);
+        }
+      }, { passive: true });
+      
+      modal.querySelectorAll('[data-modal-close]').forEach((button) => {
+        button.addEventListener('click', () => closeModal(modal), { passive: true });
+      });
+    });
+
+    // Optimized hover effects using JS instead of CSS for better performance
+    const projectCards = document.querySelectorAll('[data-project-card]');
+    
+    projectCards.forEach((card) => {
+      const image = card.querySelector('.project-image');
+      const overlay = card.querySelector('.project-overlay');
+      
+      if (!image || !overlay) return;
+      
+      let hoverTimeout;
+      
+      card.addEventListener('mouseenter', () => {
+        clearTimeout(hoverTimeout);
+        requestAnimationFrame(() => {
+          card.style.transform = 'translateY(-0.25rem)';
+          card.style.borderColor = 'rgb(168 85 247)';
+          card.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+          image.style.transform = 'scale(1.05)';
+          overlay.style.opacity = '1';
+        });
+      }, { passive: true });
+      
+      card.addEventListener('mouseleave', () => {
+        clearTimeout(hoverTimeout);
+        hoverTimeout = setTimeout(() => {
+          requestAnimationFrame(() => {
+            card.style.transform = '';
+            card.style.borderColor = '';
+            card.style.backgroundColor = '';
+            image.style.transform = '';
+            overlay.style.opacity = '';
+          });
+        }, 50);
+      }, { passive: true });
+    });
+  });
+</script>
+
+</body>
+</html>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('[data-filter-button]');
+    const cards = document.querySelectorAll('[data-project-card]');
+
+    if (!buttons.length || !cards.length) return;
+
+    let activeCategory = 'all';
+
+    const updateUI = () => {
+      buttons.forEach((button) => {
+        const isActive = button.dataset.category === activeCategory;
+        button.classList.toggle('bg-gradient-to-r', isActive);
+        button.classList.toggle('from-purple-600', isActive);
+        button.classList.toggle('to-blue-600', isActive);
+        button.classList.toggle('text-white', isActive);
+        button.classList.toggle('border-transparent', isActive);
+      });
+
+      cards.forEach((card) => {
+        const cardCategory = card.dataset.category;
+        const shouldShow = activeCategory === 'all' || cardCategory === activeCategory;
+        card.classList.toggle('hidden', !shouldShow);
+      });
+    };
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const category = button.dataset.category;
+        activeCategory = category === 'all' ? 'all' : category;
+        updateUI();
+      });
+    });
+
+    updateUI();
+  });
+</script>
+
+</body>
+</html>

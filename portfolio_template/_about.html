@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | About Me</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .neon-title {
+      position: relative;
+      display: inline-block;
+      overflow: visible;
+    }
+
+    .neon-title span {
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      background: repeating-linear-gradient(
+        135deg,
+        transparent 0px,
+        transparent 8px,
+        rgba(6, 182, 212, 0.5) 8px,
+        rgba(6, 182, 212, 0.8) 10px,
+        rgba(6, 182, 212, 0.5) 12px,
+        transparent 12px,
+        transparent 20px
+      );
+      background-size: 60px 60px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      animation: diagonalLine 2.5s linear infinite;
+      -webkit-text-stroke: 2px #06b6d4;
+      filter: drop-shadow(0 0 2px rgba(6, 182, 212, 0.5));
+    }
+
+    .neon-title::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      color: transparent;
+      -webkit-text-stroke: 2px #06b6d4;
+      pointer-events: none;
+    }
+    @keyframes diagonalLine {
+      0% {
+        background-position: -60px -60px;
+      }
+      100% {
+        background-position: 60px 60px;
+      }
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    .fade-in-delay {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+      animation-delay: 0.2s;
+    }
+    .fade-in-delay-2 {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+      animation-delay: 0.4s;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .card-glow {
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.3), 0 0 40px rgba(6, 182, 212, 0.1);
+    }
+    .card-glow:hover {
+      box-shadow: 0 0 30px rgba(6, 182, 212, 0.5), 0 0 60px rgba(6, 182, 212, 0.2);
+    }
+    .skill-tag {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(6, 182, 212, 0.1) 100%);
+      border: 1px solid rgba(6, 182, 212, 0.4);
+    }
+    .skill-tag:hover {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.3) 0%, rgba(6, 182, 212, 0.2) 100%);
+      border-color: rgba(6, 182, 212, 0.6);
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+    }
+    .skill-box {
+      position: relative;
+      overflow: hidden;
+      background: rgba(31, 41, 55, 0.6);
+      border: 1px solid transparent;
+    }
+
+    .skill-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: rgba(6, 182, 212, 0.9);
+      z-index: 1;
+      transition: width 0.4s ease;
+    }
+
+    .skill-box::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 0;
+      background: rgba(6, 182, 212, 0.9);
+      z-index: 1;
+      transition: height 0.4s ease 0.4s;
+    }
+
+    .border-bottom {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background: rgba(6, 182, 212, 0.9);
+      z-index: 1;
+      transition: width 0.4s ease 0.8s;
+    }
+
+    .border-left-line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 2px;
+      height: 0;
+      background: rgba(6, 182, 212, 0.9);
+      z-index: 1;
+      transition: height 0.4s ease 1.2s;
+    }
+    .skill-box:hover::before {
+      width: 100%;
+    }
+    .skill-box:hover::after {
+      height: 100%;
+    }
+    .skill-box:hover .border-bottom {
+      width: 100%;
+    }
+    .skill-box:hover .border-left-line {
+      height: 100%;
+    }
+    .skill-box-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .detail-card {
+      position: relative;
+      overflow: hidden;
+      background: rgba(31, 41, 55, 0.8);
+      border: 1px solid transparent;
+    }
+
+    .detail-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: rgba(6, 182, 212, 0.9);
+      z-index: 1;
+      transition: width 0.4s ease;
+    }
+
+    .detail-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 0;
+      background: rgba(6, 182, 212, 0.9);
+      z-index: 1;
+      transition: height 0.4s ease 0.4s;
+    }
+
+    .detail-border-bottom {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background: rgba(6, 182, 212, 0.9);
+      z-index: 1;
+      transition: width 0.4s ease 0.8s;
+    }
+
+    .detail-border-left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 2px;
+      height: 0;
+      background: rgba(6, 182, 212, 0.9);
+      z-index: 1;
+      transition: height 0.4s ease 1.2s;
+    }
+    .detail-card:hover::before {
+      width: 100%;
+    }
+    .detail-card:hover::after {
+      height: 100%;
+    }
+    .detail-card:hover .detail-border-bottom {
+      width: 100%;
+    }
+    .detail-card:hover .detail-border-left {
+      height: 100%;
+    }
+    .detail-card-content {
+      position: relative;
+      z-index: 2;
+    }
+    .profile-frame {
+      position: relative;
+      padding: 1.5rem;
+      border-radius: 1.75rem;
+      background: radial-gradient(circle at top, rgba(6, 182, 212, 0.18), rgba(15, 23, 42, 0.95));
+      border: 1px solid rgba(6, 182, 212, 0.25);
+      box-shadow: 0 25px 60px rgba(6, 182, 212, 0.25);
+      overflow: visible;
+      transition: border-color 0.4s ease, box-shadow 0.4s ease;
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+    .profile-frame::before {
+      content: '';
+      position: absolute;
+      inset: 10px;
+      border-radius: 1.35rem;
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      opacity: 0.5;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+    .profile-frame::after {
+      content: '';
+      position: absolute;
+      inset: -25%;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.15), transparent 60%);
+      filter: blur(50px);
+      z-index: -1;
+      opacity: 0.6;
+      transition: opacity 0.4s ease;
+    }
+    .profile-frame:hover {
+      border-color: rgba(6, 182, 212, 0.5);
+      box-shadow: 0 35px 80px rgba(6, 182, 212, 0.4);
+    }
+    .profile-frame:hover::before,
+    .profile-frame:hover::after {
+      opacity: 0.9;
+    }
+    .profile-photo {
+      border-radius: 1.2rem;
+      border: 2px solid rgba(6, 182, 212, 0.4);
+      transition: transform 0.6s ease, filter 0.6s ease, border-color 0.4s ease;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+    .profile-frame:hover .profile-photo {
+      transform: translateY(-8px);
+      filter: drop-shadow(0 20px 25px rgba(6, 182, 212, 0.35));
+      border-color: rgba(255, 255, 255, 0.7);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans overflow-x-hidden">
+
+  <!-- ABOUT page -->
+  <section class="min-h-screen px-6 md:px-8 lg:px-12 xl:px-16 pt-32 pb-20 relative overflow-hidden">
+    
+    <!-- Centered Content Container -->
+    <div class="max-w-7xl w-full mx-auto relative z-10 space-y-12">
+      
+      <!-- 1. Top Center - Heading -->
+      <div class="text-center fade-in">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-0 neon-title leading-tight inline-block" data-text="About Me">
+          <span>About Me</span>
+        </h1>
+      </div>
+
+      <!-- 2. Row: Subheading (Left) + Image (Right) -->
+      <div class="flex max-w-5xl mx-auto flex-col md:flex-row items-center justify-between gap-8 md:gap-12 fade-in-delay">
+        <!-- Left: Subheading -->
+        <div class="md:w-1/2 flex items-center justify-center md:justify-start">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-200 leading-tight text-center md:text-left">
+            Full-Stack Developer focused on scalable systems, AI-driven products, and end-to-end execution.
+          </h2>
+        </div>
+        
+        <!-- Right: Profile Image -->
+        <div class="md:w-1/2 flex justify-center md:justify-end">
+          <div class="profile-frame tilt-interactive" data-tilt-max="12" data-tilt-perspective="1000">
+            <img src="https://img.sleekcms.com/1ez81/mi2vghx4.webp" alt="Profile photo of Arin Jain" class="profile-photo w-40 md:w-64 lg:w-80">
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Bio Section - Full Width -->
+      <div class="fade-in-delay text-center md:text-left">
+        <div class="text-gray-200 leading-relaxed text-base md:text-lg lg:text-xl max-w-full">
+          <p>I&#39;m a full-stack developer who builds real-world, production-grade systems from responsive frontends to scalable backends and AI-powered workflows. I work across React/Next.js, FastAPI/Node.js, MongoDB/PostgreSQL, and cloud deployment stacks, delivering products that handle real-time updates, high concurrency, and large-scale data.</p>
+<p>I’ve shipped complex platforms including real-time Kanban tools, AI interview simulators, document-processing engines for 100MB+ files, and multi-disease diagnostic systems powered by deep learning models. I enjoy taking ownership of projects: planning architecture, coordinating with teams, refining UX flows, and delivering clean, reliable systems.</p>
+<p>I’ve interned with multiple companies from SaaS to AI tooling where I contributed to frontend performance, backend APIs, cloud pipelines, and UI/UX improvements. I also lead The Coding Era!, a tech community empowering students through workshops, hackathons, and hands-on learning.</p>
+
+        </div>
+      </div>
+
+      <!-- 4. Details Cards - 4 in one line -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 fade-in-delay-2">
+        
+          <div class="detail-card rounded-xl backdrop-blur-sm hover:bg-gray-800/90 transition-all duration-300 card-glow">
+            <div class="detail-border-bottom"></div>
+            <div class="detail-border-left"></div>
+            <div class="detail-card-content flex flex-col p-6">
+              <span class="font-semibold text-cyan-400 mb-3 text-xs uppercase tracking-wide">
+                Location
+              </span>
+              <span class="text-gray-200 text-lg md:text-xl font-medium">
+                Jabalpur, Madhya Pradesh
+              </span>
+            </div>
+          </div>
+        
+          <div class="detail-card rounded-xl backdrop-blur-sm hover:bg-gray-800/90 transition-all duration-300 card-glow">
+            <div class="detail-border-bottom"></div>
+            <div class="detail-border-left"></div>
+            <div class="detail-card-content flex flex-col p-6">
+              <span class="font-semibold text-cyan-400 mb-3 text-xs uppercase tracking-wide">
+                Education
+              </span>
+              <span class="text-gray-200 text-lg md:text-xl font-medium">
+                B.Tech CSE, BGIEM (RGPV) — CGPA 7.88
+              </span>
+            </div>
+          </div>
+        
+          <div class="detail-card rounded-xl backdrop-blur-sm hover:bg-gray-800/90 transition-all duration-300 card-glow">
+            <div class="detail-border-bottom"></div>
+            <div class="detail-border-left"></div>
+            <div class="detail-card-content flex flex-col p-6">
+              <span class="font-semibold text-cyan-400 mb-3 text-xs uppercase tracking-wide">
+                Experience
+              </span>
+              <span class="text-gray-200 text-lg md:text-xl font-medium">
+                Web Developer Intern @ SleekSky, EliteTech, IBM SkillsBuild
+              </span>
+            </div>
+          </div>
+        
+          <div class="detail-card rounded-xl backdrop-blur-sm hover:bg-gray-800/90 transition-all duration-300 card-glow">
+            <div class="detail-border-bottom"></div>
+            <div class="detail-border-left"></div>
+            <div class="detail-card-content flex flex-col p-6">
+              <span class="font-semibold text-cyan-400 mb-3 text-xs uppercase tracking-wide">
+                Interests
+              </span>
+              <span class="text-gray-200 text-lg md:text-xl font-medium">
+                AI systems, scalable architectures, cloud tooling, developer communities
+              </span>
+            </div>
+          </div>
+        
+      </div>
+
+      <!-- 5. Skills Section - Displayed Properly -->
+      <div class="fade-in-delay-2">
+        <h3 class="font-bold text-cyan-400 mb-6 text-2xl md:text-3xl flex items-center gap-3 justify-center md:justify-start">
+          <span class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
+          Skills &amp; Technologies
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+            <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+              <div class="border-bottom"></div>
+              <div class="border-left-line"></div>
+              <div class="skill-box-content flex items-center gap-3 p-4">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                <span class="text-cyan-300 text-base md:text-lg font-medium">
+                  JavaScript / TypeScript
+                </span>
+              </div>
+            </div>
+          
+            <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+              <div class="border-bottom"></div>
+              <div class="border-left-line"></div>
+              <div class="skill-box-content flex items-center gap-3 p-4">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                <span class="text-cyan-300 text-base md:text-lg font-medium">
+                  React.js / Next.js
+                </span>
+              </div>
+            </div>
+          
+            <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+              <div class="border-bottom"></div>
+              <div class="border-left-line"></div>
+              <div class="skill-box-content flex items-center gap-3 p-4">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                <span class="text-cyan-300 text-base md:text-lg font-medium">
+                  Node.js / Express.js / FastAPI
+                </span>
+              </div>
+            </div>
+          
+            <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+              <div class="border-bottom"></div>
+              <div class="border-left-line"></div>
+              <div class="skill-box-content flex items-center gap-3 p-4">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                <span class="text-cyan-300 text-base md:text-lg font-medium">
+                  MongoDB / PostgreSQL
+                </span>
+              </div>
+            </div>
+          
+            <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+              <div class="border-bottom"></div>
+              <div class="border-left-line"></div>
+              <div class="skill-box-content flex items-center gap-3 p-4">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                <span class="text-cyan-300 text-base md:text-lg font-medium">
+                  REST APIs / WebSockets
+                </span>
+              </div>
+            </div>
+          
+            <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+              <div class="border-bottom"></div>
+              <div class="border-left-line"></div>
+              <div class="skill-box-content flex items-center gap-3 p-4">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                <span class="text-cyan-300 text-base md:text-lg font-medium">
+                  CI/CD (GitHub Actions)
+                </span>
+              </div>
+            </div>
+          
+            <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+              <div class="border-bottom"></div>
+              <div class="border-left-line"></div>
+              <div class="skill-box-content flex items-center gap-3 p-4">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                <span class="text-cyan-300 text-base md:text-lg font-medium">
+                  TensorFlow / Sentence Transformers
+                </span>
+              </div>
+            </div>
+          
+            <div class="skill-box rounded-lg hover:bg-gray-800/80 transition-all duration-300 card-glow">
+              <div class="border-bottom"></div>
+              <div class="border-left-line"></div>
+              <div class="skill-box-content flex items-center gap-3 p-4">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                <span class="text-cyan-300 text-base md:text-lg font-medium">
+                  Distributed Systems &amp; Scalable Architectures
+                </span>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>

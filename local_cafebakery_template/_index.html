@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Corner Bakery & Cafe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#d4a574',
+            secondary: '#8b6f47',
+            accent: '#2c5f2d',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+  
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 bg-white/98 backdrop-blur-md shadow-md z-50 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-primary">Sweet Corner</div>
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="md:hidden flex flex-col gap-1 p-2" id="mobileMenuToggle" aria-label="Toggle menu">
+        <span class="w-6 h-0.5 bg-gray-800 transition-all"></span>
+        <span class="w-6 h-0.5 bg-gray-800 transition-all"></span>
+        <span class="w-6 h-0.5 bg-gray-800 transition-all"></span>
+      </button>
+      
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-8 items-center">
+        <li><a href="#home" class="nav-link text-gray-800 font-medium hover:text-primary transition-colors relative">Home</a></li>
+        <li><a href="#menu" class="nav-link text-gray-800 font-medium hover:text-primary transition-colors relative">Menu</a></li>
+        <li><a href="#gallery" class="nav-link text-gray-800 font-medium hover:text-primary transition-colors relative">Gallery</a></li>
+        <li><a href="#about" class="nav-link text-gray-800 font-medium hover:text-primary transition-colors relative">About</a></li>
+        <li><a href="#contact" class="nav-link text-gray-800 font-medium hover:text-primary transition-colors relative">Contact</a></li>
+      </ul>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <ul class="md:hidden fixed left-[-100%] top-[72px] w-full bg-white shadow-md transition-all duration-300 text-center py-6" id="mobileMenu">
+      <li class="py-4"><a href="#home" class="mobile-nav-link text-gray-800 font-medium">Home</a></li>
+      <li class="py-4"><a href="#menu" class="mobile-nav-link text-gray-800 font-medium">Menu</a></li>
+      <li class="py-4"><a href="#gallery" class="mobile-nav-link text-gray-800 font-medium">Gallery</a></li>
+      <li class="py-4"><a href="#about" class="mobile-nav-link text-gray-800 font-medium">About</a></li>
+      <li class="py-4"><a href="#contact" class="mobile-nav-link text-gray-800 font-medium">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen h-screen flex items-center justify-center text-center text-white relative">
+      <div class="absolute inset-0 bg-black/40 z-0"></div>
+      <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://img.sleekcms.com/1ez88/mi3exg7t.webp');"></div>
+      
+      <div class="relative z-10 max-w-4xl px-6 animate-fade-in-up flex flex-col items-center justify-center">
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">Freshly Baked Every Day</h1>
+        <p class="text-xl md:text-2xl mb-10 opacity-95">Artisan bread, pastries, and coffee crafted with love</p>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <a href="#menu" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-secondary hover:-translate-y-1 transition-all shadow-lg">View Menu</a>
+          <a href="#contact" class="bg-transparent text-white border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-800 transition-all">Visit Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-4">Our Menu</h2>
+        <p class="text-center text-lg text-gray-600 mb-12">Delicious selections made fresh daily</p>
+
+        <!-- Category Filters -->
+        <div class="flex justify-center gap-4 mb-12 flex-wrap">
+          <button class="category-btn px-6 py-3 border-2 border-gray-300 bg-white text-gray-800 rounded-lg font-semibold hover:bg-primary hover:text-white hover:border-primary transition-all" data-category="all">All</button>
+          <button class="category-btn px-6 py-3 border-2 border-gray-300 bg-white text-gray-800 rounded-lg font-semibold hover:bg-primary hover:text-white hover:border-primary transition-all" data-category="breakfast">Breakfast</button>
+          <button class="category-btn px-6 py-3 border-2 border-gray-300 bg-white text-gray-800 rounded-lg font-semibold hover:bg-primary hover:text-white hover:border-primary transition-all" data-category="pastries">Pastries</button>
+          <button class="category-btn px-6 py-3 border-2 border-gray-300 bg-white text-gray-800 rounded-lg font-semibold hover:bg-primary hover:text-white hover:border-primary transition-all" data-category="bread">Bread</button>
+          <button class="category-btn px-6 py-3 border-2 border-gray-300 bg-white text-gray-800 rounded-lg font-semibold hover:bg-primary hover:text-white hover:border-primary transition-all" data-category="coffee">Coffee</button>
+          <button class="category-btn px-6 py-3 border-2 border-gray-300 bg-white text-gray-800 rounded-lg font-semibold hover:bg-primary hover:text-white hover:border-primary transition-all" data-category="desserts">Desserts</button>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="menuGrid">
+          
+            <div class="menu-item bg-white rounded-xl shadow-md overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-category="breakfast">
+              <img src="https://img.sleekcms.com/1ez88/mi3eytxr.webp" alt="Classic Croissant" class="w-full h-56 object-cover">
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-3">
+                  <h3 class="text-xl font-bold text-gray-800">Classic Croissant</h3>
+                  <span class="text-xl font-bold text-primary">$4.50</span>
+                </div>
+                <p class="text-gray-600 text-sm leading-relaxed">Buttery, flaky French pastry baked fresh daily</p>
+              </div>
+            </div>
+          
+            <div class="menu-item bg-white rounded-xl shadow-md overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-category="pastries">
+              <img src="https://img.sleekcms.com/1ez88/mi3f01xk.webp" alt="Pain au Chocolat" class="w-full h-56 object-cover">
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-3">
+                  <h3 class="text-xl font-bold text-gray-800">Pain au Chocolat</h3>
+                  <span class="text-xl font-bold text-primary">$5.00</span>
+                </div>
+                <p class="text-gray-600 text-sm leading-relaxed">Chocolate-filled croissant, a perfect morning treat</p>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-4">Gallery</h2>
+        <p class="text-center text-lg text-gray-600 mb-12">A glimpse into our bakery</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          
+            <div class="relative overflow-hidden rounded-xl h-72 cursor-pointer shadow-md hover:scale-105 transition-transform duration-300">
+              <img src="https://img.sleekcms.com/1ez88/mi3f0ynd.webp" alt="Bakery gallery" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+          
+            <div class="relative overflow-hidden rounded-xl h-72 cursor-pointer shadow-md hover:scale-105 transition-transform duration-300">
+              <img src="https://img.sleekcms.com/1ez88/mi3f1gd7.webp" alt="Bakery gallery" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">About Us</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">Welcome to Sweet Corner Bakery &amp; Cafe, where tradition meets innovation. Since 2015, we&#39;ve been serving our community with the finest artisan breads, pastries, and coffee.</p>
+            <p class="text-gray-600 leading-relaxed mb-4">Our master bakers start work at 4 AM every morning to ensure you get the freshest baked goods. We use only premium ingredients, traditional techniques, and a whole lot of passion.</p>
+            <p class="text-gray-600 leading-relaxed">From our signature sourdough to delicate French pastries, every item is crafted with care and attention to detail.</p>
+          </div>
+          <div>
+            <img src="https://img.sleekcms.com/1ez88/mi3f0ynd.webp" alt="Baker at work" class="w-full h-full object-cover rounded-xl shadow-xl">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-12">Visit Us</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <!-- Contact Info -->
+          <div class="space-y-6">
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+              <h3 class="text-2xl font-bold mb-4">Hours</h3>
+              <div class="space-y-3">
+                <div class="flex justify-between pb-3 border-b border-gray-300">
+                  <span class="font-semibold text-gray-800">Monday - Friday</span>
+                  <span class="text-gray-600">7:00 AM - 8:00 PM</span>
+                </div>
+                <div class="flex justify-between pb-3 border-b border-gray-300">
+                  <span class="font-semibold text-gray-800">Saturday</span>
+                  <span class="text-gray-600">8:00 AM - 9:00 PM</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="font-semibold text-gray-800">Sunday</span>
+                  <span class="text-gray-600">8:00 AM - 7:00 PM</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+              <h3 class="text-2xl font-bold mb-4">Location</h3>
+              <p class="text-gray-600 leading-relaxed">
+                123 Baker Street<br>
+                Downtown District<br>
+                City, State 12345
+              </p>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+              <h3 class="text-2xl font-bold mb-4">Contact</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Phone: 9301459291<br>
+                Email: hello@sweetcorner.com
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-gray-50 p-10 rounded-xl shadow-md">
+            <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+            <form id="contactForm" class="space-y-4">
+              <input type="text" placeholder="Your Name" required class="w-full px-4 py-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors">
+              <input type="email" placeholder="Your Email" required class="w-full px-4 py-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors">
+              <input type="tel" placeholder="Phone Number" class="w-full px-4 py-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors">
+              <textarea placeholder="Message" rows="4" required class="w-full px-4 py-4 border-2 border-gray-300 rounded-lg resize-y focus:outline-none focus:border-primary transition-colors"></textarea>
+              <button type="submit" class="w-full bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-secondary hover:-translate-y-1 transition-all shadow-lg">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
+        <div>
+          <h4 class="text-lg font-bold text-primary mb-4">Sweet Corner</h4>
+          <p class="text-gray-400 leading-relaxed">Freshly baked with love since 2025</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-primary mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+            <li><a href="#menu" class="text-gray-400 hover:text-primary transition-colors">Menu</a></li>
+            <li><a href="#gallery" class="text-gray-400 hover:text-primary transition-colors">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-primary mb-4">Follow Us</h4>
+          <div class="flex gap-4">
+            <a href="#" class="text-gray-400 hover:text-primary transition-colors">Facebook</a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-colors">Instagram</a>
+            <a href="#" class="text-gray-400 hover:text-primary transition-colors">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 text-center">
+        <p class="text-gray-400">© 2025 Sweet Corner Bakery &amp; Cafe. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    mobileMenuToggle.addEventListener('click', () => {
+      if (mobileMenu.style.left === '0px') {
+        mobileMenu.style.left = '-100%';
+      } else {
+        mobileMenu.style.left = '0px';
+      }
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.style.left = '-100%';
+      });
+    });
+
+    // Navbar scroll shadow
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 100) {
+        navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+      } else {
+        navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+      }
+    });
+
+    // Menu filter functionality
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        categoryButtons.forEach(btn => {
+          btn.classList.remove('bg-primary', 'text-white', 'border-primary');
+          btn.classList.add('bg-white', 'text-gray-800', 'border-gray-300');
+        });
+        
+        // Add active class to clicked button
+        button.classList.remove('bg-white', 'text-gray-800', 'border-gray-300');
+        button.classList.add('bg-primary', 'text-white', 'border-primary');
+
+        const category = button.dataset.category;
+
+        // Filter menu items
+        menuItems.forEach(item => {
+          if (category === 'all' || item.dataset.category === category) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Set first category button as active
+    if (categoryButtons.length > 0) {
+      categoryButtons[0].classList.remove('bg-white', 'text-gray-800', 'border-gray-300');
+      categoryButtons[0].classList.add('bg-primary', 'text-white', 'border-primary');
+    }
+
+    // Contact form submission
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for your message! We will get back to you soon.');
+      contactForm.reset();
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('text-primary');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('text-primary');
+        }
+      });
+    });
+  </script>
+
+  <style>
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in-up {
+      animation: fade-in-up 1s ease;
+    }
+  </style>
+</body>
+</html>
