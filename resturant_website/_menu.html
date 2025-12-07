@@ -1,0 +1,332 @@
+<head> 
+    
+</head>
+
+<!-- Page Header -->
+
+  <section class="menu-page-header">
+    <div class="menu-page-background">
+      <img 
+        src="https://images.unsplash.com/photo-1536236397240-9b229a37a286?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHwxNnx8bWVudXxlbnwwfHx8fDE3NjQxOTQ2MDJ8MA&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+        alt="Menu-printed board with brown frame on table"
+      >
+    </div>
+    <div class="menu-page-overlay"></div>
+    <div class="menu-page-header-content">
+      
+        <h1 class="menu-page-title">Explore Our Collections</h1>
+      
+      
+        <p class="menu-page-subtitle">Discover your next favorite read</p>
+      
+    </div>
+  </section>
+
+
+<!-- Filters Section -->
+
+  <section class="menu-filters-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Search Box -->
+      
+        <div class="menu-search-box">
+          <input 
+            type="text" 
+            id="menuSearchInput" 
+            placeholder="Search dishes..." 
+            class="menu-search-input"
+          >
+          <svg class="menu-search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+      
+      
+      <!-- Category Tabs -->
+      
+        <div class="menu-category-tabs" id="menuCategoryTabs">
+          <button class="menu-category-tab active" data-category="all">All</button>
+          <button class="menu-category-tab" data-category="specials">Chef's Specials</button>
+          <button class="menu-category-tab" data-category="appetizers">Appetizers</button>
+          <button class="menu-category-tab" data-category="soups-salads">Soups & Salads</button>
+          <button class="menu-category-tab" data-category="main-course">Main Course</button>
+          <button class="menu-category-tab" data-category="seafood">Seafood</button>
+          <button class="menu-category-tab" data-category="vegetarian">Vegetarian</button>
+          <button class="menu-category-tab" data-category="pasta-risotto">Pasta & Risotto</button>
+          <button class="menu-category-tab" data-category="grills-bbq">Grills & BBQ</button>
+          <button class="menu-category-tab" data-category="desserts">Desserts</button>
+          <button class="menu-category-tab" data-category="beverages">Beverages</button>
+          <button class="menu-category-tab" data-category="cocktails">Cocktails</button>
+          <button class="menu-category-tab" data-category="wine">Wine</button>
+          <button class="menu-category-tab" data-category="kids-menu">Kids Menu</button>
+        </div>
+      
+      
+      <!-- Dietary Filters -->
+      
+        <div class="menu-dietary-filters" id="menuDietaryFilters">
+          <div style="width: 100%; margin-bottom: 0.75rem;">
+            <span style="font-weight: 600; color: #374151; font-size: 0.875rem;">Dietary:</span>
+          </div>
+          <button class="menu-dietary-filter" data-dietary="vegetarian">Vegetarian</button>
+          <button class="menu-dietary-filter" data-dietary="vegan">Vegan</button>
+          <button class="menu-dietary-filter" data-dietary="gluten-free">Gluten-Free</button>
+          <button class="menu-dietary-filter" data-dietary="dairy-free">Dairy-Free</button>
+          <button class="menu-dietary-filter" data-dietary="nut-free">Nut-Free</button>
+          <button class="menu-dietary-filter" data-dietary="halal">Halal</button>
+          <button class="menu-dietary-filter" data-dietary="kosher">Kosher</button>
+          <button class="menu-dietary-filter" data-dietary="organic">Organic</button>
+          <button class="menu-dietary-filter" data-dietary="low-carb">Low-Carb</button>
+          <button class="menu-dietary-filter" data-dietary="keto-friendly">Keto-Friendly</button>
+          <button class="menu-dietary-filter" data-dietary="paleo">Paleo</button>
+        </div>
+        
+        <!-- Allergen Filters -->
+        <div class="menu-dietary-filters" id="menuAllergenFilters" style="margin-top: 1rem;">
+          <div style="width: 100%; margin-bottom: 0.75rem;">
+            <span style="font-weight: 600; color: #374151; font-size: 0.875rem;">Allergens (Exclude):</span>
+          </div>
+          <button class="menu-dietary-filter" data-allergen="gluten">⚠️ Gluten</button>
+          <button class="menu-dietary-filter" data-allergen="dairy">⚠️ Dairy</button>
+          <button class="menu-dietary-filter" data-allergen="eggs">⚠️ Eggs</button>
+          <button class="menu-dietary-filter" data-allergen="nuts">⚠️ Nuts</button>
+          <button class="menu-dietary-filter" data-allergen="peanuts">⚠️ Peanuts</button>
+          <button class="menu-dietary-filter" data-allergen="shellfish">⚠️ Shellfish</button>
+          <button class="menu-dietary-filter" data-allergen="fish">⚠️ Fish</button>
+          <button class="menu-dietary-filter" data-allergen="soy">⚠️ Soy</button>
+          <button class="menu-dietary-filter" data-allergen="sesame">⚠️ Sesame</button>
+          <button class="menu-dietary-filter" data-allergen="sulfites">⚠️ Sulfites</button>
+          <button class="menu-dietary-filter" data-allergen="mustard">⚠️ Mustard</button>
+          <button class="menu-dietary-filter" data-allergen="celery">⚠️ Celery</button>
+        </div>
+      
+      
+    </div>
+  </section>
+
+
+<!-- Featured Category Section -->
+
+
+<!-- Main Content -->
+<section class="py-12 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Get all dishes - EXACTLY like featured-dishes-section -->
+    
+    
+    
+    
+    
+      <div class="menu-dishes-grid columns-3" id="menuDishesGrid">
+        
+          <a 
+            href="/menu/truffle-arancini" 
+            class="menu-dish-card"
+            data-category="appetizers"
+            data-special="true"
+            data-dietary="vegetarian"
+            data-allergens="peanuts"
+          >
+            <!-- Dish Image -->
+            <div class="menu-dish-image-wrapper">
+              
+                <img 
+                  src="https://img.sleekcms.com/1ez9p/miggg20d.webp" 
+                  alt="Truffle Arancini"
+                >
+              
+              
+              <!-- Badges -->
+              <div class="menu-dish-badges">
+                
+                  <span class="menu-dish-badge featured">Featured</span>
+                
+                
+                  <span class="menu-dish-badge special">Special</span>
+                
+                
+                  <span class="menu-dish-badge new">New</span>
+                
+              </div>
+            </div>
+            
+            <!-- Dish Content -->
+            <div class="menu-dish-content">
+              
+                <div class="menu-dish-category">Appetizers</div>
+              
+              
+              
+                <h3 class="menu-dish-name">Truffle Arancini</h3>
+              
+              
+              
+                <p class="menu-dish-tagline">Crispy risotto balls with a creamy truffle center.</p>
+              
+              
+              <div class="menu-dish-footer">
+                
+                  <span class="menu-dish-price">$12.50</span>
+                
+              </div>
+            </div>
+          </a>
+        
+          <a 
+            href="/menu/appetizer-miniature-arancini" 
+            class="menu-dish-card"
+            data-category="main-course"
+            data-special="true"
+            data-dietary="gluten-free"
+            data-allergens="nuts"
+          >
+            <!-- Dish Image -->
+            <div class="menu-dish-image-wrapper">
+              
+                <img 
+                  src="https://images.unsplash.com/photo-1672088401792-5689c7706df3?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHwyfHxNaW5pYXR1cmUlMjBBcmFuY2luaXxlbnwwfHx8fDE3NjQxODg4NzB8MA&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+                  alt="Miniature Arancini"
+                >
+              
+              
+              <!-- Badges -->
+              <div class="menu-dish-badges">
+                
+                  <span class="menu-dish-badge featured">Featured</span>
+                
+                
+                  <span class="menu-dish-badge special">Special</span>
+                
+                
+              </div>
+            </div>
+            
+            <!-- Dish Content -->
+            <div class="menu-dish-content">
+              
+                <div class="menu-dish-category">Main Course</div>
+              
+              
+              
+                <h3 class="menu-dish-name">Miniature Arancini</h3>
+              
+              
+              
+                <p class="menu-dish-tagline">Crispy risotto bites with a molten mozzarella center.</p>
+              
+              
+              <div class="menu-dish-footer">
+                
+                  <span class="menu-dish-price">$8.50</span>
+                
+              </div>
+            </div>
+          </a>
+        
+          <a 
+            href="/menu/masala-dosa" 
+            class="menu-dish-card"
+            data-category="main-course"
+            data-special="true"
+            data-dietary="vegetarian"
+            data-allergens="soy"
+          >
+            <!-- Dish Image -->
+            <div class="menu-dish-image-wrapper">
+              
+                <img 
+                  src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHwxfHxkb3NhfGVufDB8fHx8MTc2NDE5MDkyOHww&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+                  alt="Masala Dosa"
+                >
+              
+              
+              <!-- Badges -->
+              <div class="menu-dish-badges">
+                
+                
+                  <span class="menu-dish-badge special">Special</span>
+                
+                
+                  <span class="menu-dish-badge new">New</span>
+                
+              </div>
+            </div>
+            
+            <!-- Dish Content -->
+            <div class="menu-dish-content">
+              
+                <div class="menu-dish-category">Main Course</div>
+              
+              
+              
+                <h3 class="menu-dish-name">Masala Dosa</h3>
+              
+              
+              
+                <p class="menu-dish-tagline">Crispy South Indian Delight</p>
+              
+              
+              <div class="menu-dish-footer">
+                
+                  <span class="menu-dish-price">$8.99</span>
+                
+              </div>
+            </div>
+          </a>
+        
+          <a 
+            href="/menu/spicy-mango-tango-salad" 
+            class="menu-dish-card"
+            data-category="beverages"
+            data-special="false"
+            data-dietary=""
+            data-allergens=""
+          >
+            <!-- Dish Image -->
+            <div class="menu-dish-image-wrapper">
+              
+                <img 
+                  src="https://images.unsplash.com/photo-1714281121101-fdae2ed0272a?ixid=M3wzNzczMzl8MHwxfHNlYXJjaHw0fHxTcGljeSUyME1hbmdvJTIwVGFuZ28lMjBTYWxhZHxlbnwwfHx8fDE3NjQxOTU5OTF8MA&amp;ixlib=rb-4.1.0&amp;fm=webp" 
+                  alt="Spicy Mango Tango Salad"
+                >
+              
+              
+              <!-- Badges -->
+              <div class="menu-dish-badges">
+                
+                  <span class="menu-dish-badge featured">Featured</span>
+                
+                
+                
+              </div>
+            </div>
+            
+            <!-- Dish Content -->
+            <div class="menu-dish-content">
+              
+                <div class="menu-dish-category">Beverages</div>
+              
+              
+              
+                <h3 class="menu-dish-name">Spicy Mango Tango Salad</h3>
+              
+              
+              
+                <p class="menu-dish-tagline">A vibrant explosion of sweet, spicy, and tangy flavors.</p>
+              
+              
+              <div class="menu-dish-footer">
+                
+                  <span class="menu-dish-price">$12.99</span>
+                
+              </div>
+            </div>
+          </a>
+        
+      </div>
+    
+
+  </div>
+</section>
