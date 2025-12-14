@@ -1,0 +1,3406 @@
+<!-- Built with SleekCMS @ 2025-12-14T16:28:05.499Z -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta name="generator" content="SleekCMS" />
+    <link rel="stylesheet" href="/main.css" type="text/css" />
+    <link rel="stylesheet" href="/Navbar/Navbar.css" type="text/css" />
+    <link rel="stylesheet" href="/Sidebar/Sidebar.css" type="text/css" />
+    <link rel="stylesheet" href="/tailwind-1ezc3.css" />
+  </head>
+  <body>
+    <div id="page-loader">
+      <div class="loader-spinner"></div>
+    </div>
+
+    <script>
+      // Initialize search data
+      window.searchData = [
+        {
+          path: "/docs",
+          title: "",
+          description: "",
+          content:
+            "SleekCMS Documentation Everything you need to build, manage, and deploy content-driven websites with SleekCMS Content Management Learn how to structure and organize your content using pages, entries, blocks, and lists. Master the content modeling system to build flexible, reusable content architectures. Database https://img.sleekcms.com/1ezc3/mj5dedla image-33 /docs/modelcontent categories_1765607323267 7-0 entry-1765607323267 Editing & Workflows Discover how to edit content, manage drafts, compare versions, and collaborate with your team. Streamline your content creation process with powerful editing tools. Pencil Twotone https://img.sleekcms.com/1ezc3/mj5deqz1 image-34 /docs/editcontent categories_1765607323267 7-1 entry-1765607323267 Media & Assets Manage images, videos, and documents with ease. Learn about media optimization, transformations, supported formats, and integrations with platforms like Imgix. Media 16 https://img.sleekcms.com/1ezc3/mj5dfite image-35 /docs/media categories_1765607323267 7-2 entry-1765607323267 Site Building & Templates Build stunning static sites with EJS templates and Tailwind CSS. Configure assets, customize templates, and preview your site before deployment. Website Development Code Flowchart 1 https://img.sleekcms.com/1ezc3/mj5dfw72 image-36 /docs/site-generator categories_1765607323267 7-3 entry-1765607323267 API & Integration Integrate SleekCMS with your applications using REST APIs. Access development and production content, manage environment tags, and automate deployments. Api https://img.sleekcms.com/1ezc3/mj5ddmmk image-32 /docs/integrate-and-deploy categories_1765607323267 7-4 entry-1765607323267 Configuration & Teams Configure your site settings, manage team members and permissions, set up environments, and customize localization and multi-tenant options. Team Line https://img.sleekcms.com/1ezc3/mj5dgf28 image-37 /docs/members-and-config categories_1765607323267 7-5 entry-1765607323267 Getting Started: Create Your First Content Model A step-by-step guide to creating pages, entries, and blocks. Learn the fundamentals of content modeling and build your first structured content. /docs/modelcontent/pages popular_guides_1765607323474 8-0 entry-1765607323474 REST API Quick Start Start fetching content programmatically in minutes. Learn about development and production endpoints, authentication tokens, and environment tags. /docs/integrate-and-deploy popular_guides_1765607323474 8-1 entry-1765607323474 Deploy Your Site to Netlify or GitHub Pages Complete deployment guide for static sites. Automate deployments with GitHub Actions, Netlify builds, and custom webhooks. /docs/integrate-and-deploy/deploy-site popular_guides_1765607323474 8-2 entry-1765607323474 Building Blocks: Reusable Content Components Master the art of creating modular, reusable content blocks like hero sections, carousels, and call-to-action components. /docs/modelcontent/blocks popular_guides_1765607323474 8-3 entry-1765607323474 Managing Images with Imgix Integration Optimize and transform images dynamically with Imgix CDN. Learn about automatic format conversion, responsive sizing, and performance optimization. /docs/media/images popular_guides_1765607323474 8-4 entry-1765607323474 Multi-language Content & Localization Set up multilingual content for global audiences. Learn to create locale-specific versions and manage translation workflows. /docs/members-and-config popular_guides_1765607323474 8-5 entry-1765607323474 Search documentation, guides, and tutorials... 5 2025-12-14T06:58:42.705Z page-2",
+        },
+        {
+          path: "/docs/modelcontent",
+          title: "Model Content",
+          description: "",
+          content:
+            "Overview of Model Content The Content Model Tab is a central interface within Sleek CMS where users can define and customize the structure of their content. It allows you to create, edit, and manage content models, which serve as blueprints for organizing different types of content on your website. Content models are essential for ensuring consistency and flexibility across pages, entries, blocks, and lists, enabling you to tailor your website’s data architecture to meet specific needs. textblock 10-1 block-6 modelcontent Model Content Overview of Model Content The Content Model Tab is a central interface within Sleek CMS where users can define and customize the structure of their content. It allows you to create, edit, and manage content models, which serve as blueprints for organizing different types of content on your website. Content models are essential for ensuring consistency and flexibility across pages, entries, blocks, and lists, enabling you to tailor your website’s data architecture to meet specific needs. textblock 10-1 block-6 11 2025-12-13T12:03:43.188Z page-3",
+        },
+        {
+          path: "/docs/modelcontent/pages",
+          title: "Pages",
+          description: "",
+          content:
+            "Pages represent the primary building blocks of a website within Sleek CMS. They are customizable entities that users can create to structure their site’s navigation and content, such as homepages, about pages, or blog articles. Each page is associated with a content model (defined in the Content Model Tab) and can include entries, blocks, and lists to populate its content dynamically. imageblock 12-1 block-8 modelcontent/pages Pages Pages represent the primary building blocks of a website within Sleek CMS. They are customizable entities that users can create to structure their site’s navigation and content, such as homepages, about pages, or blog articles. Each page is associated with a content model (defined in the Content Model Tab) and can include entries, blocks, and lists to populate its content dynamically. imageblock 12-1 block-8 12 2025-12-13T11:51:18.306Z page-3",
+        },
+        {
+          path: "/docs/modelcontent/entries",
+          title: "Entries",
+          description: "",
+          content:
+            "Pages represent the primary building blocks of a website within Sleek CMS. They are customizable entities that users can create to structure their site’s navigation and content, such as homepages, about pages, or blog articles. Each page is associated with a content model (defined in the Content Model Tab) and can include entries, blocks, and lists to populate its content dynamically. imageblock 14-1 block-8 modelcontent/entries Entries Pages represent the primary building blocks of a website within Sleek CMS. They are customizable entities that users can create to structure their site’s navigation and content, such as homepages, about pages, or blog articles. Each page is associated with a content model (defined in the Content Model Tab) and can include entries, blocks, and lists to populate its content dynamically. imageblock 14-1 block-8 13 2025-12-13T11:52:10.808Z page-3",
+        },
+        {
+          path: "/docs/modelcontent/blocks",
+          title: "Blocks",
+          description: "",
+          content:
+            "Blocks represent self-contained pieces of content or functionality, such as hero sections, image carousels, call-to-action sections, or media galleries, defined by a content model (created in the Content Model Tab). They are designed to be embedded within pages, entries, or lists, offering a modular approach to content management. For example, a block might represent a hero banner or a footer section. imageblock 16-1 block-8 modelcontent/blocks Blocks Blocks represent self-contained pieces of content or functionality, such as hero sections, image carousels, call-to-action sections, or media galleries, defined by a content model (created in the Content Model Tab). They are designed to be embedded within pages, entries, or lists, offering a modular approach to content management. For example, a block might represent a hero banner or a footer section. imageblock 16-1 block-8 14 2025-12-13T11:52:51.773Z page-3",
+        },
+        {
+          path: "/docs/modelcontent/lists",
+          title: "Lists",
+          description: "",
+          content:
+            "Lists represent a robust mechanism for managing content through a set of key-value pairs. This functionality is designed to organize and present categorized data such as statistics, testimonials, or key features, and is seamlessly integrated into the Model Content tab. By defining lists as collections of key-value pairs, users can create highly customizable and reusable content structures tailored to their website’s specific requirements. imageblock 18-1 block-8 modelcontent/lists Lists Lists represent a robust mechanism for managing content through a set of key-value pairs. This functionality is designed to organize and present categorized data such as statistics, testimonials, or key features, and is seamlessly integrated into the Model Content tab. By defining lists as collections of key-value pairs, users can create highly customizable and reusable content structures tailored to their website’s specific requirements. imageblock 18-1 block-8 15 2025-12-13T11:53:26.896Z page-3",
+        },
+        {
+          path: "/docs/editcontent",
+          title: "Edit Content",
+          description: "",
+          content:
+            "Editing an entry/page content The Edit Content tab in Sleek CMS serves as a dynamic interface designed to empower users with the ability to modify and manage content directly within the system. This tab provides a centralized space where users can update existing content for pages, entries, blocks, and other defined models, ensuring that the website remains current and aligned with evolving needs. By offering intuitive tools and a structured layout, the Edit Content tab facilitates precise content adjustments while maintaining the integrity of the underlying content models. Key Features: Content Modification: Users can edit the values associated with key-value pairs defined in the models. For instance, the tab allows updates to fields such as &quot;Brand Logo&quot; (e.g., uploading a new image), &quot;Brand Name&quot; (e.g., &quot;THE FITNESS&quot;) Visual and Structured Editing: The tab presents content in an organized format, with sections for different content types (e.g., &quot;navbar,&quot; &quot;footer&quot;) and fields that can be updated individually. Visual aids, such as image previews, enhance the editing experience. Save Functionality: Changes are applied seamlessly with a &quot;Save&quot; button, ensuring that updates are preserved and reflected across the website. Integration with Models: The tab leverages the structure established in the Model Content tab, allowing users to work within the predefined key-value frameworks, which supports consistency and efficiency in content updates. Media Management: For content types like images, the tab includes options to upload or replace media, as seen with the &quot;Brand Logo&quot; field, streamlining the process of refreshing visual elements. imageblock 20-1 block-8 The content form is generated based on the model. Here you can also - Draft - mark an entry/page as a draft. Draft&#39;s are not accessible in either dev or pub APIs. You can only mark collection entries/pages as drafts. Compare content with previous versions or with other dimensions/languages textblock 22-2 block-6 editcontent Edit Content Editing an entry/page content The Edit Content tab in Sleek CMS serves as a dynamic interface designed to empower users with the ability to modify and manage content directly within the system. This tab provides a centralized space where users can update existing content for pages, entries, blocks, and other defined models, ensuring that the website remains current and aligned with evolving needs. By offering intuitive tools and a structured layout, the Edit Content tab facilitates precise content adjustments while maintaining the integrity of the underlying content models. Key Features: Content Modification: Users can edit the values associated with key-value pairs defined in the models. For instance, the tab allows updates to fields such as &quot;Brand Logo&quot; (e.g., uploading a new image), &quot;Brand Name&quot; (e.g., &quot;THE FITNESS&quot;) Visual and Structured Editing: The tab presents content in an organized format, with sections for different content types (e.g., &quot;navbar,&quot; &quot;footer&quot;) and fields that can be updated individually. Visual aids, such as image previews, enhance the editing experience. Save Functionality: Changes are applied seamlessly with a &quot;Save&quot; button, ensuring that updates are preserved and reflected across the website. Integration with Models: The tab leverages the structure established in the Model Content tab, allowing users to work within the predefined key-value frameworks, which supports consistency and efficiency in content updates. Media Management: For content types like images, the tab includes options to upload or replace media, as seen with the &quot;Brand Logo&quot; field, streamlining the process of refreshing visual elements. imageblock 20-1 block-8 The content form is generated based on the model. Here you can also - Draft - mark an entry/page as a draft. Draft&#39;s are not accessible in either dev or pub APIs. You can only mark collection entries/pages as drafts. Compare content with previous versions or with other dimensions/languages textblock 22-2 block-6 18 2025-12-13T13:59:01.005Z page-3",
+        },
+        {
+          path: "/docs/media",
+          title: "Media",
+          description: "",
+          content:
+            "Overview of Media Tab The Media Tab in Sleek CMS provides a comprehensive interface for managing multimedia assets, including images and videos, which are integral to enhancing the visual appeal and functionality of your website. This tab is designed to streamline the process of uploading, organizing, and editing media content, ensuring that users have full control over their assets. imageblock 24-1 block-8 media Media Overview of Media Tab The Media Tab in Sleek CMS provides a comprehensive interface for managing multimedia assets, including images and videos, which are integral to enhancing the visual appeal and functionality of your website. This tab is designed to streamline the process of uploading, organizing, and editing media content, ensuring that users have full control over their assets. imageblock 24-1 block-8 21 2025-12-13T15:50:59.890Z page-3",
+        },
+        {
+          path: "/docs/media/images",
+          title: "Images",
+          description: "",
+          content:
+            "Upload Options: Users can upload images with four distinct options, as illustrated in the interface, allowing for flexible integration into your content models. These options cater to various use cases, ensuring versatility in how images are added. View Modes: Images can be viewed in either a grid view or a list view, providing a customizable experience to suit different preferences and workflows. Transformation Capabilities: The tab enables users to adjust image properties such as width, height, and additional attributes, as demonstrated in the interface, offering precise control over visual presentation. Attribute Customization: Image attributes can be modified directly within the tab, allowing users to refine details such as alt text or alignment to optimize accessibility and layout. Supported Formats: Sleek CMS supports a wide range of image formats, including PNG, JPG, WebP, GIF, and more, ensuring compatibility with diverse media sources. textblock 26-1 block-6 media/images Images Upload Options: Users can upload images with four distinct options, as illustrated in the interface, allowing for flexible integration into your content models. These options cater to various use cases, ensuring versatility in how images are added. View Modes: Images can be viewed in either a grid view or a list view, providing a customizable experience to suit different preferences and workflows. Transformation Capabilities: The tab enables users to adjust image properties such as width, height, and additional attributes, as demonstrated in the interface, offering precise control over visual presentation. Attribute Customization: Image attributes can be modified directly within the tab, allowing users to refine details such as alt text or alignment to optimize accessibility and layout. Supported Formats: Sleek CMS supports a wide range of image formats, including PNG, JPG, WebP, GIF, and more, ensuring compatibility with diverse media sources. textblock 26-1 block-6 22 2025-12-13T15:55:54.195Z page-3",
+        },
+        {
+          path: "/docs/media/videos",
+          title: "Videos",
+          description: "",
+          content:
+            "Upload and Embedding: Users can upload videos or embed content from popular platforms such as YouTube, TikTok, and others, providing a seamless way to incorporate dynamic video content into their sites. Management Tools: The tab offers tools to organize and manage video assets, ensuring they are easily accessible for integration into pages, blocks, or entries. Rendering Support: Videos are rendered effectively using the site builder’s EJS and Tailwind CSS capabilities, allowing for responsive and styled playback across devices. Video uploads supports the following platform links - Youtube Vimeo Tiktok textblock 28-1 block-6 media/videos Videos Upload and Embedding: Users can upload videos or embed content from popular platforms such as YouTube, TikTok, and others, providing a seamless way to incorporate dynamic video content into their sites. Management Tools: The tab offers tools to organize and manage video assets, ensuring they are easily accessible for integration into pages, blocks, or entries. Rendering Support: Videos are rendered effectively using the site builder’s EJS and Tailwind CSS capabilities, allowing for responsive and styled playback across devices. Video uploads supports the following platform links - Youtube Vimeo Tiktok textblock 28-1 block-6 23 2025-12-13T15:55:57.957Z page-3",
+        },
+        {
+          path: "/docs/media/documents",
+          title: "Documents(Coming Soon)",
+          description: "",
+          content:
+            "While document support is not yet available, Sleek CMS is actively working to introduce this feature in an upcoming update. Once implemented, users will be able to upload and manage document files, further expanding the platform’s multimedia capabilities. textblock 30-1 block-6 media/documents Documents(Coming Soon) While document support is not yet available, Sleek CMS is actively working to introduce this feature in an upcoming update. Once implemented, users will be able to upload and manage document files, further expanding the platform’s multimedia capabilities. textblock 30-1 block-6 24 2025-12-13T15:56:02.184Z page-3",
+        },
+        {
+          path: "/docs/site-generator",
+          title: "Model Code / Markup",
+          description: "",
+          content:
+            "The Site Generator tab in Sleek CMS provides a powerful and flexible environment for managing the code and markup that drive your website’s structure and functionality. This tab serves as a central hub for configuring how the code for content models, pages, entries and blocks are written and rendered, enabling users to customize their site’s output with precision. By leveraging a combination of main templates, base templates, and build configurations, the Site Generator ensures a seamless integration of content with the site’s design and assets. Users can leverage EJS for crafting the code that powers their website, while utilizing Tailwind CSS to apply sophisticated and responsive styling, ensuring a seamless and visually appealing design. Main Template The main template is the core markup that processes each model, entry, or page as an item/current. This template dynamically interprets the content data, providing the structure that brings your site to life. Base Template The base template acts as a wrapper around the main template, offering a consistent framework that is typically shared across all pages. This ensures uniformity in layout and design throughout the website. Template Context The template context represents the data available within the templates, enabling dynamic content rendering based on the defined models and entries. Item Preview When previewing an item, only the specific page associated with that item is generated. Links to other pages may not function if no content has been added for those models. In such cases, placeholder or dummy content is utilized to generate the preview, ensuring a functional view during development. imageblock 32-1 block-8 site-generator Model Code / Markup The Site Generator tab in Sleek CMS provides a powerful and flexible environment for managing the code and markup that drive your website’s structure and functionality. This tab serves as a central hub for configuring how the code for content models, pages, entries and blocks are written and rendered, enabling users to customize their site’s output with precision. By leveraging a combination of main templates, base templates, and build configurations, the Site Generator ensures a seamless integration of content with the site’s design and assets. Users can leverage EJS for crafting the code that powers their website, while utilizing Tailwind CSS to apply sophisticated and responsive styling, ensuring a seamless and visually appealing design. Main Template The main template is the core markup that processes each model, entry, or page as an item/current. This template dynamically interprets the content data, providing the structure that brings your site to life. Base Template The base template acts as a wrapper around the main template, offering a consistent framework that is typically shared across all pages. This ensures uniformity in layout and design throughout the website. Template Context The template context represents the data available within the templates, enabling dynamic content rendering based on the defined models and entries. Item Preview When previewing an item, only the specific page associated with that item is generated. Links to other pages may not function if no content has been added for those models. In such cases, placeholder or dummy content is utilized to generate the preview, ensuring a functional view during development. imageblock 32-1 block-8 25 2025-12-13T16:29:29.584Z page-3",
+        },
+        {
+          path: "/docs/site-generator/assets",
+          title: "Assets",
+          description: "",
+          content:
+            "Assets are treated as the public folder, with all content stored in this section being accessible at the root of the site when generated. Users can think of assets as the public-facing resources (e.g., images, CSS, or JavaScript files) that enhance the site. By linking to any JS or CSS file in your code with a root path starting with /, you can seamlessly incorporate these assets into your project, streamlining resource management. textblock 34-1 block-6 site-generator/assets Assets Assets are treated as the public folder, with all content stored in this section being accessible at the root of the site when generated. Users can think of assets as the public-facing resources (e.g., images, CSS, or JavaScript files) that enhance the site. By linking to any JS or CSS file in your code with a root path starting with /, you can seamlessly incorporate these assets into your project, streamlining resource management. textblock 34-1 block-6 26 2025-12-13T15:55:36.305Z page-3",
+        },
+        {
+          path: "/docs/site-generator/site-build-config",
+          title: "Site Build Config",
+          description: "",
+          content:
+            "The Site Build Config section allows users to define and customize build settings to optimize their website’s deployment and performance. Key configurations include: Title - Used as Page Title When None Found: Specifies the default title applied when no page title is defined, also utilized for sitemaps and RSS feeds. Site Address - This is the Site Origin When Deployed at Some Domain: Defines the site origin when deployed on a domain, ensuring accurate sitemaps and RSS feeds are generated based on this provided origin. Sitemap - Enabling This Option to Auto Create a Site Map: Requires site address/origin to be provided for sitemap generation. Tailwind - Enabling This Config, Auto Compiles Optimized Tailwind CSS and Includes That in All the Pages in Your Site: No other include/links necessary, optimizing performance and consistency. Adding Libraries - Add Any JS/CSS URLs from CDNJS or Other Such Provider to Use Them in Your Code: Enhances functionality by incorporating external libraries. Inline Scripts - Add Include Script Such as Google Analytics Etc.: Allows integration of tracking or analytics scripts directly into the site. Inline Styles - Add Inline Styles / Style Overrides Here: Provides the ability to apply custom styles or overrides as needed. textblock 36-1 block-6 site-generator/site-build-config Site Build Config The Site Build Config section allows users to define and customize build settings to optimize their website’s deployment and performance. Key configurations include: Title - Used as Page Title When None Found: Specifies the default title applied when no page title is defined, also utilized for sitemaps and RSS feeds. Site Address - This is the Site Origin When Deployed at Some Domain: Defines the site origin when deployed on a domain, ensuring accurate sitemaps and RSS feeds are generated based on this provided origin. Sitemap - Enabling This Option to Auto Create a Site Map: Requires site address/origin to be provided for sitemap generation. Tailwind - Enabling This Config, Auto Compiles Optimized Tailwind CSS and Includes That in All the Pages in Your Site: No other include/links necessary, optimizing performance and consistency. Adding Libraries - Add Any JS/CSS URLs from CDNJS or Other Such Provider to Use Them in Your Code: Enhances functionality by incorporating external libraries. Inline Scripts - Add Include Script Such as Google Analytics Etc.: Allows integration of tracking or analytics scripts directly into the site. Inline Styles - Add Inline Styles / Style Overrides Here: Provides the ability to apply custom styles or overrides as needed. textblock 36-1 block-6 27 2025-12-13T15:57:11.070Z page-3",
+        },
+        {
+          path: "/docs/integrate-and-deploy",
+          title: "Rest API",
+          description: "",
+          content:
+            'Access content programmatically using SleekCMS APIs. Use these endpoints in frameworks like React, Next.js, or any HTTP client. textblock 38-1 block-6 Current Content Fetch the latest unpublished content (including drafts) for development/testing. curl -H "Authorization: DEV_TOKEN" http://dev.cms.com:9000/2dz6f/latest Commands codes_1765625661608 40-0 entry-1765625661608 codeblock 41-2 block-7 Replace DEV_TOKEN with your Development Authorization Token. Use Case: Test content changes locally before publishing. Response: Returns JSON with raw content data (e.g., pages, blogs, assets). parablock 43-3 block-10 imageblock 45-4 block-8 Published Content Retrieve content tied to specific environment tags (e.g., prod, staging). Select a version from the dropdown to decouple testing from live content. curl -H "Authorization: PUB_TOKEN" https://pub.cms.com/v1/2dz6f?env=prod Commands codes_1765625661608 47-0 entry-1765625661608 codeblock 48-5 block-7 *Replace PUB_TOKEN with your Published Authorization Token.* textblock 50-15 block-6 imageblock 52-6 block-8 Environment Tags Use this API to fetch the current content versions associated with the environment. This helps override CDN caches when new content versions are associated with an environment. Create tags via the CMS dashboard to group content versions (e.g., prod for live site, beta for testing). Why Environment Tags? To Avoid CDN caching issues by associating a static tag with dynamic content versions. Test specific content versions without affecting live environments. textblock 54-7 block-6 imageblock 56-8 block-8 API Tokens Manage tokens and configurations for secure API access. imageblock 58-9 block-8 Fetch Environment Snapshot Tags curl -H "Authorization: PUB_TOKEN" https://pub.cms.com/v1/2dz6f/env-tags Commands codes_1765625661608 60-0 entry-1765625661608 codeblock 61-10 block-7 Response: List of all environment tags and their linked content versions. parablock 63-11 block-10 imageblock 65-12 block-8 Content Versions View all deployed content snapshots. Each version is a frozen copy of your content at a specific time. Tag: Semantic versioning (e.g., v1.2.0) or custom labels (e.g., homepage-update). Rollback: Deploy a previous version by selecting it from the table and clicking Restore. imageblock 67-13 block-8 imageblock 69-14 block-8 integrate-and-deploy Rest API Access content programmatically using SleekCMS APIs. Use these endpoints in frameworks like React, Next.js, or any HTTP client. textblock 38-1 block-6 Current Content Fetch the latest unpublished content (including drafts) for development/testing. curl -H "Authorization: DEV_TOKEN" http://dev.cms.com:9000/2dz6f/latest Commands codes_1765625661608 40-0 entry-1765625661608 codeblock 41-2 block-7 Replace DEV_TOKEN with your Development Authorization Token. Use Case: Test content changes locally before publishing. Response: Returns JSON with raw content data (e.g., pages, blogs, assets). parablock 43-3 block-10 imageblock 45-4 block-8 Published Content Retrieve content tied to specific environment tags (e.g., prod, staging). Select a version from the dropdown to decouple testing from live content. curl -H "Authorization: PUB_TOKEN" https://pub.cms.com/v1/2dz6f?env=prod Commands codes_1765625661608 47-0 entry-1765625661608 codeblock 48-5 block-7 *Replace PUB_TOKEN with your Published Authorization Token.* textblock 50-15 block-6 imageblock 52-6 block-8 Environment Tags Use this API to fetch the current content versions associated with the environment. This helps override CDN caches when new content versions are associated with an environment. Create tags via the CMS dashboard to group content versions (e.g., prod for live site, beta for testing). Why Environment Tags? To Avoid CDN caching issues by associating a static tag with dynamic content versions. Test specific content versions without affecting live environments. textblock 54-7 block-6 imageblock 56-8 block-8 API Tokens Manage tokens and configurations for secure API access. imageblock 58-9 block-8 Fetch Environment Snapshot Tags curl -H "Authorization: PUB_TOKEN" https://pub.cms.com/v1/2dz6f/env-tags Commands codes_1765625661608 60-0 entry-1765625661608 codeblock 61-10 block-7 Response: List of all environment tags and their linked content versions. parablock 63-11 block-10 imageblock 65-12 block-8 Content Versions View all deployed content snapshots. Each version is a frozen copy of your content at a specific time. Tag: Semantic versioning (e.g., v1.2.0) or custom labels (e.g., homepage-update). Rollback: Deploy a previous version by selecting it from the table and clicking Restore. imageblock 67-13 block-8 imageblock 69-14 block-8 28 2025-12-13T16:37:24.480Z page-3',
+        },
+        {
+          path: "/docs/integrate-and-deploy/deploy-site",
+          title: "Deploy Site",
+          description: "",
+          content:
+            "Deploy static sites built with SleekCMS to hosting platforms like GitHub Pages or Netlify. Download Site Download a ZIP of your site’s code for a specific content version. Click **Download ** to get the build files (HTML, CSS, JS, and content JSON). Use Case: Manual deployments or debugging build issues. textblock 71-1 block-6 Add Action Automate deployments using integrations. GitHub Push Push site builds directly to a GitHub repository. Action Name: A unique label (e.g., “Prod Deployment”). Personal Access Token: Generate a token with repo scope in GitHub Settings. Repository: Format org/repo (e.g., sleekcms/docs). Ref: Branch name (e.g., main). The action will commit the build to this branch. Troubleshooting: Ensure the token has write access to the repository. Verify the branch exists before triggering the action. Netlify Deploy Trigger Netlify deployments automatically. Netlify Token: Find this in Netlify Account Settings &gt; Applications. Connect: Click to authenticate Netlify. Deploy: New site builds trigger automatically when content versions are published. imageblock 73-2 block-8 imageblock 75-3 block-8 integrate-and-deploy/deploy-site Deploy Site Deploy static sites built with SleekCMS to hosting platforms like GitHub Pages or Netlify. Download Site Download a ZIP of your site’s code for a specific content version. Click **Download ** to get the build files (HTML, CSS, JS, and content JSON). Use Case: Manual deployments or debugging build issues. textblock 71-1 block-6 Add Action Automate deployments using integrations. GitHub Push Push site builds directly to a GitHub repository. Action Name: A unique label (e.g., “Prod Deployment”). Personal Access Token: Generate a token with repo scope in GitHub Settings. Repository: Format org/repo (e.g., sleekcms/docs). Ref: Branch name (e.g., main). The action will commit the build to this branch. Troubleshooting: Ensure the token has write access to the repository. Verify the branch exists before triggering the action. Netlify Deploy Trigger Netlify deployments automatically. Netlify Token: Find this in Netlify Account Settings &gt; Applications. Connect: Click to authenticate Netlify. Deploy: New site builds trigger automatically when content versions are published. imageblock 73-2 block-8 imageblock 75-3 block-8 29 2025-12-13T16:14:23.772Z page-3",
+        },
+        {
+          path: "/docs/integrate-and-deploy/deploy-content",
+          title: "Deploy Content",
+          description: "",
+          content:
+            "Automate workflows when new content versions are created (e.g., rebuild a site or notify a team). Add Action Choose a pre-configured integration: GitHub Action: Trigger a GitHub Actions workflow. GitHub Trigger: Send a repository dispatch event to any GitHub repo. Netlify Build: Rebuild your Netlify site with the latest content version. Custom Webhook: Send a POST request to your endpoint with payload details like version_tag and content_url. textblock 77-1 block-6 imageblock 79-2 block-8 integrate-and-deploy/deploy-content Deploy Content Automate workflows when new content versions are created (e.g., rebuild a site or notify a team). Add Action Choose a pre-configured integration: GitHub Action: Trigger a GitHub Actions workflow. GitHub Trigger: Send a repository dispatch event to any GitHub repo. Netlify Build: Rebuild your Netlify site with the latest content version. Custom Webhook: Send a POST request to your endpoint with payload details like version_tag and content_url. textblock 77-1 block-6 imageblock 79-2 block-8 30 2025-12-13T16:16:25.480Z page-3",
+        },
+        {
+          path: "/docs/members-and-config",
+          title: "Configuration",
+          description: "",
+          content:
+            "imageblock 81-1 block-8 imageblock 83-2 block-8 Configuration Customize your content site’s behavior, branding, and integrations. Display Name Name of Content Site: A unique internal identifier (e.g., sleekcms-docs-prod) used in APIs and system references. Display Name: The user-friendly name shown in the CMS dashboard (e.g., SleekCMS Docs). This helps teams quickly identify the site in multi-project setups. Why Both? The Name ensures consistency in APIs and automation scripts. The Display Name improves readability for editors and collaborators. textblock 85-3 block-6 Localize/Translate Add multilingual support for global audiences. Supported Locales: Define languages (e.g., en-US, fr-FR) under Settings &gt; Locales. Translation Workflow: By this user can create locale-specific content versions, assign translators with Editor or Admin roles to manage translations. textblock 87-4 block-6 Customize by Accounts/Tenants Tailor content for different customers or organizational units. Terminology: Define how accounts are labeled (e.g., Customer, Client). This term appears in the UI and API responses. How It Works: Create tenant-specific content versions, use the ?tenant=client-id parameter in APIs to fetch account-specific content. Use Case: A SaaS platform displays unique pricing pages for each client by filtering content via tenant ID. textblock 89-5 block-6 Static Site Generator (Pages) Build and deploy static sites directly from SleekCMS. Preview: Render content in real-time using templates (e.g., HTML, React). Download/Deploy: Export static files (HTML/CSS/JS) or push to platforms like Netlify. textblock 91-6 block-6 Content Preview Visualize content during editing with customizable templates. Template Types: HTML, React, Markdown, or plain text. Placeholders: Use double brackets ({{ field }}) to map content fields (e.g., {{ title }}, {{ author }}). textblock 93-7 block-6 Attribute Key Name Style Define naming conventions for content keys used in APIs. Options: Snake Case: foo_bar (common in APIs). Camel Case: fooBar (JavaScript-friendly). Kebab Case: foo-bar (URL-friendly). Dot Case foo.bar (nested object keys, configurations) Note: This setting applies globally. Changes affect existing and new content. textblock 95-8 block-6 Use Imgix for Image Processing Optimize images dynamically via Imgix CDN. Enable Imgix: Toggle on in Members &amp; Config &gt; Configuration. Imgix Source: Your Imgix subdomain (e.g., sleekcms.imgix.net). Web Folder Source Base URL: Root path for media (e.g., https://img.sleekcms.com/2zp/ ). textblock 97-9 block-6 Example URL: https://sleekcms.imgix.net/2zp/blog-header.jpg?auto=format&w=800 Commands codes_1765625661608 99-0 entry-1765625661608 codeblock 100-10 block-7 auto=format optimizes format (WebP/AVIF) based on the browser. w=800 resizes the image to 800px wide. textblock 102-11 block-6 Delete This Site Permanently remove the site and all associated data. Steps: Click Delete Site in Members &amp; Config &gt; Configuration. Confirm options in the modal: ✔ Delete all pages/entries ✔ Delete all media ✔ Delete all versions Critical Notes: This action cannot be undone. Ensure no active integrations (e.g., APIs, webhooks) rely on the site. textblock 104-12 block-6 imageblock 106-13 block-8 members-and-config Configuration imageblock 81-1 block-8 imageblock 83-2 block-8 Configuration Customize your content site’s behavior, branding, and integrations. Display Name Name of Content Site: A unique internal identifier (e.g., sleekcms-docs-prod) used in APIs and system references. Display Name: The user-friendly name shown in the CMS dashboard (e.g., SleekCMS Docs). This helps teams quickly identify the site in multi-project setups. Why Both? The Name ensures consistency in APIs and automation scripts. The Display Name improves readability for editors and collaborators. textblock 85-3 block-6 Localize/Translate Add multilingual support for global audiences. Supported Locales: Define languages (e.g., en-US, fr-FR) under Settings &gt; Locales. Translation Workflow: By this user can create locale-specific content versions, assign translators with Editor or Admin roles to manage translations. textblock 87-4 block-6 Customize by Accounts/Tenants Tailor content for different customers or organizational units. Terminology: Define how accounts are labeled (e.g., Customer, Client). This term appears in the UI and API responses. How It Works: Create tenant-specific content versions, use the ?tenant=client-id parameter in APIs to fetch account-specific content. Use Case: A SaaS platform displays unique pricing pages for each client by filtering content via tenant ID. textblock 89-5 block-6 Static Site Generator (Pages) Build and deploy static sites directly from SleekCMS. Preview: Render content in real-time using templates (e.g., HTML, React). Download/Deploy: Export static files (HTML/CSS/JS) or push to platforms like Netlify. textblock 91-6 block-6 Content Preview Visualize content during editing with customizable templates. Template Types: HTML, React, Markdown, or plain text. Placeholders: Use double brackets ({{ field }}) to map content fields (e.g., {{ title }}, {{ author }}). textblock 93-7 block-6 Attribute Key Name Style Define naming conventions for content keys used in APIs. Options: Snake Case: foo_bar (common in APIs). Camel Case: fooBar (JavaScript-friendly). Kebab Case: foo-bar (URL-friendly). Dot Case foo.bar (nested object keys, configurations) Note: This setting applies globally. Changes affect existing and new content. textblock 95-8 block-6 Use Imgix for Image Processing Optimize images dynamically via Imgix CDN. Enable Imgix: Toggle on in Members &amp; Config &gt; Configuration. Imgix Source: Your Imgix subdomain (e.g., sleekcms.imgix.net). Web Folder Source Base URL: Root path for media (e.g., https://img.sleekcms.com/2zp/ ). textblock 97-9 block-6 Example URL: https://sleekcms.imgix.net/2zp/blog-header.jpg?auto=format&w=800 Commands codes_1765625661608 99-0 entry-1765625661608 codeblock 100-10 block-7 auto=format optimizes format (WebP/AVIF) based on the browser. w=800 resizes the image to 800px wide. textblock 102-11 block-6 Delete This Site Permanently remove the site and all associated data. Steps: Click Delete Site in Members &amp; Config &gt; Configuration. Confirm options in the modal: ✔ Delete all pages/entries ✔ Delete all media ✔ Delete all versions Critical Notes: This action cannot be undone. Ensure no active integrations (e.g., APIs, webhooks) rely on the site. textblock 104-12 block-6 imageblock 106-13 block-8 31 2025-12-13T18:34:32.111Z page-3",
+        },
+        {
+          path: "/docs/members-and-config/members",
+          title: "Members",
+          description: "",
+          content:
+            "imageblock 108-1 block-8 imageblock 110-2 block-8 Members Manage collaborators and their access levels. Roles ADMIN: Full access (manage members, delete sites, configure settings). EDITOR: Create/edit content. Customize permissions (e.g., restrict to specific content types like Blogs or Products). VIEWER: Read-only access. How to Add Members: Click Invite Member. Enter the email and select a role. (Optional) For Editors, restrict access to specific sections. Security Tip: Review member access quarterly. Use Audit Logs to track changes made by collaborators. imageblock 112-3 block-8 members-and-config/members Members imageblock 108-1 block-8 imageblock 110-2 block-8 Members Manage collaborators and their access levels. Roles ADMIN: Full access (manage members, delete sites, configure settings). EDITOR: Create/edit content. Customize permissions (e.g., restrict to specific content types like Blogs or Products). VIEWER: Read-only access. How to Add Members: Click Invite Member. Enter the email and select a role. (Optional) For Editors, restrict access to specific sections. Security Tip: Review member access quarterly. Use Audit Logs to track changes made by collaborators. imageblock 112-3 block-8 32 2025-12-13T18:37:26.594Z page-3",
+        },
+        {
+          path: "/docs/members-and-config/environements",
+          title: "Environments",
+          description: "",
+          content:
+            'imageblock 114-1 block-8 imageblock 116-2 block-8 Environments Associate content versions with tags for controlled deployments. imageblock 118-3 block-8 How It Works: Create an environment (e.g., staging, prod). Link it to a content version via its Snapshot Tag (e.g., v1.2.0). Fetch environment-specific content using the **env ** parameter in APIs: curl -H "Authorization: PUB_TOKEN" https://pub.cms.com/v1/2dz6f?env=production Commands codes_1765625661608 120-0 entry-1765625661608 codeblock 121-4 block-7 members-and-config/environements Environments imageblock 114-1 block-8 imageblock 116-2 block-8 Environments Associate content versions with tags for controlled deployments. imageblock 118-3 block-8 How It Works: Create an environment (e.g., staging, prod). Link it to a content version via its Snapshot Tag (e.g., v1.2.0). Fetch environment-specific content using the **env ** parameter in APIs: curl -H "Authorization: PUB_TOKEN" https://pub.cms.com/v1/2dz6f?env=production Commands codes_1765625661608 120-0 entry-1765625661608 codeblock 121-4 block-7 33 2025-12-13T18:39:37.931Z page-3',
+        },
+      ];
+
+      (function () {
+        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        if (mobileMenuBtn && mobileMenu) {
+          mobileMenuBtn.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+          });
+        }
+      })();
+
+      (function () {
+        const themeToggleEnabled = true;
+
+        function getTheme() {
+          const cookies = document.cookie.split(";");
+          for (let cookie of cookies) {
+            const [name, value] = cookie.trim().split("=");
+            if (name === "theme") {
+              return value;
+            }
+          }
+          return "light";
+        }
+
+        function setTheme(theme) {
+          document.cookie = `theme=${theme}; path=/; max-age=31536000`; // 1 year
+        }
+
+        function applyTheme(theme) {
+          if (theme === "dark") {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+        }
+
+        function updateIcon(theme) {
+          const toggleBtn = document.getElementById("theme-toggle-btn");
+          if (!toggleBtn) return;
+
+          const icon = toggleBtn.querySelector("svg");
+          if (!icon) return;
+
+          if (theme === "dark") {
+            icon.innerHTML =
+              '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>';
+          } else {
+            icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>';
+          }
+        }
+
+        if (themeToggleEnabled) {
+          const currentTheme = getTheme();
+          applyTheme(currentTheme);
+
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", function () {
+              updateIcon(currentTheme);
+            });
+          } else {
+            updateIcon(currentTheme);
+          }
+        } else {
+          applyTheme("light");
+        }
+
+        window.toggleTheme = function () {
+          if (!themeToggleEnabled) return;
+
+          const currentTheme = getTheme();
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+          setTheme(newTheme);
+          applyTheme(newTheme);
+          updateIcon(newTheme);
+        };
+
+        window.updateThemeIcon = updateIcon;
+      })();
+
+      // Search functionality
+      (function () {
+        if (!window.searchData || !Array.isArray(window.searchData)) {
+          return;
+        }
+
+        function matchText(text, query) {
+          if (!text || !query) return false;
+          const lowerText = String(text).toLowerCase();
+          const lowerQuery = String(query).toLowerCase();
+          return lowerText.includes(lowerQuery);
+        }
+
+        function searchPages(query) {
+          if (!query || query.trim().length === 0) {
+            return [];
+          }
+
+          const trimmedQuery = query.trim();
+          const results = [];
+
+          window.searchData.forEach(function (page) {
+            let score = 0;
+            const title = page.title || "";
+            const description = page.description || "";
+            const path = page.path || "";
+
+            if (matchText(title, trimmedQuery)) {
+              score += 100;
+              if (title.toLowerCase() === trimmedQuery.toLowerCase()) {
+                score += 50;
+              }
+              if (title.toLowerCase().startsWith(trimmedQuery.toLowerCase())) {
+                score += 25;
+              }
+            }
+
+            if (matchText(description, trimmedQuery)) {
+              score += 30;
+            }
+
+            if (matchText(path, trimmedQuery)) {
+              score += 10;
+            }
+
+            // Search through full content
+            const content = page.content || "";
+            if (matchText(content, trimmedQuery)) {
+              score += 5;
+              // Boost score if content has multiple matches
+              const contentMatches = (content.toLowerCase().match(new RegExp(trimmedQuery.toLowerCase(), "g")) || []).length;
+              score += Math.min(contentMatches * 2, 20); // Cap at 20 bonus points
+            }
+
+            if (score > 0) {
+              results.push({
+                title: title,
+                description: description,
+                path: path,
+                content: content,
+                score: score,
+              });
+            }
+          });
+
+          results.sort(function (a, b) {
+            return b.score - a.score;
+          });
+
+          return results.slice(0, 10);
+        }
+
+        function createSearchResults(results, container, query) {
+          const existingResults = container.querySelector(".search-results-dropdown");
+          if (existingResults) {
+            existingResults.remove();
+          }
+
+          if (results.length === 0) {
+            return;
+          }
+
+          const dropdown = document.createElement("div");
+          dropdown.className = "search-results-dropdown";
+          dropdown.style.cssText =
+            "position: absolute; top: 100%; left: 0; right: 0; margin-top: 4px; background-color: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); max-height: 400px; overflow-y: auto; z-index: 1000;";
+
+          results.forEach(function (result) {
+            const item = document.createElement("a");
+            item.href = result.path;
+            item.className = "search-result-item";
+            item.style.cssText =
+              "display: block; padding: 12px 16px; border-bottom: 1px solid var(--border-color); text-decoration: none; transition: background-color 0.2s; color: var(--text-primary); background-color: transparent;";
+
+            item.onmouseover = function () {
+              this.style.backgroundColor = "var(--bg-secondary)";
+            };
+            item.onmouseout = function () {
+              this.style.backgroundColor = "transparent";
+            };
+
+            const title = document.createElement("div");
+            title.style.cssText = "font-weight: 600; font-size: 14px; margin-bottom: 4px; color: var(--text-primary);";
+            title.textContent = result.title;
+
+            const desc = document.createElement("div");
+            desc.style.cssText = "font-size: 12px; color: var(--text-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;";
+
+            // Show content snippet if available and description is empty
+            let displayText = result.description || "";
+            if (!displayText && result.content) {
+              // Extract a snippet from content around the search query
+              const searchQuery = (query || "").trim().toLowerCase();
+              if (searchQuery) {
+                const content = result.content.toLowerCase();
+                const index = content.indexOf(searchQuery);
+                if (index !== -1) {
+                  const start = Math.max(0, index - 50);
+                  const end = Math.min(result.content.length, index + searchQuery.length + 50);
+                  let snippet = result.content.substring(start, end);
+                  if (start > 0) snippet = "..." + snippet;
+                  if (end < result.content.length) snippet = snippet + "...";
+                  displayText = snippet;
+                } else {
+                  // Just show first 100 chars
+                  displayText = result.content.substring(0, 100);
+                  if (result.content.length > 100) displayText += "...";
+                }
+              } else {
+                // Just show first 100 chars
+                displayText = result.content.substring(0, 100);
+                if (result.content.length > 100) displayText += "...";
+              }
+            }
+            if (!displayText) displayText = result.path;
+            desc.textContent = displayText;
+
+            const path = document.createElement("div");
+            path.style.cssText = "font-size: 11px; color: var(--text-tertiary); margin-top: 4px; font-family: monospace;";
+            path.textContent = result.path;
+
+            item.appendChild(title);
+            if (result.description) {
+              item.appendChild(desc);
+            }
+            item.appendChild(path);
+
+            dropdown.appendChild(item);
+          });
+
+          container.appendChild(dropdown);
+        }
+
+        function initSearch(inputElement) {
+          if (!inputElement) return;
+
+          let container = inputElement.parentElement;
+          if (!container || container.style.position !== "relative") {
+            container.style.position = "relative";
+          }
+
+          let searchTimeout;
+
+          inputElement.addEventListener("input", function (e) {
+            const query = e.target.value;
+            clearTimeout(searchTimeout);
+
+            searchTimeout = setTimeout(function () {
+              if (query.trim().length > 0) {
+                const results = searchPages(query);
+                createSearchResults(results, container, query);
+              } else {
+                const dropdown = container.querySelector(".search-results-dropdown");
+                if (dropdown) {
+                  dropdown.remove();
+                }
+              }
+            }, 150);
+          });
+
+          inputElement.addEventListener("focus", function (e) {
+            const query = e.target.value;
+            if (query.trim().length > 0) {
+              const results = searchPages(query);
+              createSearchResults(results, container, query);
+            }
+          });
+
+          document.addEventListener("click", function (e) {
+            if (!container.contains(e.target) && e.target !== inputElement) {
+              const dropdown = container.querySelector(".search-results-dropdown");
+              if (dropdown) {
+                dropdown.remove();
+              }
+            }
+          });
+
+          inputElement.addEventListener("keydown", function (e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+              e.preventDefault();
+              inputElement.focus();
+            }
+            if (e.key === "Escape") {
+              const dropdown = container.querySelector(".search-results-dropdown");
+              if (dropdown) {
+                dropdown.remove();
+              }
+            }
+          });
+        }
+
+        // Initialize search inputs when DOM is ready
+        function initAllSearches() {
+          const navbarInput = document.getElementById("navbar-search-input");
+          const mobileInput = document.getElementById("mobile-search-input");
+
+          if (navbarInput) {
+            initSearch(navbarInput);
+          }
+          if (mobileInput) {
+            initSearch(mobileInput);
+          }
+        }
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initAllSearches);
+        } else {
+          initAllSearches();
+        }
+
+        // Global keyboard shortcut (Ctrl+K / Cmd+K)
+        document.addEventListener("keydown", function (e) {
+          if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+            e.preventDefault();
+            const navbarInput = document.getElementById("navbar-search-input");
+            if (navbarInput) {
+              navbarInput.focus();
+              navbarInput.select();
+            }
+          }
+        });
+      })();
+    </script>
+
+    <nav class="sticky top-0 z-50 border-b" style="background-color: var(--navbar-bg); border-color: var(--border-color)">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a href="/" class="flex items-center gap-2 text-xl font-bold transition-all duration-200 hover:opacity-80" style="color: var(--text-primary)">
+              <img src="https://img.sleekcms.com/1ezc3/mj4j29u1.webp" alt="SleekCMS" class="h-8 w-auto object-contain" loading="lazy" />
+
+              <span>SleekCMS</span>
+            </a>
+          </div>
+
+          <div class="hidden md:flex items-center gap-6 flex-1 justify-center">
+            <div class="relative group">
+              <a
+                href="/docs"
+                class="px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center nav-main-link"
+                style="color: var(--text-primary)"
+                onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.transform='translateY(-1px)';"
+                onmouseout="this.style.backgroundColor='transparent'; this.style.transform='translateY(0)';"
+              >
+                Documentations
+                <svg class="ml-1 h-4 w-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </a>
+              <div
+                class="absolute left-0 mt-2 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 navbar-dropdown"
+                style="background-color: var(--bg-primary); border: 1px solid var(--border-color); max-width: 90vw; max-height: 80vh; overflow-auto;"
+              >
+                <div class="p-4 navbar-dropdown-grid">
+                  <div class="min-w-[200px]">
+                    <a
+                      href="/docs/modelcontent"
+                      class="block px-3 py-2 text-sm font-semibold transition-all duration-200 rounded mb-1 nav-section-link"
+                      style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                      onmouseover="this.style.backgroundColor='var(--bg-tertiary)'; this.style.transform='translateX(4px)';"
+                      onmouseout="this.style.backgroundColor='var(--bg-secondary)'; this.style.transform='translateX(0)';"
+                    >
+                      Model Content
+                    </a>
+
+                    <div class="pl-3">
+                      <a
+                        href="/docs/modelcontent/pages"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Pages
+                      </a>
+
+                      <a
+                        href="/docs/modelcontent/entries"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Entries
+                      </a>
+
+                      <a
+                        href="/docs/modelcontent/blocks"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Blocks
+                      </a>
+
+                      <a
+                        href="/docs/modelcontent/lists"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Lists
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="min-w-[200px]">
+                    <a
+                      href="/docs/media"
+                      class="block px-3 py-2 text-sm font-semibold transition-all duration-200 rounded mb-1 nav-section-link"
+                      style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                      onmouseover="this.style.backgroundColor='var(--bg-tertiary)'; this.style.transform='translateX(4px)';"
+                      onmouseout="this.style.backgroundColor='var(--bg-secondary)'; this.style.transform='translateX(0)';"
+                    >
+                      Media
+                    </a>
+
+                    <div class="pl-3">
+                      <a
+                        href="/docs/media/images"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Images
+                      </a>
+
+                      <a
+                        href="/docs/media/videos"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Videos
+                      </a>
+
+                      <a
+                        href="/docs/media/documents"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Documents(Coming Soon)
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="min-w-[200px]">
+                    <a
+                      href="/docs/site-generator"
+                      class="block px-3 py-2 text-sm font-semibold transition-all duration-200 rounded mb-1 nav-section-link"
+                      style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                      onmouseover="this.style.backgroundColor='var(--bg-tertiary)'; this.style.transform='translateX(4px)';"
+                      onmouseout="this.style.backgroundColor='var(--bg-secondary)'; this.style.transform='translateX(0)';"
+                    >
+                      Model Code / Markup
+                    </a>
+
+                    <div class="pl-3">
+                      <a
+                        href="/docs/site-generator/assets"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Assets
+                      </a>
+
+                      <a
+                        href="/docs/site-generator/site-build-config"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Site Build Config
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="min-w-[200px]">
+                    <a
+                      href="/docs/integrate-and-deploy"
+                      class="block px-3 py-2 text-sm font-semibold transition-all duration-200 rounded mb-1 nav-section-link"
+                      style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                      onmouseover="this.style.backgroundColor='var(--bg-tertiary)'; this.style.transform='translateX(4px)';"
+                      onmouseout="this.style.backgroundColor='var(--bg-secondary)'; this.style.transform='translateX(0)';"
+                    >
+                      Rest API
+                    </a>
+
+                    <div class="pl-3">
+                      <a
+                        href="/docs/integrate-and-deploy/deploy-site"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Deploy Site
+                      </a>
+
+                      <a
+                        href="/docs/integrate-and-deploy/deploy-content"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Deploy Content
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="min-w-[200px]">
+                    <a
+                      href="/docs/members-and-config"
+                      class="block px-3 py-2 text-sm font-semibold transition-all duration-200 rounded mb-1 nav-section-link"
+                      style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                      onmouseover="this.style.backgroundColor='var(--bg-tertiary)'; this.style.transform='translateX(4px)';"
+                      onmouseout="this.style.backgroundColor='var(--bg-secondary)'; this.style.transform='translateX(0)';"
+                    >
+                      Configuration
+                    </a>
+
+                    <div class="pl-3">
+                      <a
+                        href="/docs/members-and-config/members"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Members
+                      </a>
+
+                      <a
+                        href="/docs/members-and-config/environements"
+                        class="block px-3 py-1.5 text-sm transition-all duration-200 rounded nav-subsection-link"
+                        style="color: var(--text-secondary)"
+                        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='var(--text-primary)'; this.style.transform='translateX(4px)';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--text-secondary)'; this.style.transform='translateX(0)';"
+                      >
+                        Environments
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="min-w-[200px]">
+                    <a
+                      href="/docs/editcontent"
+                      class="block px-3 py-2 text-sm font-semibold transition-all duration-200 rounded mb-1 nav-section-link"
+                      style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                      onmouseover="this.style.backgroundColor='var(--bg-tertiary)'; this.style.transform='translateX(4px)';"
+                      onmouseout="this.style.backgroundColor='var(--bg-secondary)'; this.style.transform='translateX(0)';"
+                    >
+                      Edit Content
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-4">
+            <div class="relative" id="navbar-search-container">
+              <input
+                type="text"
+                id="navbar-search-input"
+                placeholder="Search for solutions..."
+                class="px-5 py-2.5 pl-11 rounded-lg text-sm border focus:outline-none focus:ring-2 focus:ring-opacity-50 transition search-input"
+                style="background-color: var(--bg-secondary); color: var(--text-primary); border-color: var(--border-color); focus:ring-color: var(--accent-primary); min-width: 400px;"
+              />
+              <svg class="absolute left-3.5 top-3 h-5 w-5" style="color: var(--text-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+
+            <button
+              id="theme-toggle-btn"
+              onclick="toggleTheme()"
+              class="p-2 rounded-lg transition hover:opacity-80"
+              style="color: var(--text-primary); background-color: var(--bg-secondary)"
+              aria-label="Toggle theme"
+            >
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+              </svg>
+            </button>
+
+            <a href="/docs" class="px-4 py-2 rounded-lg text-sm font-medium transition hover:opacity-90" style="background-color: var(--accent-primary); color: white"> Get Started </a>
+          </div>
+
+          <div class="md:hidden">
+            <button id="mobile-menu-btn" class="p-2 rounded-md" style="color: var(--text-primary)">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden border-t" style="background-color: var(--navbar-bg); border-color: var(--border-color)">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="/docs" class="block px-3 py-2 rounded-md text-base font-medium" style="color: var(--text-primary)">Documentations</a>
+
+          <div class="px-3 py-2 text-xs font-semibold uppercase tracking-wider" style="color: var(--text-secondary)">All Sections</div>
+
+          <div>
+            <a href="/docs/modelcontent" class="block px-3 py-2 rounded-md text-base font-semibold" style="color: var(--text-primary); background-color: var(--bg-secondary)"> Model Content </a>
+
+            <div class="pl-6 mt-1">
+              <a href="/docs/modelcontent/pages" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Pages </a>
+
+              <a href="/docs/modelcontent/entries" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Entries </a>
+
+              <a href="/docs/modelcontent/blocks" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Blocks </a>
+
+              <a href="/docs/modelcontent/lists" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Lists </a>
+            </div>
+          </div>
+
+          <div>
+            <a href="/docs/media" class="block px-3 py-2 rounded-md text-base font-semibold" style="color: var(--text-primary); background-color: var(--bg-secondary)"> Media </a>
+
+            <div class="pl-6 mt-1">
+              <a href="/docs/media/images" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Images </a>
+
+              <a href="/docs/media/videos" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Videos </a>
+
+              <a href="/docs/media/documents" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Documents(Coming Soon) </a>
+            </div>
+          </div>
+
+          <div>
+            <a href="/docs/site-generator" class="block px-3 py-2 rounded-md text-base font-semibold" style="color: var(--text-primary); background-color: var(--bg-secondary)">
+              Model Code / Markup
+            </a>
+
+            <div class="pl-6 mt-1">
+              <a href="/docs/site-generator/assets" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Assets </a>
+
+              <a href="/docs/site-generator/site-build-config" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Site Build Config </a>
+            </div>
+          </div>
+
+          <div>
+            <a href="/docs/integrate-and-deploy" class="block px-3 py-2 rounded-md text-base font-semibold" style="color: var(--text-primary); background-color: var(--bg-secondary)"> Rest API </a>
+
+            <div class="pl-6 mt-1">
+              <a href="/docs/integrate-and-deploy/deploy-site" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Deploy Site </a>
+
+              <a href="/docs/integrate-and-deploy/deploy-content" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Deploy Content </a>
+            </div>
+          </div>
+
+          <div>
+            <a href="/docs/members-and-config" class="block px-3 py-2 rounded-md text-base font-semibold" style="color: var(--text-primary); background-color: var(--bg-secondary)"> Configuration </a>
+
+            <div class="pl-6 mt-1">
+              <a href="/docs/members-and-config/members" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Members </a>
+
+              <a href="/docs/members-and-config/environements" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Environments </a>
+            </div>
+          </div>
+
+          <div>
+            <a href="/docs/editcontent" class="block px-3 py-2 rounded-md text-base font-semibold" style="color: var(--text-primary); background-color: var(--bg-secondary)"> Edit Content </a>
+          </div>
+
+          <div class="pt-4">
+            <div class="relative" id="mobile-search-container">
+              <input
+                type="text"
+                id="mobile-search-input"
+                placeholder="Search for solutions..."
+                class="w-full px-4 py-2 rounded-lg text-sm border focus:outline-none focus:ring-2 focus:ring-opacity-50 search-input"
+                style="background-color: var(--bg-secondary); color: var(--text-primary); border-color: var(--border-color)"
+              />
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button
+              onclick="toggleTheme()"
+              class="w-full flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium transition hover:opacity-80"
+              style="color: var(--text-primary); background-color: var(--bg-secondary)"
+              aria-label="Toggle theme"
+            >
+              <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+              </svg>
+              Toggle Theme
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <a href="/docs" class="block w-full text-center px-4 py-2 rounded-lg text-sm font-medium" style="background-color: var(--accent-primary); color: white"> Get Started </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      (function () {
+        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        if (mobileMenuBtn && mobileMenu) {
+          mobileMenuBtn.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+          });
+        }
+      })();
+    </script>
+    <div class="flex relative min-h-screen">
+      <button
+        id="sidebar-toggle-btn"
+        class="lg:hidden fixed left-4 top-20 z-50 p-2 rounded-lg transition-all duration-200 hover:scale-110"
+        style="background-color: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border-color); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)"
+        aria-label="Toggle sidebar"
+      >
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <div id="sidebar-overlay" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300" onclick="closeSidebar()"></div>
+
+      <aside
+        id="sidebar"
+        class="lg:translate-x-0 -translate-x-full fixed left-0 top-16 bottom-0 w-64 overflow-y-auto border-r z-40 transform transition-transform duration-300 ease-in-out"
+        style="background-color: var(--sidebar-bg); border-color: var(--border-color); height: calc(100vh - 4rem)"
+      >
+        <div class="p-4">
+          <div class="mb-4 flex items-center justify-between">
+            <h3 class="text-sm font-semibold uppercase tracking-wider" style="color: var(--text-secondary)">Documentations</h3>
+            <button onclick="closeSidebar()" class="lg:hidden p-1 rounded hover:opacity-80 transition" style="color: var(--text-secondary)" aria-label="Close sidebar">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <nav class="space-y-1">
+            <div>
+              <div class="relative group">
+                <button
+                  class="w-full flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-bold transition-all duration-200 sidebar-section-toggle"
+                  data-section="0"
+                  style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                  onmouseover="this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="this.style.backgroundColor='var(--bg-secondary)'"
+                >
+                  <span class="flex-1 text-left"> Model Content </span>
+                  <svg class="h-4 w-4 transition-transform duration-200 sidebar-arrow" data-arrow="0" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: rotate(0deg)">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="sidebar-subsections pl-4 mt-1 overflow-hidden transition-all duration-300 ease-in-out hidden" data-subsections="0" style="max-height: 0; opacity: 0">
+                <a
+                  href="/docs/modelcontent"
+                  class="block px-3 py-2 rounded-md text-sm font-semibold transition-all duration-200 sidebar-link"
+                  data-href="/docs/modelcontent"
+                  style="color: var(--text-primary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Model Content
+                </a>
+
+                <a
+                  href="/docs/modelcontent/pages"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/modelcontent/pages"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Pages
+                </a>
+
+                <a
+                  href="/docs/modelcontent/entries"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/modelcontent/entries"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Entries
+                </a>
+
+                <a
+                  href="/docs/modelcontent/blocks"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/modelcontent/blocks"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Blocks
+                </a>
+
+                <a
+                  href="/docs/modelcontent/lists"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/modelcontent/lists"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Lists
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <a
+                href="/docs/editcontent"
+                class="block w-full px-3 py-2.5 rounded-md text-sm font-bold transition-all duration-200 sidebar-link"
+                data-href="/docs/editcontent"
+                style="color: var(--text-primary)"
+                onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+              >
+                Edit Content
+              </a>
+            </div>
+
+            <div>
+              <div class="relative group">
+                <button
+                  class="w-full flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-bold transition-all duration-200 sidebar-section-toggle"
+                  data-section="2"
+                  style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                  onmouseover="this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="this.style.backgroundColor='var(--bg-secondary)'"
+                >
+                  <span class="flex-1 text-left"> Media </span>
+                  <svg class="h-4 w-4 transition-transform duration-200 sidebar-arrow" data-arrow="2" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: rotate(0deg)">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="sidebar-subsections pl-4 mt-1 overflow-hidden transition-all duration-300 ease-in-out hidden" data-subsections="2" style="max-height: 0; opacity: 0">
+                <a
+                  href="/docs/media"
+                  class="block px-3 py-2 rounded-md text-sm font-semibold transition-all duration-200 sidebar-link"
+                  data-href="/docs/media"
+                  style="color: var(--text-primary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Media
+                </a>
+
+                <a
+                  href="/docs/media/images"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/media/images"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Images
+                </a>
+
+                <a
+                  href="/docs/media/videos"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/media/videos"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Videos
+                </a>
+
+                <a
+                  href="/docs/media/documents"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/media/documents"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Documents(Coming Soon)
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div class="relative group">
+                <button
+                  class="w-full flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-bold transition-all duration-200 sidebar-section-toggle"
+                  data-section="3"
+                  style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                  onmouseover="this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="this.style.backgroundColor='var(--bg-secondary)'"
+                >
+                  <span class="flex-1 text-left"> Model Code / Markup </span>
+                  <svg class="h-4 w-4 transition-transform duration-200 sidebar-arrow" data-arrow="3" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: rotate(0deg)">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="sidebar-subsections pl-4 mt-1 overflow-hidden transition-all duration-300 ease-in-out hidden" data-subsections="3" style="max-height: 0; opacity: 0">
+                <a
+                  href="/docs/site-generator"
+                  class="block px-3 py-2 rounded-md text-sm font-semibold transition-all duration-200 sidebar-link"
+                  data-href="/docs/site-generator"
+                  style="color: var(--text-primary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Model Code / Markup
+                </a>
+
+                <a
+                  href="/docs/site-generator/assets"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/site-generator/assets"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Assets
+                </a>
+
+                <a
+                  href="/docs/site-generator/site-build-config"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/site-generator/site-build-config"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Site Build Config
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div class="relative group">
+                <button
+                  class="w-full flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-bold transition-all duration-200 sidebar-section-toggle"
+                  data-section="4"
+                  style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                  onmouseover="this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="this.style.backgroundColor='var(--bg-secondary)'"
+                >
+                  <span class="flex-1 text-left"> Rest API </span>
+                  <svg class="h-4 w-4 transition-transform duration-200 sidebar-arrow" data-arrow="4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: rotate(0deg)">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="sidebar-subsections pl-4 mt-1 overflow-hidden transition-all duration-300 ease-in-out hidden" data-subsections="4" style="max-height: 0; opacity: 0">
+                <a
+                  href="/docs/integrate-and-deploy"
+                  class="block px-3 py-2 rounded-md text-sm font-semibold transition-all duration-200 sidebar-link"
+                  data-href="/docs/integrate-and-deploy"
+                  style="color: var(--text-primary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Rest API
+                </a>
+
+                <a
+                  href="/docs/integrate-and-deploy/deploy-site"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/integrate-and-deploy/deploy-site"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Deploy Site
+                </a>
+
+                <a
+                  href="/docs/integrate-and-deploy/deploy-content"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/integrate-and-deploy/deploy-content"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Deploy Content
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div class="relative group">
+                <button
+                  class="w-full flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-bold transition-all duration-200 sidebar-section-toggle"
+                  data-section="5"
+                  style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                  onmouseover="this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="this.style.backgroundColor='var(--bg-secondary)'"
+                >
+                  <span class="flex-1 text-left"> Configuration </span>
+                  <svg class="h-4 w-4 transition-transform duration-200 sidebar-arrow" data-arrow="5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: rotate(0deg)">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="sidebar-subsections pl-4 mt-1 overflow-hidden transition-all duration-300 ease-in-out hidden" data-subsections="5" style="max-height: 0; opacity: 0">
+                <a
+                  href="/docs/members-and-config"
+                  class="block px-3 py-2 rounded-md text-sm font-semibold transition-all duration-200 sidebar-link"
+                  data-href="/docs/members-and-config"
+                  style="color: var(--text-primary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Configuration
+                </a>
+
+                <a
+                  href="/docs/members-and-config/members"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/members-and-config/members"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Members
+                </a>
+
+                <a
+                  href="/docs/members-and-config/environements"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/members-and-config/environements"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Environments
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </aside>
+      <div class="flex-1 lg:ml-64 flex flex-col" style="min-height: calc(100vh - 4rem)">
+        <main class="flex-1" style="padding: 0">
+          <div class="py-4 px-4 sm:px-6 lg:px-8 border-b" style="background-color: var(--bg-primary); border-color: var(--border-color)">
+            <div class="max-w-7xl mx-auto">
+              <nav class="flex items-center space-x-2 text-sm">
+                <a href="/" class="hover:opacity-80 transition" style="color: var(--text-secondary)"> Home </a>
+
+                <span style="color: var(--text-tertiary)">/</span>
+
+                <a href="/docs" class="hover:opacity-80 transition" style="color: var(--text-secondary)"> Docs </a>
+
+                <span style="color: var(--text-tertiary)">/</span>
+
+                <span style="color: var(--text-primary)">Rest API</span>
+              </nav>
+
+              <h1 class="text-3xl font-bold mt-4" style="color: var(--text-primary)">Rest API</h1>
+            </div>
+          </div>
+
+          <div class="py-8">
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <!-- Main Text -->
+
+                <!-- Markdown Content -->
+
+                <div class="space-y-6">
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)">
+                    <p>Access content programmatically using SleekCMS APIs. Use these endpoints in frameworks like React, Next.js, or any HTTP client.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .text-main-text {
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 1.6;
+              }
+
+              @media (min-width: 768px) {
+                .text-main-text {
+                  font-size: 1.875rem;
+                }
+              }
+
+              .prose h2 {
+                font-size: 1.875rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+                color: var(--text-primary);
+              }
+
+              @media (min-width: 768px) {
+                .prose h2 {
+                  font-size: 2.25rem;
+                }
+              }
+
+              .prose p {
+                margin-top: 0.75rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose h2:first-child {
+                margin-top: 0;
+              }
+
+              .prose ul,
+              .prose ol {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-left: 1.5rem;
+                color: var(--text-primary);
+              }
+
+              .prose ul {
+                list-style-type: disc;
+              }
+
+              .prose ol {
+                list-style-type: decimal;
+              }
+
+              .prose li {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose li > p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .prose ul ul,
+              .prose ol ol,
+              .prose ul ol,
+              .prose ol ul {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }</style
+            ><!-- Code Block -->
+            <style>
+              .code-block {
+                display: block;
+              }
+
+              .code-card {
+                border-radius: 0.75rem;
+                border: 1px solid var(--border-color);
+                background: var(--bg-primary);
+                box-shadow:
+                  0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                overflow: hidden;
+              }
+
+              .code-card-tabs {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                padding: 1rem;
+                background: var(--bg-secondary);
+                border-bottom: 1px solid var(--border-color);
+                align-items: flex-start;
+              }
+
+              .code-tab {
+                border-radius: 0.5rem;
+                padding: 0.5rem 0.875rem;
+                font-size: 0.8125rem;
+                font-weight: 600;
+                color: var(--text-secondary);
+                border: 1px solid var(--border-color);
+                background: var(--bg-primary);
+                cursor: pointer;
+                transition: all 0.2s ease;
+                text-align: left;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+                white-space: nowrap;
+              }
+
+              .code-tab:hover:not(.active) {
+                color: var(--text-primary);
+                background: var(--bg-tertiary);
+                border-color: var(--border-color);
+                transform: translateY(-1px);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              }
+
+              .code-tab.active {
+                color: white;
+                background: var(--accent-primary);
+                border-color: var(--accent-primary);
+                box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+              }
+
+              .code-card-body {
+                padding: 1.5rem;
+                background: var(--bg-primary);
+              }
+
+              .code-block-content-wrapper {
+                font-size: 0.95rem;
+                color: var(--text-primary);
+                line-height: 1.7;
+                background: var(--bg-secondary);
+                border: 1px solid var(--border-color);
+                border-radius: 0.75rem;
+                padding: 1.25rem 1.5rem;
+                margin-bottom: 1rem;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+              }
+
+              .code-block-content-wrapper * {
+                font-size: inherit;
+                color: inherit;
+              }
+
+              .code-block-content-wrapper ol,
+              .code-block-content-wrapper ul {
+                margin-left: 1.5rem;
+                margin-bottom: 0.75rem;
+                margin-top: 0.5rem;
+                padding-left: 1.5rem;
+                display: block;
+              }
+
+              .code-block-content-wrapper ol {
+                list-style-type: decimal;
+                list-style-position: outside;
+              }
+
+              .code-block-content-wrapper ul {
+                list-style-type: disc;
+                list-style-position: outside;
+              }
+
+              .code-block-content-wrapper li {
+                margin-bottom: 0.25rem;
+                display: list-item;
+              }
+
+              .code-block-content-wrapper p {
+                margin-bottom: 0.5rem;
+                margin-top: 0;
+                color: var(--text-primary);
+              }
+
+              .code-block-content-wrapper p:last-child {
+                margin-bottom: 0;
+              }
+
+              .code-block-content-wrapper h1,
+              .code-block-content-wrapper h2,
+              .code-block-content-wrapper h3,
+              .code-block-content-wrapper h4,
+              .code-block-content-wrapper h5,
+              .code-block-content-wrapper h6 {
+                font-weight: 700;
+                margin-top: 1rem;
+                margin-bottom: 0.75rem;
+                color: var(--text-primary);
+              }
+
+              .code-block-content-wrapper h2 {
+                font-size: 1.5rem;
+              }
+
+              .code-shell {
+                position: relative;
+                border-radius: 0.75rem;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                background: #1e293b;
+                padding: 1.5rem;
+                overflow: hidden;
+                box-shadow:
+                  inset 0 2px 4px rgba(0, 0, 0, 0.2),
+                  0 1px 3px rgba(0, 0, 0, 0.1);
+              }
+
+              .dark .code-shell {
+                background: #0f172a;
+                border-color: rgba(255, 255, 255, 0.1);
+              }
+
+              .code-shell pre {
+                margin: 0;
+                font-size: 0.875rem;
+                line-height: 1.75;
+                background: transparent;
+                color: #e2e8f0;
+                font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
+                overflow-x: auto;
+              }
+
+              .code-shell code {
+                font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
+                color: #e2e8f0;
+                white-space: pre;
+              }
+
+              .code-copy-btn {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                padding: 0.5rem 0.75rem;
+                border-radius: 0.5rem;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                font-size: 0.75rem;
+                font-weight: 600;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.375rem;
+                color: #cbd5e1;
+                background: rgba(255, 255, 255, 0.1);
+                transition: all 0.2s ease;
+                backdrop-filter: blur(4px);
+              }
+
+              .code-copy-btn svg {
+                width: 1rem;
+                height: 1rem;
+              }
+
+              .code-copy-btn:hover {
+                color: white;
+                background: rgba(255, 255, 255, 0.2);
+                border-color: rgba(255, 255, 255, 0.3);
+                transform: translateY(-1px);
+              }
+
+              .code-copy-btn.copied {
+                color: #22c55e;
+                background: rgba(34, 197, 94, 0.2);
+                border-color: rgba(34, 197, 94, 0.4);
+              }
+            </style>
+
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <div class="code-block">
+                  <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: var(--text-primary)">Current Content</h2>
+
+                  <!-- Single code block -->
+
+                  <div class="code-card">
+                    <div class="code-card-body">
+                      <div class="code-block-content-wrapper">
+                        <p>Fetch the latest unpublished content (including drafts) for development/testing.</p>
+                      </div>
+
+                      <div class="code-shell group">
+                        <button type="button" onclick="copyCodeToClipboard('code-block-tjgh31ty1-code-0', this)" class="code-copy-btn" title="Copy code">
+                          <svg class="copy-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                            ></path>
+                          </svg>
+                          <svg class="check-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                        </button>
+                        <div class="overflow-x-auto">
+                          <pre
+                            class="font-mono leading-relaxed whitespace-pre-wrap"
+                          ><code id="code-block-tjgh31ty1-code-0">curl -H "Authorization: DEV_TOKEN" http://dev.cms.com:9000/2dz6f/latest  </code></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script>
+              // Switch code tab function
+              if (typeof switchCodeTab === "undefined") {
+                function switchCodeTab(blockId, tabIndex) {
+                  const block = document.getElementById(blockId);
+                  if (!block) return;
+
+                  // Update tabs
+                  const tabs = block.querySelectorAll(".code-tab");
+                  tabs.forEach((tab, index) => {
+                    tab.classList.toggle("active", index === tabIndex);
+                  });
+
+                  // Update code content
+                  const codeContents = block.querySelectorAll(".code-content");
+                  codeContents.forEach((content, index) => {
+                    if (index === tabIndex) {
+                      content.classList.remove("hidden");
+                    } else {
+                      content.classList.add("hidden");
+                    }
+                  });
+                }
+              }
+
+              if (typeof window !== "undefined" && !window.__codeTabsBound) {
+                window.__codeTabsBound = true;
+                document.addEventListener("click", function (event) {
+                  const tabButton = event.target.closest("[data-code-tab-button]");
+                  if (!tabButton || typeof switchCodeTab !== "function") {
+                    return;
+                  }
+                  const blockId = tabButton.getAttribute("data-code-block");
+                  if (!blockId) {
+                    return;
+                  }
+                  const tabIndex = Number(tabButton.getAttribute("data-tab-index") || "0");
+                  switchCodeTab(blockId, tabIndex);
+                });
+              }
+
+              // Copy code to clipboard function
+              if (typeof copyCodeToClipboard === "undefined") {
+                function copyCodeToClipboard(codeId, button) {
+                  const codeElement = document.getElementById(codeId);
+                  const code = codeElement.textContent || codeElement.innerText;
+
+                  navigator.clipboard
+                    .writeText(code)
+                    .then(() => {
+                      // Visual feedback
+                      const copyIcon = button.querySelector(".copy-icon");
+                      const checkIcon = button.querySelector(".check-icon");
+                      if (copyIcon) copyIcon.classList.add("hidden");
+                      if (checkIcon) checkIcon.classList.remove("hidden");
+                      button.classList.add("copied");
+
+                      setTimeout(() => {
+                        if (copyIcon) copyIcon.classList.remove("hidden");
+                        if (checkIcon) checkIcon.classList.add("hidden");
+                        button.classList.remove("copied");
+                      }, 2000);
+                    })
+                    .catch(() => {
+                      // Fallback for older browsers
+                      const textarea = document.createElement("textarea");
+                      textarea.value = code;
+                      textarea.style.position = "fixed";
+                      textarea.style.opacity = "0";
+                      document.body.appendChild(textarea);
+                      textarea.select();
+                      document.execCommand("copy");
+                      document.body.removeChild(textarea);
+
+                      const copyIcon = button.querySelector(".copy-icon");
+                      const checkIcon = button.querySelector(".check-icon");
+                      if (copyIcon) copyIcon.classList.add("hidden");
+                      if (checkIcon) checkIcon.classList.remove("hidden");
+                      button.classList.add("copied");
+
+                      setTimeout(() => {
+                        if (copyIcon) copyIcon.classList.remove("hidden");
+                        if (checkIcon) checkIcon.classList.add("hidden");
+                        button.classList.remove("copied");
+                      }, 2000);
+                    });
+                }
+              }
+            </script>
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <!-- Paragraph Content -->
+
+                <div class="space-y-8">
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)">
+                    <ol>
+                      <li>Replace DEV_TOKEN with your Development Authorization Token.</li>
+                      <li>Use Case: Test content changes locally before publishing.</li>
+                      <li>Response: Returns JSON with raw content data (e.g., pages, blogs, assets).</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .prose h2 {
+                font-size: 1.875rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+                color: var(--text-primary);
+              }
+
+              @media (min-width: 768px) {
+                .prose h2 {
+                  font-size: 2.25rem;
+                }
+              }
+
+              .prose p {
+                margin-top: 0.75rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose h2:first-child {
+                margin-top: 0;
+              }
+
+              .prose ul,
+              .prose ol {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-left: 1.5rem;
+                color: var(--text-primary);
+              }
+
+              .prose ul {
+                list-style-type: disc;
+              }
+
+              .prose ol {
+                list-style-type: decimal;
+              }
+
+              .prose li {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose li > p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .prose ul ul,
+              .prose ol ol,
+              .prose ul ol,
+              .prose ol ul {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+            </style>
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <!-- Image Title -->
+
+                <!-- Images -->
+
+                <!-- Single Image - Centered at normal size -->
+                <div class="mb-8 flex justify-center">
+                  <div class="max-w-4xl w-full">
+                    <img src="https://img.sleekcms.com/1ezc3/mj4hewq1.webp" alt="Image" class="w-full h-auto rounded-lg" loading="lazy" />
+                  </div>
+                </div>
+
+                <!-- Image Text Content -->
+
+                <div class="space-y-6 mt-8">
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)"></div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .prose h2 {
+                font-size: 1.875rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+                color: var(--text-primary);
+              }
+
+              @media (min-width: 768px) {
+                .prose h2 {
+                  font-size: 2.25rem;
+                }
+              }
+
+              .prose p {
+                margin-top: 0.75rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose h2:first-child {
+                margin-top: 0;
+              }
+
+              .prose ul,
+              .prose ol {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-left: 1.5rem;
+                color: var(--text-primary);
+              }
+
+              .prose ul {
+                list-style-type: disc;
+              }
+
+              .prose ol {
+                list-style-type: decimal;
+              }
+
+              .prose li {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose li > p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .prose ul ul,
+              .prose ol ol,
+              .prose ul ol,
+              .prose ol ul {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }</style
+            ><!-- Code Block -->
+            <style>
+              .code-block {
+                display: block;
+              }
+
+              .code-card {
+                border-radius: 0.75rem;
+                border: 1px solid var(--border-color);
+                background: var(--bg-primary);
+                box-shadow:
+                  0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                overflow: hidden;
+              }
+
+              .code-card-tabs {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                padding: 1rem;
+                background: var(--bg-secondary);
+                border-bottom: 1px solid var(--border-color);
+                align-items: flex-start;
+              }
+
+              .code-tab {
+                border-radius: 0.5rem;
+                padding: 0.5rem 0.875rem;
+                font-size: 0.8125rem;
+                font-weight: 600;
+                color: var(--text-secondary);
+                border: 1px solid var(--border-color);
+                background: var(--bg-primary);
+                cursor: pointer;
+                transition: all 0.2s ease;
+                text-align: left;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+                white-space: nowrap;
+              }
+
+              .code-tab:hover:not(.active) {
+                color: var(--text-primary);
+                background: var(--bg-tertiary);
+                border-color: var(--border-color);
+                transform: translateY(-1px);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              }
+
+              .code-tab.active {
+                color: white;
+                background: var(--accent-primary);
+                border-color: var(--accent-primary);
+                box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+              }
+
+              .code-card-body {
+                padding: 1.5rem;
+                background: var(--bg-primary);
+              }
+
+              .code-block-content-wrapper {
+                font-size: 0.95rem;
+                color: var(--text-primary);
+                line-height: 1.7;
+                background: var(--bg-secondary);
+                border: 1px solid var(--border-color);
+                border-radius: 0.75rem;
+                padding: 1.25rem 1.5rem;
+                margin-bottom: 1rem;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+              }
+
+              .code-block-content-wrapper * {
+                font-size: inherit;
+                color: inherit;
+              }
+
+              .code-block-content-wrapper ol,
+              .code-block-content-wrapper ul {
+                margin-left: 1.5rem;
+                margin-bottom: 0.75rem;
+                margin-top: 0.5rem;
+                padding-left: 1.5rem;
+                display: block;
+              }
+
+              .code-block-content-wrapper ol {
+                list-style-type: decimal;
+                list-style-position: outside;
+              }
+
+              .code-block-content-wrapper ul {
+                list-style-type: disc;
+                list-style-position: outside;
+              }
+
+              .code-block-content-wrapper li {
+                margin-bottom: 0.25rem;
+                display: list-item;
+              }
+
+              .code-block-content-wrapper p {
+                margin-bottom: 0.5rem;
+                margin-top: 0;
+                color: var(--text-primary);
+              }
+
+              .code-block-content-wrapper p:last-child {
+                margin-bottom: 0;
+              }
+
+              .code-block-content-wrapper h1,
+              .code-block-content-wrapper h2,
+              .code-block-content-wrapper h3,
+              .code-block-content-wrapper h4,
+              .code-block-content-wrapper h5,
+              .code-block-content-wrapper h6 {
+                font-weight: 700;
+                margin-top: 1rem;
+                margin-bottom: 0.75rem;
+                color: var(--text-primary);
+              }
+
+              .code-block-content-wrapper h2 {
+                font-size: 1.5rem;
+              }
+
+              .code-shell {
+                position: relative;
+                border-radius: 0.75rem;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                background: #1e293b;
+                padding: 1.5rem;
+                overflow: hidden;
+                box-shadow:
+                  inset 0 2px 4px rgba(0, 0, 0, 0.2),
+                  0 1px 3px rgba(0, 0, 0, 0.1);
+              }
+
+              .dark .code-shell {
+                background: #0f172a;
+                border-color: rgba(255, 255, 255, 0.1);
+              }
+
+              .code-shell pre {
+                margin: 0;
+                font-size: 0.875rem;
+                line-height: 1.75;
+                background: transparent;
+                color: #e2e8f0;
+                font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
+                overflow-x: auto;
+              }
+
+              .code-shell code {
+                font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
+                color: #e2e8f0;
+                white-space: pre;
+              }
+
+              .code-copy-btn {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                padding: 0.5rem 0.75rem;
+                border-radius: 0.5rem;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                font-size: 0.75rem;
+                font-weight: 600;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.375rem;
+                color: #cbd5e1;
+                background: rgba(255, 255, 255, 0.1);
+                transition: all 0.2s ease;
+                backdrop-filter: blur(4px);
+              }
+
+              .code-copy-btn svg {
+                width: 1rem;
+                height: 1rem;
+              }
+
+              .code-copy-btn:hover {
+                color: white;
+                background: rgba(255, 255, 255, 0.2);
+                border-color: rgba(255, 255, 255, 0.3);
+                transform: translateY(-1px);
+              }
+
+              .code-copy-btn.copied {
+                color: #22c55e;
+                background: rgba(34, 197, 94, 0.2);
+                border-color: rgba(34, 197, 94, 0.4);
+              }
+            </style>
+
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <div class="code-block">
+                  <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: var(--text-primary)">Published Content</h2>
+
+                  <!-- Single code block -->
+
+                  <div class="code-card">
+                    <div class="code-card-body">
+                      <div class="code-block-content-wrapper">
+                        <p>Retrieve content tied to specific environment tags (e.g., prod, staging). Select a version from the dropdown to decouple testing from live content.</p>
+                      </div>
+
+                      <div class="code-shell group">
+                        <button type="button" onclick="copyCodeToClipboard('code-block-w34tj3h04-code-0', this)" class="code-copy-btn" title="Copy code">
+                          <svg class="copy-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                            ></path>
+                          </svg>
+                          <svg class="check-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                        </button>
+                        <div class="overflow-x-auto">
+                          <pre
+                            class="font-mono leading-relaxed whitespace-pre-wrap"
+                          ><code id="code-block-w34tj3h04-code-0">curl -H "Authorization: PUB_TOKEN" https://pub.cms.com/v1/2dz6f?env=prod</code></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script>
+              // Switch code tab function
+              if (typeof switchCodeTab === "undefined") {
+                function switchCodeTab(blockId, tabIndex) {
+                  const block = document.getElementById(blockId);
+                  if (!block) return;
+
+                  // Update tabs
+                  const tabs = block.querySelectorAll(".code-tab");
+                  tabs.forEach((tab, index) => {
+                    tab.classList.toggle("active", index === tabIndex);
+                  });
+
+                  // Update code content
+                  const codeContents = block.querySelectorAll(".code-content");
+                  codeContents.forEach((content, index) => {
+                    if (index === tabIndex) {
+                      content.classList.remove("hidden");
+                    } else {
+                      content.classList.add("hidden");
+                    }
+                  });
+                }
+              }
+
+              if (typeof window !== "undefined" && !window.__codeTabsBound) {
+                window.__codeTabsBound = true;
+                document.addEventListener("click", function (event) {
+                  const tabButton = event.target.closest("[data-code-tab-button]");
+                  if (!tabButton || typeof switchCodeTab !== "function") {
+                    return;
+                  }
+                  const blockId = tabButton.getAttribute("data-code-block");
+                  if (!blockId) {
+                    return;
+                  }
+                  const tabIndex = Number(tabButton.getAttribute("data-tab-index") || "0");
+                  switchCodeTab(blockId, tabIndex);
+                });
+              }
+
+              // Copy code to clipboard function
+              if (typeof copyCodeToClipboard === "undefined") {
+                function copyCodeToClipboard(codeId, button) {
+                  const codeElement = document.getElementById(codeId);
+                  const code = codeElement.textContent || codeElement.innerText;
+
+                  navigator.clipboard
+                    .writeText(code)
+                    .then(() => {
+                      // Visual feedback
+                      const copyIcon = button.querySelector(".copy-icon");
+                      const checkIcon = button.querySelector(".check-icon");
+                      if (copyIcon) copyIcon.classList.add("hidden");
+                      if (checkIcon) checkIcon.classList.remove("hidden");
+                      button.classList.add("copied");
+
+                      setTimeout(() => {
+                        if (copyIcon) copyIcon.classList.remove("hidden");
+                        if (checkIcon) checkIcon.classList.add("hidden");
+                        button.classList.remove("copied");
+                      }, 2000);
+                    })
+                    .catch(() => {
+                      // Fallback for older browsers
+                      const textarea = document.createElement("textarea");
+                      textarea.value = code;
+                      textarea.style.position = "fixed";
+                      textarea.style.opacity = "0";
+                      document.body.appendChild(textarea);
+                      textarea.select();
+                      document.execCommand("copy");
+                      document.body.removeChild(textarea);
+
+                      const copyIcon = button.querySelector(".copy-icon");
+                      const checkIcon = button.querySelector(".check-icon");
+                      if (copyIcon) copyIcon.classList.add("hidden");
+                      if (checkIcon) checkIcon.classList.remove("hidden");
+                      button.classList.add("copied");
+
+                      setTimeout(() => {
+                        if (copyIcon) copyIcon.classList.remove("hidden");
+                        if (checkIcon) checkIcon.classList.add("hidden");
+                        button.classList.remove("copied");
+                      }, 2000);
+                    });
+                }
+              }
+            </script>
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <!-- Main Text -->
+
+                <div class="mb-8">
+                  <p class="text-main-text leading-relaxed" style="color: var(--text-primary)">*Replace PUB_TOKEN with your Published Authorization Token.*</p>
+                </div>
+
+                <!-- Markdown Content -->
+
+                <div class="space-y-6">
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)"></div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .text-main-text {
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 1.6;
+              }
+
+              @media (min-width: 768px) {
+                .text-main-text {
+                  font-size: 1.875rem;
+                }
+              }
+
+              .prose h2 {
+                font-size: 1.875rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+                color: var(--text-primary);
+              }
+
+              @media (min-width: 768px) {
+                .prose h2 {
+                  font-size: 2.25rem;
+                }
+              }
+
+              .prose p {
+                margin-top: 0.75rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose h2:first-child {
+                margin-top: 0;
+              }
+
+              .prose ul,
+              .prose ol {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-left: 1.5rem;
+                color: var(--text-primary);
+              }
+
+              .prose ul {
+                list-style-type: disc;
+              }
+
+              .prose ol {
+                list-style-type: decimal;
+              }
+
+              .prose li {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose li > p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .prose ul ul,
+              .prose ol ol,
+              .prose ul ol,
+              .prose ol ul {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+            </style>
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <!-- Image Title -->
+
+                <!-- Images -->
+
+                <!-- Single Image - Centered at normal size -->
+                <div class="mb-8 flex justify-center">
+                  <div class="max-w-4xl w-full">
+                    <img src="https://img.sleekcms.com/1ezc3/mj4hkwt9.webp" alt="Image" class="w-full h-auto rounded-lg" loading="lazy" />
+                  </div>
+                </div>
+
+                <!-- Image Text Content -->
+
+                <div class="space-y-6 mt-8">
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)"></div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .prose h2 {
+                font-size: 1.875rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+                color: var(--text-primary);
+              }
+
+              @media (min-width: 768px) {
+                .prose h2 {
+                  font-size: 2.25rem;
+                }
+              }
+
+              .prose p {
+                margin-top: 0.75rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose h2:first-child {
+                margin-top: 0;
+              }
+
+              .prose ul,
+              .prose ol {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-left: 1.5rem;
+                color: var(--text-primary);
+              }
+
+              .prose ul {
+                list-style-type: disc;
+              }
+
+              .prose ol {
+                list-style-type: decimal;
+              }
+
+              .prose li {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose li > p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .prose ul ul,
+              .prose ol ol,
+              .prose ul ol,
+              .prose ol ul {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+            </style>
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <!-- Main Text -->
+
+                <div class="mb-8">
+                  <p class="text-main-text leading-relaxed" style="color: var(--text-primary)">Environment Tags</p>
+                </div>
+
+                <!-- Markdown Content -->
+
+                <div class="space-y-6">
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)">
+                    <p>
+                      Use this API to fetch the current content versions associated with the environment. This helps override CDN caches when new content versions are associated with an environment.
+                    </p>
+                    <p>Create tags via the CMS dashboard to group content versions (e.g., prod for live site, beta for testing).</p>
+                  </div>
+
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)">
+                    <p>Why Environment Tags?</p>
+                    <ol>
+                      <li>To Avoid CDN caching issues by associating a static tag with dynamic content versions.</li>
+                      <li>Test specific content versions without affecting live environments.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .text-main-text {
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 1.6;
+              }
+
+              @media (min-width: 768px) {
+                .text-main-text {
+                  font-size: 1.875rem;
+                }
+              }
+
+              .prose h2 {
+                font-size: 1.875rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+                color: var(--text-primary);
+              }
+
+              @media (min-width: 768px) {
+                .prose h2 {
+                  font-size: 2.25rem;
+                }
+              }
+
+              .prose p {
+                margin-top: 0.75rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose h2:first-child {
+                margin-top: 0;
+              }
+
+              .prose ul,
+              .prose ol {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-left: 1.5rem;
+                color: var(--text-primary);
+              }
+
+              .prose ul {
+                list-style-type: disc;
+              }
+
+              .prose ol {
+                list-style-type: decimal;
+              }
+
+              .prose li {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose li > p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .prose ul ul,
+              .prose ol ol,
+              .prose ul ol,
+              .prose ol ul {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+            </style>
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <!-- Image Title -->
+
+                <!-- Images -->
+
+                <!-- Single Image - Centered at normal size -->
+                <div class="mb-8 flex justify-center">
+                  <div class="max-w-4xl w-full">
+                    <img src="https://img.sleekcms.com/1ezc3/mj4hmg48.webp" alt="Image" class="w-full h-auto rounded-lg" loading="lazy" />
+                  </div>
+                </div>
+
+                <!-- Image Text Content -->
+
+                <div class="space-y-6 mt-8">
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)"></div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .prose h2 {
+                font-size: 1.875rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+                color: var(--text-primary);
+              }
+
+              @media (min-width: 768px) {
+                .prose h2 {
+                  font-size: 2.25rem;
+                }
+              }
+
+              .prose p {
+                margin-top: 0.75rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose h2:first-child {
+                margin-top: 0;
+              }
+
+              .prose ul,
+              .prose ol {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-left: 1.5rem;
+                color: var(--text-primary);
+              }
+
+              .prose ul {
+                list-style-type: disc;
+              }
+
+              .prose ol {
+                list-style-type: decimal;
+              }
+
+              .prose li {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose li > p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .prose ul ul,
+              .prose ol ol,
+              .prose ul ol,
+              .prose ol ul {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+            </style>
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <!-- Image Title -->
+
+                <div class="mb-6">
+                  <h2 class="text-3xl md:text-4xl font-bold" style="color: var(--text-primary)">API Tokens</h2>
+                </div>
+
+                <!-- Images -->
+
+                <!-- Single Image - Centered at normal size -->
+                <div class="mb-8 flex justify-center">
+                  <div class="max-w-4xl w-full">
+                    <img src="https://img.sleekcms.com/1ezc3/mj4hpj5e.webp" alt="API Tokens" class="w-full h-auto rounded-lg" loading="lazy" />
+                  </div>
+                </div>
+
+                <!-- Image Text Content -->
+
+                <div class="space-y-6 mt-8">
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)">
+                    <p>Manage tokens and configurations for secure API access.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .prose h2 {
+                font-size: 1.875rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+                color: var(--text-primary);
+              }
+
+              @media (min-width: 768px) {
+                .prose h2 {
+                  font-size: 2.25rem;
+                }
+              }
+
+              .prose p {
+                margin-top: 0.75rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose h2:first-child {
+                margin-top: 0;
+              }
+
+              .prose ul,
+              .prose ol {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-left: 1.5rem;
+                color: var(--text-primary);
+              }
+
+              .prose ul {
+                list-style-type: disc;
+              }
+
+              .prose ol {
+                list-style-type: decimal;
+              }
+
+              .prose li {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose li > p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .prose ul ul,
+              .prose ol ol,
+              .prose ul ol,
+              .prose ol ul {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }</style
+            ><!-- Code Block -->
+            <style>
+              .code-block {
+                display: block;
+              }
+
+              .code-card {
+                border-radius: 0.75rem;
+                border: 1px solid var(--border-color);
+                background: var(--bg-primary);
+                box-shadow:
+                  0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                overflow: hidden;
+              }
+
+              .code-card-tabs {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                padding: 1rem;
+                background: var(--bg-secondary);
+                border-bottom: 1px solid var(--border-color);
+                align-items: flex-start;
+              }
+
+              .code-tab {
+                border-radius: 0.5rem;
+                padding: 0.5rem 0.875rem;
+                font-size: 0.8125rem;
+                font-weight: 600;
+                color: var(--text-secondary);
+                border: 1px solid var(--border-color);
+                background: var(--bg-primary);
+                cursor: pointer;
+                transition: all 0.2s ease;
+                text-align: left;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+                white-space: nowrap;
+              }
+
+              .code-tab:hover:not(.active) {
+                color: var(--text-primary);
+                background: var(--bg-tertiary);
+                border-color: var(--border-color);
+                transform: translateY(-1px);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              }
+
+              .code-tab.active {
+                color: white;
+                background: var(--accent-primary);
+                border-color: var(--accent-primary);
+                box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+              }
+
+              .code-card-body {
+                padding: 1.5rem;
+                background: var(--bg-primary);
+              }
+
+              .code-block-content-wrapper {
+                font-size: 0.95rem;
+                color: var(--text-primary);
+                line-height: 1.7;
+                background: var(--bg-secondary);
+                border: 1px solid var(--border-color);
+                border-radius: 0.75rem;
+                padding: 1.25rem 1.5rem;
+                margin-bottom: 1rem;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+              }
+
+              .code-block-content-wrapper * {
+                font-size: inherit;
+                color: inherit;
+              }
+
+              .code-block-content-wrapper ol,
+              .code-block-content-wrapper ul {
+                margin-left: 1.5rem;
+                margin-bottom: 0.75rem;
+                margin-top: 0.5rem;
+                padding-left: 1.5rem;
+                display: block;
+              }
+
+              .code-block-content-wrapper ol {
+                list-style-type: decimal;
+                list-style-position: outside;
+              }
+
+              .code-block-content-wrapper ul {
+                list-style-type: disc;
+                list-style-position: outside;
+              }
+
+              .code-block-content-wrapper li {
+                margin-bottom: 0.25rem;
+                display: list-item;
+              }
+
+              .code-block-content-wrapper p {
+                margin-bottom: 0.5rem;
+                margin-top: 0;
+                color: var(--text-primary);
+              }
+
+              .code-block-content-wrapper p:last-child {
+                margin-bottom: 0;
+              }
+
+              .code-block-content-wrapper h1,
+              .code-block-content-wrapper h2,
+              .code-block-content-wrapper h3,
+              .code-block-content-wrapper h4,
+              .code-block-content-wrapper h5,
+              .code-block-content-wrapper h6 {
+                font-weight: 700;
+                margin-top: 1rem;
+                margin-bottom: 0.75rem;
+                color: var(--text-primary);
+              }
+
+              .code-block-content-wrapper h2 {
+                font-size: 1.5rem;
+              }
+
+              .code-shell {
+                position: relative;
+                border-radius: 0.75rem;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                background: #1e293b;
+                padding: 1.5rem;
+                overflow: hidden;
+                box-shadow:
+                  inset 0 2px 4px rgba(0, 0, 0, 0.2),
+                  0 1px 3px rgba(0, 0, 0, 0.1);
+              }
+
+              .dark .code-shell {
+                background: #0f172a;
+                border-color: rgba(255, 255, 255, 0.1);
+              }
+
+              .code-shell pre {
+                margin: 0;
+                font-size: 0.875rem;
+                line-height: 1.75;
+                background: transparent;
+                color: #e2e8f0;
+                font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
+                overflow-x: auto;
+              }
+
+              .code-shell code {
+                font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
+                color: #e2e8f0;
+                white-space: pre;
+              }
+
+              .code-copy-btn {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                padding: 0.5rem 0.75rem;
+                border-radius: 0.5rem;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                font-size: 0.75rem;
+                font-weight: 600;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.375rem;
+                color: #cbd5e1;
+                background: rgba(255, 255, 255, 0.1);
+                transition: all 0.2s ease;
+                backdrop-filter: blur(4px);
+              }
+
+              .code-copy-btn svg {
+                width: 1rem;
+                height: 1rem;
+              }
+
+              .code-copy-btn:hover {
+                color: white;
+                background: rgba(255, 255, 255, 0.2);
+                border-color: rgba(255, 255, 255, 0.3);
+                transform: translateY(-1px);
+              }
+
+              .code-copy-btn.copied {
+                color: #22c55e;
+                background: rgba(34, 197, 94, 0.2);
+                border-color: rgba(34, 197, 94, 0.4);
+              }
+            </style>
+
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <div class="code-block">
+                  <!-- Single code block -->
+
+                  <div class="code-card">
+                    <div class="code-card-body">
+                      <div class="code-block-content-wrapper">
+                        <p>Fetch Environment Snapshot Tags</p>
+                      </div>
+
+                      <div class="code-shell group">
+                        <button type="button" onclick="copyCodeToClipboard('code-block-yk8ow9ecr-code-0', this)" class="code-copy-btn" title="Copy code">
+                          <svg class="copy-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                            ></path>
+                          </svg>
+                          <svg class="check-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                        </button>
+                        <div class="overflow-x-auto">
+                          <pre
+                            class="font-mono leading-relaxed whitespace-pre-wrap"
+                          ><code id="code-block-yk8ow9ecr-code-0">curl -H "Authorization: PUB_TOKEN" https://pub.cms.com/v1/2dz6f/env-tags  </code></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script>
+              // Switch code tab function
+              if (typeof switchCodeTab === "undefined") {
+                function switchCodeTab(blockId, tabIndex) {
+                  const block = document.getElementById(blockId);
+                  if (!block) return;
+
+                  // Update tabs
+                  const tabs = block.querySelectorAll(".code-tab");
+                  tabs.forEach((tab, index) => {
+                    tab.classList.toggle("active", index === tabIndex);
+                  });
+
+                  // Update code content
+                  const codeContents = block.querySelectorAll(".code-content");
+                  codeContents.forEach((content, index) => {
+                    if (index === tabIndex) {
+                      content.classList.remove("hidden");
+                    } else {
+                      content.classList.add("hidden");
+                    }
+                  });
+                }
+              }
+
+              if (typeof window !== "undefined" && !window.__codeTabsBound) {
+                window.__codeTabsBound = true;
+                document.addEventListener("click", function (event) {
+                  const tabButton = event.target.closest("[data-code-tab-button]");
+                  if (!tabButton || typeof switchCodeTab !== "function") {
+                    return;
+                  }
+                  const blockId = tabButton.getAttribute("data-code-block");
+                  if (!blockId) {
+                    return;
+                  }
+                  const tabIndex = Number(tabButton.getAttribute("data-tab-index") || "0");
+                  switchCodeTab(blockId, tabIndex);
+                });
+              }
+
+              // Copy code to clipboard function
+              if (typeof copyCodeToClipboard === "undefined") {
+                function copyCodeToClipboard(codeId, button) {
+                  const codeElement = document.getElementById(codeId);
+                  const code = codeElement.textContent || codeElement.innerText;
+
+                  navigator.clipboard
+                    .writeText(code)
+                    .then(() => {
+                      // Visual feedback
+                      const copyIcon = button.querySelector(".copy-icon");
+                      const checkIcon = button.querySelector(".check-icon");
+                      if (copyIcon) copyIcon.classList.add("hidden");
+                      if (checkIcon) checkIcon.classList.remove("hidden");
+                      button.classList.add("copied");
+
+                      setTimeout(() => {
+                        if (copyIcon) copyIcon.classList.remove("hidden");
+                        if (checkIcon) checkIcon.classList.add("hidden");
+                        button.classList.remove("copied");
+                      }, 2000);
+                    })
+                    .catch(() => {
+                      // Fallback for older browsers
+                      const textarea = document.createElement("textarea");
+                      textarea.value = code;
+                      textarea.style.position = "fixed";
+                      textarea.style.opacity = "0";
+                      document.body.appendChild(textarea);
+                      textarea.select();
+                      document.execCommand("copy");
+                      document.body.removeChild(textarea);
+
+                      const copyIcon = button.querySelector(".copy-icon");
+                      const checkIcon = button.querySelector(".check-icon");
+                      if (copyIcon) copyIcon.classList.add("hidden");
+                      if (checkIcon) checkIcon.classList.remove("hidden");
+                      button.classList.add("copied");
+
+                      setTimeout(() => {
+                        if (copyIcon) copyIcon.classList.remove("hidden");
+                        if (checkIcon) checkIcon.classList.add("hidden");
+                        button.classList.remove("copied");
+                      }, 2000);
+                    });
+                }
+              }
+            </script>
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <!-- Paragraph Content -->
+
+                <div class="space-y-8">
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)">
+                    <ul>
+                      <li>Response: List of all environment tags and their linked content versions.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .prose h2 {
+                font-size: 1.875rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+                color: var(--text-primary);
+              }
+
+              @media (min-width: 768px) {
+                .prose h2 {
+                  font-size: 2.25rem;
+                }
+              }
+
+              .prose p {
+                margin-top: 0.75rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose h2:first-child {
+                margin-top: 0;
+              }
+
+              .prose ul,
+              .prose ol {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-left: 1.5rem;
+                color: var(--text-primary);
+              }
+
+              .prose ul {
+                list-style-type: disc;
+              }
+
+              .prose ol {
+                list-style-type: decimal;
+              }
+
+              .prose li {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose li > p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .prose ul ul,
+              .prose ol ol,
+              .prose ul ol,
+              .prose ol ul {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+            </style>
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <!-- Image Title -->
+
+                <!-- Images -->
+
+                <!-- Single Image - Centered at normal size -->
+                <div class="mb-8 flex justify-center">
+                  <div class="max-w-4xl w-full">
+                    <img src="https://img.sleekcms.com/1ezc3/mj4hs0es.webp" alt="Image" class="w-full h-auto rounded-lg" loading="lazy" />
+                  </div>
+                </div>
+
+                <!-- Image Text Content -->
+
+                <div class="space-y-6 mt-8">
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)"></div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .prose h2 {
+                font-size: 1.875rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+                color: var(--text-primary);
+              }
+
+              @media (min-width: 768px) {
+                .prose h2 {
+                  font-size: 2.25rem;
+                }
+              }
+
+              .prose p {
+                margin-top: 0.75rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose h2:first-child {
+                margin-top: 0;
+              }
+
+              .prose ul,
+              .prose ol {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-left: 1.5rem;
+                color: var(--text-primary);
+              }
+
+              .prose ul {
+                list-style-type: disc;
+              }
+
+              .prose ol {
+                list-style-type: decimal;
+              }
+
+              .prose li {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose li > p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .prose ul ul,
+              .prose ol ol,
+              .prose ul ol,
+              .prose ol ul {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+            </style>
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <!-- Image Title -->
+
+                <div class="mb-6">
+                  <h2 class="text-3xl md:text-4xl font-bold" style="color: var(--text-primary)">Content Versions</h2>
+                </div>
+
+                <!-- Images -->
+
+                <!-- Single Image - Centered at normal size -->
+                <div class="mb-8 flex justify-center">
+                  <div class="max-w-4xl w-full">
+                    <img src="https://img.sleekcms.com/1ezc3/mj4ht1ay.webp" alt="Content Versions" class="w-full h-auto rounded-lg" loading="lazy" />
+                  </div>
+                </div>
+
+                <!-- Image Text Content -->
+
+                <div class="space-y-6 mt-8">
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)">
+                    <p>View all deployed content snapshots. Each version is a frozen copy of your content at a specific time.</p>
+                  </div>
+
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)">
+                    <ul>
+                      <li>Tag: Semantic versioning (e.g., v1.2.0) or custom labels (e.g., homepage-update).</li>
+                      <li>Rollback: Deploy a previous version by selecting it from the table and clicking Restore.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .prose h2 {
+                font-size: 1.875rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+                color: var(--text-primary);
+              }
+
+              @media (min-width: 768px) {
+                .prose h2 {
+                  font-size: 2.25rem;
+                }
+              }
+
+              .prose p {
+                margin-top: 0.75rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose h2:first-child {
+                margin-top: 0;
+              }
+
+              .prose ul,
+              .prose ol {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-left: 1.5rem;
+                color: var(--text-primary);
+              }
+
+              .prose ul {
+                list-style-type: disc;
+              }
+
+              .prose ol {
+                list-style-type: decimal;
+              }
+
+              .prose li {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose li > p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .prose ul ul,
+              .prose ol ol,
+              .prose ul ol,
+              .prose ol ul {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+            </style>
+            <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary)">
+              <div class="max-w-6xl mx-auto">
+                <!-- Image Title -->
+
+                <!-- Images -->
+
+                <!-- Single Image - Centered at normal size -->
+                <div class="mb-8 flex justify-center">
+                  <div class="max-w-4xl w-full">
+                    <img src="https://img.sleekcms.com/1ezc3/mj4htn8e.webp" alt="Image" class="w-full h-auto rounded-lg" loading="lazy" />
+                  </div>
+                </div>
+
+                <!-- Image Text Content -->
+
+                <div class="space-y-6 mt-8">
+                  <div class="prose prose-lg max-w-none" style="color: var(--text-primary)"></div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .prose h2 {
+                font-size: 1.875rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+                color: var(--text-primary);
+              }
+
+              @media (min-width: 768px) {
+                .prose h2 {
+                  font-size: 2.25rem;
+                }
+              }
+
+              .prose p {
+                margin-top: 0.75rem;
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose h2:first-child {
+                margin-top: 0;
+              }
+
+              .prose ul,
+              .prose ol {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-left: 1.5rem;
+                color: var(--text-primary);
+              }
+
+              .prose ul {
+                list-style-type: disc;
+              }
+
+              .prose ol {
+                list-style-type: decimal;
+              }
+
+              .prose li {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.7;
+                color: var(--text-primary);
+              }
+
+              .prose li > p {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+
+              .prose ul ul,
+              .prose ol ol,
+              .prose ul ol,
+              .prose ol ul {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+              }
+            </style>
+          </div>
+
+          <div class="border-t py-8 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary); border-color: var(--border-color)">
+            <div class="max-w-7xl mx-auto">
+              <div class="flex items-center justify-between gap-4">
+                <a href="/docs/site-generator/site-build-config" class="flex flex-col items-start transition hover:opacity-80" style="color: var(--text-primary)">
+                  <div class="flex items-center mb-1">
+                    <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                    <span class="text-sm font-medium uppercase tracking-wider" style="color: var(--text-secondary)">Previous</span>
+                  </div>
+                  <span class="text-base font-medium">Site Build Config</span>
+                </a>
+
+                <a href="/docs/integrate-and-deploy/deploy-site" class="flex flex-col items-end transition hover:opacity-80 ml-auto" style="color: var(--text-primary)">
+                  <div class="flex items-center mb-1">
+                    <span class="text-sm font-medium uppercase tracking-wider mr-2" style="color: var(--text-secondary)">Next</span>
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </div>
+                  <span class="text-base font-medium">Deploy Site</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer style="background-color: var(--footer-bg); color: var(--footer-text)">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+              <div class="lg:col-span-2">
+                <h3 class="text-lg font-semibold mb-4" style="color: #f9fafb">SleekCMS</h3>
+                <p class="text-sm mb-4" style="color: var(--footer-text)">
+                  SleekCMS is a modern headless content management system designed for developers and content teams. We provide powerful tools for content modeling, multilingual support, media
+                  management, and seamless deployment—empowering you to build faster, manage smarter, and deploy with confidence.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="text-sm font-semibold mb-4 uppercase tracking-wider" style="color: #f9fafb">About Us</h4>
+                <ul class="space-y-2">
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Features </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Content Modeling </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> REST APIs </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Static Site Generator </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Media Management </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 class="text-sm font-semibold mb-4 uppercase tracking-wider" style="color: #f9fafb">Documentation</h4>
+                <ul class="space-y-2">
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Getting Started </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> API Reference </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Deployment Guides </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Configuration </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Tutorials </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 class="text-sm font-semibold mb-4 uppercase tracking-wider" style="color: #f9fafb">Resources</h4>
+                <ul class="space-y-2">
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Blog </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Community </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Support </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Changelog </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Status </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t" style="border-color: var(--border-color)">
+              <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm mb-4 md:mb-0" style="color: var(--footer-text)">© 2025 SleekCMS. All rights reserved. | Privacy Policy | Terms of Service</p>
+                <div class="flex space-x-4">
+                  <a href="https://www.linkedin.com/company/innovatesolutions" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                  </a>
+
+                  <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)" target="_blank" rel="noopener noreferrer"> Twitter </a>
+
+                  <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)" target="_blank" rel="noopener noreferrer"> LinkedIn </a>
+
+                  <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)" target="_blank" rel="noopener noreferrer"> Discord </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="/Navbar/Navbar.js"></script>
+    <script src="/Sidebar/Sidebar.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>

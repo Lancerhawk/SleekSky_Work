@@ -1,0 +1,437 @@
+<div class="py-4 px-4 sm:px-6 lg:px-8 border-b" style="background-color: var(--bg-primary); border-color: var(--border-color);">
+    <div class="max-w-7xl mx-auto">
+      <nav class="flex items-center space-x-2 text-sm">
+        
+          
+          
+            <a href="/" class="hover:opacity-80 transition" style="color: var(--text-secondary);">
+              Home
+            </a>
+          
+        
+          
+            <span style="color: var(--text-tertiary);">/</span>
+          
+          
+            <a href="/docs" class="hover:opacity-80 transition" style="color: var(--text-secondary);">
+              Docs
+            </a>
+          
+        
+          
+            <span style="color: var(--text-tertiary);">/</span>
+          
+          
+            <a href="/docs/integrate-and-deploy" class="hover:opacity-80 transition" style="color: var(--text-secondary);">
+              Integrate And Deploy
+            </a>
+          
+        
+          
+            <span style="color: var(--text-tertiary);">/</span>
+          
+          
+            <span style="color: var(--text-primary);">Deploy Site</span>
+          
+        
+      </nav>
+      
+        <h1 class="text-3xl font-bold mt-4" style="color: var(--text-primary);">
+          Deploy Site
+        </h1>
+      
+    </div>
+  </div>
+
+
+<div class="py-8">
+  <div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary);">
+  <div class="max-w-6xl mx-auto">
+    <!-- Main Text -->
+    
+      <div class="mb-8">
+        <p class="text-main-text leading-relaxed" style="color: var(--text-primary);">
+          Deploy static sites built with SleekCMS to hosting platforms like GitHub Pages or Netlify.
+        </p>
+      </div>
+    
+    
+    <!-- Markdown Content -->
+    
+      <div class="space-y-6">
+        
+          <div class="prose prose-lg max-w-none" style="color: var(--text-primary);">
+            <p>Download Site
+Download a ZIP of your site’s code for a specific content version. Click **Download ** to get the build files (HTML, CSS, JS, and content JSON).</p>
+
+          </div>
+        
+          <div class="prose prose-lg max-w-none" style="color: var(--text-primary);">
+            <ul>
+<li>Use Case: Manual deployments or debugging build issues.</li>
+</ul>
+
+          </div>
+        
+      </div>
+    
+  </div>
+</div>
+
+<style>
+  .text-main-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  @media (min-width: 768px) {
+    .text-main-text {
+      font-size: 1.875rem;
+    }
+  }
+  
+  .prose h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    color: var(--text-primary);
+  }
+  
+  @media (min-width: 768px) {
+    .prose h2 {
+      font-size: 2.25rem;
+    }
+  }
+  
+  .prose p {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+  }
+  
+  .prose h2:first-child {
+    margin-top: 0;
+  }
+  
+  .prose ul,
+  .prose ol {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    color: var(--text-primary);
+  }
+  
+  .prose ul {
+    list-style-type: disc;
+  }
+  
+  .prose ol {
+    list-style-type: decimal;
+  }
+  
+  .prose li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+  }
+  
+  .prose li > p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .prose ul ul,
+  .prose ol ol,
+  .prose ul ol,
+  .prose ol ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+</style><div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary);">
+  <div class="max-w-6xl mx-auto">
+    <!-- Image Title -->
+    
+    
+    <!-- Images -->
+    
+      
+        <!-- Single Image - Centered at normal size -->
+        <div class="mb-8 flex justify-center">
+          <div class="max-w-4xl w-full">
+            
+            
+              <img 
+                src="https://img.sleekcms.com/1ezc3/mj4hvtva.webp" 
+                alt="Image"
+                class="w-full h-auto rounded-lg"
+                loading="lazy"
+              />
+              
+            
+          </div>
+        </div>
+      
+    
+    
+    <!-- Image Text Content -->
+    
+      <div class="space-y-6 mt-8">
+        
+          <div class="prose prose-lg max-w-none" style="color: var(--text-primary);">
+            <p>Add Action
+Automate deployments using integrations.</p>
+
+          </div>
+        
+          <div class="prose prose-lg max-w-none" style="color: var(--text-primary);">
+            <p>GitHub Push</p>
+<ol>
+<li>Push site builds directly to a GitHub repository.</li>
+<li>Action Name: A unique label (e.g., “Prod Deployment”).</li>
+<li>Personal Access Token: Generate a token with repo scope in GitHub Settings.</li>
+<li>Repository: Format org/repo (e.g., sleekcms/docs).</li>
+<li>Ref: Branch name (e.g., main). The action will commit the build to this branch.</li>
+</ol>
+
+          </div>
+        
+          <div class="prose prose-lg max-w-none" style="color: var(--text-primary);">
+            <p>Troubleshooting:</p>
+<ol>
+<li>Ensure the token has write access to the repository.</li>
+<li>Verify the branch exists before triggering the action.</li>
+</ol>
+
+          </div>
+        
+          <div class="prose prose-lg max-w-none" style="color: var(--text-primary);">
+            <p>Netlify Deploy
+Trigger Netlify deployments automatically.</p>
+
+          </div>
+        
+          <div class="prose prose-lg max-w-none" style="color: var(--text-primary);">
+            <ol>
+<li>Netlify Token: Find this in Netlify Account Settings &gt; Applications.</li>
+<li>Connect: Click to authenticate Netlify.</li>
+<li>Deploy: New site builds trigger automatically when content versions are published.</li>
+</ol>
+
+          </div>
+        
+      </div>
+    
+  </div>
+</div>
+
+<style>
+  .prose h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    color: var(--text-primary);
+  }
+  
+  @media (min-width: 768px) {
+    .prose h2 {
+      font-size: 2.25rem;
+    }
+  }
+  
+  .prose p {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+  }
+  
+  .prose h2:first-child {
+    margin-top: 0;
+  }
+  
+  .prose ul,
+  .prose ol {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    color: var(--text-primary);
+  }
+  
+  .prose ul {
+    list-style-type: disc;
+  }
+  
+  .prose ol {
+    list-style-type: decimal;
+  }
+  
+  .prose li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+  }
+  
+  .prose li > p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .prose ul ul,
+  .prose ol ol,
+  .prose ul ol,
+  .prose ol ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+</style><div class="py-2 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary);">
+  <div class="max-w-6xl mx-auto">
+    <!-- Image Title -->
+    
+    
+    <!-- Images -->
+    
+      
+        <!-- Single Image - Centered at normal size -->
+        <div class="mb-8 flex justify-center">
+          <div class="max-w-4xl w-full">
+            
+            
+              <img 
+                src="https://img.sleekcms.com/1ezc3/mj4hxkbd.webp" 
+                alt="Image"
+                class="w-full h-auto rounded-lg"
+                loading="lazy"
+              />
+              
+            
+          </div>
+        </div>
+      
+    
+    
+    <!-- Image Text Content -->
+    
+      <div class="space-y-6 mt-8">
+        
+          <div class="prose prose-lg max-w-none" style="color: var(--text-primary);">
+            
+          </div>
+        
+      </div>
+    
+  </div>
+</div>
+
+<style>
+  .prose h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    color: var(--text-primary);
+  }
+  
+  @media (min-width: 768px) {
+    .prose h2 {
+      font-size: 2.25rem;
+    }
+  }
+  
+  .prose p {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+  }
+  
+  .prose h2:first-child {
+    margin-top: 0;
+  }
+  
+  .prose ul,
+  .prose ol {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    color: var(--text-primary);
+  }
+  
+  .prose ul {
+    list-style-type: disc;
+  }
+  
+  .prose ol {
+    list-style-type: decimal;
+  }
+  
+  .prose li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+  }
+  
+  .prose li > p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .prose ul ul,
+  .prose ol ol,
+  .prose ul ol,
+  .prose ol ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+</style>
+</div>
+
+
+
+
+  <div class="border-t py-8 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary); border-color: var(--border-color);">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between gap-4">
+        
+          <a 
+            href="/docs/integrate-and-deploy" 
+            class="flex flex-col items-start transition hover:opacity-80"
+            style="color: var(--text-primary);"
+          >
+            <div class="flex items-center mb-1">
+              <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+              <span class="text-sm font-medium uppercase tracking-wider" style="color: var(--text-secondary);">Previous</span>
+            </div>
+            <span class="text-base font-medium">Rest API</span>
+          </a>
+        
+        
+        
+          <a 
+            href="/docs/integrate-and-deploy/deploy-content" 
+            class="flex flex-col items-end transition hover:opacity-80 ml-auto"
+            style="color: var(--text-primary);"
+          >
+            <div class="flex items-center mb-1">
+              <span class="text-sm font-medium uppercase tracking-wider mr-2" style="color: var(--text-secondary);">Next</span>
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </div>
+            <span class="text-base font-medium">Deploy Content</span>
+          </a>
+        
+      </div>
+    </div>
+  </div>

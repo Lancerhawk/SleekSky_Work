@@ -1,0 +1,926 @@
+<!-- Built with SleekCMS @ 2025-12-13T14:47:13.747Z -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      :root {
+        --bg-primary: #ffffff;
+        --bg-secondary: #f9fafb;
+        --bg-tertiary: #f3f4f6;
+        --text-primary: #111827;
+        --text-secondary: #6b7280;
+        --text-tertiary: #9ca3af;
+        --border-color: #e5e7eb;
+        --accent-primary: #3b82f6;
+        --accent-hover: #2563eb;
+        --navbar-bg: #ffffff;
+        --sidebar-bg: #f9fafb;
+        --sidebar-hover: #f3f4f6;
+        --footer-bg: #111827;
+        --footer-text: #d1d5db;
+      }
+
+      .dark {
+        --bg-primary: #111827;
+        --bg-secondary: #1f2937;
+        --bg-tertiary: #374151;
+        --text-primary: #f9fafb;
+        --text-secondary: #d1d5db;
+        --text-tertiary: #9ca3af;
+        --border-color: #374151;
+        --accent-primary: #60a5fa;
+        --accent-hover: #3b82f6;
+        --navbar-bg: #1f2937;
+        --sidebar-bg: #1f2937;
+        --sidebar-hover: #374151;
+        --footer-bg: #030712;
+        --footer-text: #9ca3af;
+      }
+
+      body {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+      }
+
+      /* Loader Styles */
+      #page-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--bg-primary);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:
+          opacity 0.3s ease-out,
+          visibility 0.3s ease-out;
+      }
+
+      #page-loader.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .loader-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid var(--border-color);
+        border-top-color: var(--accent-primary);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <meta name="generator" content="SleekCMS" />
+    <link rel="stylesheet" href="/tailwind-1ezc3.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div id="page-loader">
+      <div class="loader-spinner"></div>
+    </div>
+
+    <script>
+      // Theme management
+      (function () {
+        const themeToggleEnabled = true;
+
+        // Get theme from cookie or default to light
+        function getTheme() {
+          const cookies = document.cookie.split(";");
+          for (let cookie of cookies) {
+            const [name, value] = cookie.trim().split("=");
+            if (name === "theme") {
+              return value;
+            }
+          }
+          return "light";
+        }
+
+        // Set theme cookie
+        function setTheme(theme) {
+          document.cookie = `theme=${theme}; path=/; max-age=31536000`; // 1 year
+        }
+
+        // Apply theme
+        function applyTheme(theme) {
+          if (theme === "dark") {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+        }
+
+        // Update icon helper
+        function updateIcon(theme) {
+          const toggleBtn = document.getElementById("theme-toggle-btn");
+          if (!toggleBtn) return;
+
+          const icon = toggleBtn.querySelector("svg");
+          if (!icon) return;
+
+          if (theme === "dark") {
+            // Show sun icon (click to switch to light)
+            icon.innerHTML =
+              '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>';
+          } else {
+            // Show moon icon (click to switch to dark)
+            icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>';
+          }
+        }
+
+        // Initialize theme
+        if (themeToggleEnabled) {
+          const currentTheme = getTheme();
+          applyTheme(currentTheme);
+
+          // Update icon after DOM loads
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", function () {
+              updateIcon(currentTheme);
+            });
+          } else {
+            updateIcon(currentTheme);
+          }
+        } else {
+          // Theme toggle disabled, force light mode
+          applyTheme("light");
+        }
+
+        // Theme toggle handler
+        window.toggleTheme = function () {
+          if (!themeToggleEnabled) return;
+
+          const currentTheme = getTheme();
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+          setTheme(newTheme);
+          applyTheme(newTheme);
+          updateIcon(newTheme);
+        };
+
+        // Make updateIcon available globally for mobile menu
+        window.updateThemeIcon = updateIcon;
+      })();
+    </script>
+
+    <nav class="sticky top-0 z-50 border-b" style="background-color: var(--navbar-bg); border-color: var(--border-color)">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <a href="/images/logos/tech-innovators.svg" class="text-xl font-bold" style="color: var(--text-primary)"> Tech Innovators </a>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center gap-6 flex-1 justify-center">
+            <a href="/" class="px-3 py-2 rounded-md text-sm font-medium hover:opacity-80 transition" style="color: var(--text-primary)"> Home </a>
+
+            <!-- Docs Dropdown with All Sections -->
+
+            <div class="relative group">
+              <a href="/docs" class="px-3 py-2 rounded-md text-sm font-medium hover:opacity-80 transition flex items-center" style="color: var(--text-primary)">
+                Docs
+                <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </a>
+              <div
+                class="absolute left-0 mt-2 w-64 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 max-h-96 overflow-y-auto"
+                style="background-color: var(--bg-primary); border: 1px solid var(--border-color)"
+              >
+                <div class="py-2">
+                  <div class="px-2">
+                    <!-- Section Header (Clickable) -->
+                    <a
+                      href="/docs/modelcontent"
+                      class="block px-3 py-2 text-sm font-semibold hover:opacity-80 transition rounded"
+                      style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                    >
+                      Model Content
+                    </a>
+                    <!-- Subsections -->
+
+                    <div class="pl-4 mt-1">
+                      <a href="/docs/modelcontent/pages" class="block px-3 py-1.5 text-sm hover:opacity-80 transition rounded" style="color: var(--text-secondary)"> Pages </a>
+
+                      <a href="/docs/modelcontent/entries" class="block px-3 py-1.5 text-sm hover:opacity-80 transition rounded" style="color: var(--text-secondary)"> Entries </a>
+
+                      <a href="/docs/modelcontent/blocks" class="block px-3 py-1.5 text-sm hover:opacity-80 transition rounded" style="color: var(--text-secondary)"> Blocks </a>
+
+                      <a href="/docs/modelcontent/lists" class="block px-3 py-1.5 text-sm hover:opacity-80 transition rounded" style="color: var(--text-secondary)"> Lists </a>
+                    </div>
+                  </div>
+
+                  <div class="px-2">
+                    <!-- Section Header (Clickable) -->
+                    <a
+                      href="/docs/editcontent"
+                      class="block px-3 py-2 text-sm font-semibold hover:opacity-80 transition rounded"
+                      style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                    >
+                      Edit Content
+                    </a>
+                    <!-- Subsections -->
+
+                    <div class="pl-4 mt-1">
+                      <a href="/docs/editcontent/test" class="block px-3 py-1.5 text-sm hover:opacity-80 transition rounded" style="color: var(--text-secondary)"> dada </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Search, Theme Toggle, and CTA -->
+          <div class="hidden md:flex items-center space-x-4">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Search for solutions..."
+                class="px-4 py-2 pl-10 rounded-lg text-sm border focus:outline-none focus:ring-2 focus:ring-opacity-50 transition"
+                style="background-color: var(--bg-secondary); color: var(--text-primary); border-color: var(--border-color); focus:ring-color: var(--accent-primary);"
+              />
+              <svg class="absolute left-3 top-2.5 h-5 w-5" style="color: var(--text-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+
+            <button
+              id="theme-toggle-btn"
+              onclick="toggleTheme()"
+              class="p-2 rounded-lg transition hover:opacity-80"
+              style="color: var(--text-primary); background-color: var(--bg-secondary)"
+              aria-label="Toggle theme"
+            >
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+              </svg>
+            </button>
+
+            <a href="/signup" class="px-4 py-2 rounded-lg text-sm font-medium transition hover:opacity-90" style="background-color: var(--accent-primary); color: white"> Get Started </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button id="mobile-menu-btn" class="p-2 rounded-md" style="color: var(--text-primary)">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden border-t" style="background-color: var(--navbar-bg); border-color: var(--border-color)">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="/" class="block px-3 py-2 rounded-md text-base font-medium" style="color: var(--text-primary)">Home</a>
+          <a href="/docs" class="block px-3 py-2 rounded-md text-base font-medium" style="color: var(--text-primary)">Docs</a>
+
+          <div class="px-3 py-2 text-xs font-semibold uppercase tracking-wider" style="color: var(--text-secondary)">All Sections</div>
+
+          <div>
+            <a href="/docs/modelcontent" class="block px-3 py-2 rounded-md text-base font-semibold" style="color: var(--text-primary); background-color: var(--bg-secondary)"> Model Content </a>
+
+            <div class="pl-6 mt-1">
+              <a href="/docs/modelcontent/pages" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Pages </a>
+
+              <a href="/docs/modelcontent/entries" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Entries </a>
+
+              <a href="/docs/modelcontent/blocks" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Blocks </a>
+
+              <a href="/docs/modelcontent/lists" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> Lists </a>
+            </div>
+          </div>
+
+          <div>
+            <a href="/docs/editcontent" class="block px-3 py-2 rounded-md text-base font-semibold" style="color: var(--text-primary); background-color: var(--bg-secondary)"> Edit Content </a>
+
+            <div class="pl-6 mt-1">
+              <a href="/docs/editcontent/test" class="block px-3 py-2 rounded-md text-sm" style="color: var(--text-secondary)"> dada </a>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <input
+              type="text"
+              placeholder="Search for solutions..."
+              class="w-full px-4 py-2 rounded-lg text-sm border focus:outline-none focus:ring-2 focus:ring-opacity-50"
+              style="background-color: var(--bg-secondary); color: var(--text-primary); border-color: var(--border-color)"
+            />
+          </div>
+
+          <div class="pt-2">
+            <button
+              onclick="toggleTheme()"
+              class="w-full flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium transition hover:opacity-80"
+              style="color: var(--text-primary); background-color: var(--bg-secondary)"
+              aria-label="Toggle theme"
+            >
+              <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+              </svg>
+              Toggle Theme
+            </button>
+          </div>
+
+          <div class="pt-2">
+            <a href="/signup" class="block w-full text-center px-4 py-2 rounded-lg text-sm font-medium" style="background-color: var(--accent-primary); color: white"> Get Started </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      // Mobile menu toggle
+      (function () {
+        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        if (mobileMenuBtn && mobileMenu) {
+          mobileMenuBtn.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+          });
+        }
+      })();
+    </script>
+    <div class="flex relative min-h-screen">
+      <!-- Sidebar Toggle Button (Mobile) -->
+      <button
+        id="sidebar-toggle-btn"
+        class="lg:hidden fixed left-4 top-20 z-50 p-2 rounded-lg transition-all duration-200 hover:scale-110"
+        style="background-color: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border-color); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)"
+        aria-label="Toggle sidebar"
+      >
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Sidebar Overlay (Mobile) -->
+      <div id="sidebar-overlay" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300" onclick="closeSidebar()"></div>
+
+      <!-- Sidebar -->
+      <aside
+        id="sidebar"
+        class="lg:translate-x-0 -translate-x-full fixed left-0 top-16 bottom-0 w-64 overflow-y-auto border-r z-40 transform transition-transform duration-300 ease-in-out"
+        style="background-color: var(--sidebar-bg); border-color: var(--border-color); height: calc(100vh - 4rem)"
+      >
+        <div class="p-4">
+          <div class="mb-4 flex items-center justify-between">
+            <h3 class="text-sm font-semibold uppercase tracking-wider" style="color: var(--text-secondary)">Documentations</h3>
+            <!-- Close button for mobile -->
+            <button onclick="closeSidebar()" class="lg:hidden p-1 rounded hover:opacity-80 transition" style="color: var(--text-secondary)" aria-label="Close sidebar">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <nav class="space-y-1">
+            <div>
+              <!-- Section Header (Toggle Only - No Direct Link) -->
+              <div class="relative group">
+                <button
+                  class="w-full flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-bold transition-all duration-200 sidebar-section-toggle"
+                  data-section="0"
+                  style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                  onmouseover="this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="this.style.backgroundColor='var(--bg-secondary)'"
+                >
+                  <span class="flex-1 text-left"> Model Content </span>
+
+                  <svg class="h-4 w-4 transition-transform duration-200 sidebar-arrow" data-arrow="0" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: rotate(0deg)">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Dropdown Content (Section Link + Subsections) -->
+
+              <div class="sidebar-subsections pl-4 mt-1 overflow-hidden transition-all duration-300 ease-in-out hidden" data-subsections="0" style="max-height: 0; opacity: 0">
+                <!-- Section Main Link (Inside Dropdown) -->
+                <a
+                  href="/docs/modelcontent"
+                  class="block px-3 py-2 rounded-md text-sm font-semibold transition-all duration-200 sidebar-link"
+                  data-href="/docs/modelcontent"
+                  style="color: var(--text-primary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Model Content
+                </a>
+                <!-- Subsections -->
+
+                <a
+                  href="/docs/modelcontent/pages"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/modelcontent/pages"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Pages
+                </a>
+
+                <a
+                  href="/docs/modelcontent/entries"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/modelcontent/entries"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Entries
+                </a>
+
+                <a
+                  href="/docs/modelcontent/blocks"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/modelcontent/blocks"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Blocks
+                </a>
+
+                <a
+                  href="/docs/modelcontent/lists"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/modelcontent/lists"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Lists
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <!-- Section Header (Toggle Only - No Direct Link) -->
+              <div class="relative group">
+                <button
+                  class="w-full flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-bold transition-all duration-200 sidebar-section-toggle"
+                  data-section="1"
+                  style="color: var(--text-primary); background-color: var(--bg-secondary)"
+                  onmouseover="this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="this.style.backgroundColor='var(--bg-secondary)'"
+                >
+                  <span class="flex-1 text-left"> Edit Content </span>
+
+                  <svg class="h-4 w-4 transition-transform duration-200 sidebar-arrow" data-arrow="1" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: rotate(0deg)">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Dropdown Content (Section Link + Subsections) -->
+
+              <div class="sidebar-subsections pl-4 mt-1 overflow-hidden transition-all duration-300 ease-in-out hidden" data-subsections="1" style="max-height: 0; opacity: 0">
+                <!-- Section Main Link (Inside Dropdown) -->
+                <a
+                  href="/docs/editcontent"
+                  class="block px-3 py-2 rounded-md text-sm font-semibold transition-all duration-200 sidebar-link"
+                  data-href="/docs/editcontent"
+                  style="color: var(--text-primary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  Edit Content
+                </a>
+                <!-- Subsections -->
+
+                <a
+                  href="/docs/editcontent/test"
+                  class="block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 sidebar-link"
+                  data-href="/docs/editcontent/test"
+                  style="color: var(--text-secondary)"
+                  onmouseover="if (!this.classList.contains('active-link')) this.style.backgroundColor='var(--sidebar-hover)'"
+                  onmouseout="if (!this.classList.contains('active-link')) this.style.backgroundColor='transparent'"
+                >
+                  dada
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </aside>
+
+      <script>
+        (function () {
+          // Sidebar state
+          let sidebarOpen = false;
+          const sidebar = document.getElementById("sidebar");
+          const sidebarOverlay = document.getElementById("sidebar-overlay");
+          const toggleBtn = document.getElementById("sidebar-toggle-btn");
+
+          // Mobile sidebar functions
+          window.openSidebar = function () {
+            if (sidebar && sidebarOverlay && window.innerWidth < 1024) {
+              sidebar.classList.remove("-translate-x-full");
+              sidebarOverlay.classList.remove("hidden");
+              sidebarOpen = true;
+              document.body.style.overflow = "hidden";
+              // Hide toggle button when sidebar is open
+              if (toggleBtn) {
+                toggleBtn.style.display = "none";
+              }
+            }
+          };
+
+          window.closeSidebar = function () {
+            if (sidebar && sidebarOverlay && window.innerWidth < 1024) {
+              sidebar.classList.add("-translate-x-full");
+              sidebarOverlay.classList.add("hidden");
+              sidebarOpen = false;
+              document.body.style.overflow = "";
+              // Show toggle button when sidebar is closed
+              if (toggleBtn) {
+                toggleBtn.style.display = "block";
+              }
+            }
+          };
+
+          // Toggle button click
+          if (toggleBtn) {
+            toggleBtn.addEventListener("click", function () {
+              if (sidebarOpen) {
+                closeSidebar();
+              } else {
+                openSidebar();
+              }
+            });
+          }
+
+          // Handle window resize
+          window.addEventListener("resize", function () {
+            if (window.innerWidth >= 1024) {
+              // Desktop: always show sidebar
+              sidebar.classList.remove("-translate-x-full");
+              sidebar.classList.add("lg:translate-x-0");
+              sidebarOverlay.classList.add("hidden");
+              sidebarOpen = false;
+              document.body.style.overflow = "";
+              // Hide toggle button on desktop
+              if (toggleBtn) {
+                toggleBtn.style.display = "none";
+              }
+            } else {
+              // Mobile: hide sidebar if not open
+              if (!sidebarOpen) {
+                sidebar.classList.add("-translate-x-full");
+                // Show toggle button when sidebar is closed on mobile
+                if (toggleBtn) {
+                  toggleBtn.style.display = "block";
+                }
+              } else {
+                // Hide toggle button when sidebar is open on mobile
+                if (toggleBtn) {
+                  toggleBtn.style.display = "none";
+                }
+              }
+            }
+          });
+
+          // Initialize toggle button visibility
+          if (toggleBtn && window.innerWidth < 1024) {
+            // On mobile, show button initially (sidebar is closed)
+            toggleBtn.style.display = "block";
+          } else if (toggleBtn) {
+            // On desktop, hide button
+            toggleBtn.style.display = "none";
+          }
+
+          // Get current URL path from browser (more reliable)
+          const currentUrlPath = window.location.pathname;
+
+          // Initialize sidebar sections
+          const sectionButtons = document.querySelectorAll(".sidebar-section-toggle");
+
+          sectionButtons.forEach(function (button) {
+            const sectionIndex = button.getAttribute("data-section");
+            const subsectionsDiv = document.querySelector(`[data-subsections="${sectionIndex}"]`);
+            const arrow = document.querySelector(`[data-arrow="${sectionIndex}"]`);
+
+            if (!subsectionsDiv) return;
+
+            // Check if current path matches section or any subsection
+            let isActive = false;
+            let shouldBeExpanded = false;
+
+            const subsectionLinks = subsectionsDiv.querySelectorAll("a");
+            const sectionLink = subsectionsDiv.querySelector("a:first-of-type"); // First link is the section link
+
+            // Normalize paths for comparison (remove trailing slashes)
+            const normalizePath = function (path) {
+              if (!path) return "";
+              return path.replace(/\/$/, "") || "/";
+            };
+
+            const normalizedCurrentPath = normalizePath(currentUrlPath);
+
+            // Check if section link matches
+            if (sectionLink) {
+              const sectionHref = normalizePath(sectionLink.getAttribute("href"));
+              if (sectionHref === normalizedCurrentPath) {
+                isActive = true;
+                shouldBeExpanded = true;
+                sectionLink.classList.add("active-link");
+              }
+            }
+
+            // Check if any subsection matches
+            subsectionLinks.forEach(function (link) {
+              const linkHref = normalizePath(link.getAttribute("href"));
+              if (linkHref === normalizedCurrentPath) {
+                isActive = true;
+                shouldBeExpanded = true;
+                link.classList.add("active-link");
+              }
+            });
+
+            // Also check all sidebar links for active state
+            const allSidebarLinks = document.querySelectorAll(".sidebar-link");
+            allSidebarLinks.forEach(function (link) {
+              const linkHref = normalizePath(link.getAttribute("href"));
+              if (linkHref === normalizedCurrentPath) {
+                link.classList.add("active-link");
+              }
+            });
+
+            // Auto-expand if current page is inside this section
+            if (shouldBeExpanded) {
+              const itemCount = subsectionLinks.length + (sectionLink ? 1 : 0);
+              const targetHeight = itemCount * 50;
+
+              // Remove hidden class if present
+              if (subsectionsDiv.classList.contains("hidden")) {
+                subsectionsDiv.classList.remove("hidden");
+              }
+
+              // Set initial state for animation
+              subsectionsDiv.style.maxHeight = "0";
+              subsectionsDiv.style.opacity = "0";
+
+              // Force reflow
+              subsectionsDiv.offsetHeight;
+
+              // Animate to open
+              requestAnimationFrame(function () {
+                subsectionsDiv.style.maxHeight = targetHeight + "px";
+                subsectionsDiv.style.opacity = "1";
+              });
+
+              if (arrow) {
+                arrow.style.transform = "rotate(180deg)";
+              }
+            }
+
+            // Toggle on click
+            button.addEventListener("click", function (e) {
+              e.preventDefault();
+              e.stopPropagation();
+
+              const isHidden = subsectionsDiv.classList.contains("hidden");
+              const sectionLink = subsectionsDiv.querySelector("a");
+              const itemCount = subsectionLinks.length + (sectionLink ? 1 : 0);
+              const targetHeight = itemCount * 50;
+
+              if (isHidden) {
+                // Opening animation
+                subsectionsDiv.classList.remove("hidden");
+                // Force reflow
+                subsectionsDiv.offsetHeight;
+                // Set to target height with smooth transition
+                subsectionsDiv.style.maxHeight = targetHeight + "px";
+                subsectionsDiv.style.opacity = "1";
+              } else {
+                // Closing animation
+                subsectionsDiv.style.maxHeight = "0";
+                subsectionsDiv.style.opacity = "0";
+                // Hide after animation completes
+                setTimeout(function () {
+                  if (subsectionsDiv.style.maxHeight === "0px") {
+                    subsectionsDiv.classList.add("hidden");
+                  }
+                }, 300);
+              }
+
+              if (arrow) {
+                const willBeHidden = !isHidden;
+                arrow.style.transform = willBeHidden ? "rotate(0deg)" : "rotate(180deg)";
+              }
+            });
+          });
+
+          // Close sidebar when clicking a link on mobile
+          if (window.innerWidth < 1024) {
+            document.querySelectorAll("#sidebar a").forEach(function (link) {
+              link.addEventListener("click", function () {
+                setTimeout(closeSidebar, 100);
+              });
+            });
+          }
+        })();
+      </script>
+
+      <style>
+        .sidebar-subsections {
+          transition:
+            max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 0.3s ease-in-out;
+          will-change: max-height, opacity;
+        }
+
+        .sidebar-subsections.hidden {
+          max-height: 0 !important;
+          opacity: 0 !important;
+          overflow: hidden;
+        }
+
+        .sidebar-subsections:not(.hidden) {
+          opacity: 1;
+        }
+
+        .sidebar-section-toggle {
+          position: relative;
+        }
+
+        .sidebar-section-toggle:hover {
+          transform: translateX(2px);
+        }
+
+        .sidebar-section-toggle.active {
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-arrow {
+          transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Active link styling - subtle and professional */
+        .sidebar-link.active-link {
+          background-color: rgba(59, 130, 246, 0.1) !important;
+          color: var(--accent-primary) !important;
+          border-left: 2px solid var(--accent-primary);
+          padding-left: calc(0.75rem - 2px);
+          font-weight: 500;
+        }
+
+        .dark .sidebar-link.active-link {
+          background-color: rgba(96, 165, 250, 0.15) !important;
+          color: var(--accent-primary) !important;
+        }
+
+        .sidebar-link.active-link:hover {
+          background-color: rgba(59, 130, 246, 0.15) !important;
+        }
+
+        .dark .sidebar-link.active-link:hover {
+          background-color: rgba(96, 165, 250, 0.2) !important;
+        }
+      </style>
+      <div class="flex-1 lg:ml-64 flex flex-col" style="min-height: calc(100vh - 4rem)">
+        <main class="flex-1" style="padding: 0">
+          <!-- Breadcrumb Navigation -->
+
+          <div class="py-4 px-4 sm:px-6 lg:px-8 border-b" style="background-color: var(--bg-primary); border-color: var(--border-color)">
+            <div class="max-w-7xl mx-auto">
+              <nav class="flex items-center space-x-2 text-sm">
+                <a href="/" class="hover:opacity-80 transition" style="color: var(--text-secondary)"> Home </a>
+
+                <span style="color: var(--text-tertiary)">/</span>
+
+                <a href="/docs" class="hover:opacity-80 transition" style="color: var(--text-secondary)"> Docs </a>
+
+                <span style="color: var(--text-tertiary)">/</span>
+
+                <a href="/docs/editcontent" class="hover:opacity-80 transition" style="color: var(--text-secondary)"> Editcontent </a>
+
+                <span style="color: var(--text-tertiary)">/</span>
+
+                <span style="color: var(--text-primary)">dada</span>
+              </nav>
+              <!-- Page Title -->
+
+              <h1 class="text-3xl font-bold mt-4" style="color: var(--text-primary)">dada</h1>
+            </div>
+          </div>
+
+          <!-- Page Content will be rendered here by blocks -->
+
+          <!-- Navigation Footer -->
+
+          <div class="border-t py-8 px-4 sm:px-6 lg:px-8" style="background-color: var(--bg-primary); border-color: var(--border-color)">
+            <div class="max-w-7xl mx-auto">
+              <div class="flex items-center justify-between gap-4">
+                <!-- Previous Button -->
+
+                <a
+                  href="/docs/editcontent"
+                  class="inline-flex items-center px-6 py-3 rounded-lg border transition hover:opacity-80"
+                  style="background-color: var(--bg-secondary); border-color: var(--border-color); color: var(--text-primary)"
+                >
+                  <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                  </svg>
+                  <span class="font-medium">Previous</span>
+                </a>
+
+                <!-- Next Button -->
+
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer style="background-color: var(--footer-bg); color: var(--footer-text)">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+              <!-- Company Info -->
+              <div class="lg:col-span-2">
+                <h3 class="text-lg font-semibold mb-4" style="color: #f9fafb">Innovate Solutions Inc.</h3>
+                <p class="text-sm mb-4" style="color: var(--footer-text)">
+                  We are a forward-thinking technology company dedicated to creating innovative solutions that drive progress and efficiency for businesses worldwide. Our expertise spans AI, cloud
+                  computing, and data analytics.
+                </p>
+              </div>
+
+              <!-- Footer Links Section 1 -->
+              <div>
+                <h4 class="text-sm font-semibold mb-4 uppercase tracking-wider" style="color: #f9fafb">About Us</h4>
+                <ul class="space-y-2">
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Our Mission </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Footer Links Section 2 -->
+              <div>
+                <h4 class="text-sm font-semibold mb-4 uppercase tracking-wider" style="color: #f9fafb">Services</h4>
+                <ul class="space-y-2">
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Cloud Services </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Footer Links Section 3 -->
+              <div>
+                <h4 class="text-sm font-semibold mb-4 uppercase tracking-wider" style="color: #f9fafb">Resources</h4>
+                <ul class="space-y-2">
+                  <li>
+                    <a href="#" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)"> Blog </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Social Media & Copyright -->
+            <div class="mt-8 pt-8 border-t" style="border-color: var(--border-color)">
+              <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm mb-4 md:mb-0" style="color: var(--footer-text)">© 2024 Innovate Solutions Inc. All rights reserved.</p>
+                <div class="flex space-x-4">
+                  <a href="https://www.linkedin.com/company/innovatesolutions" class="text-sm hover:opacity-80 transition" style="color: var(--footer-text)" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      // Hide loader when page is fully loaded
+      window.addEventListener("load", function () {
+        const loader = document.getElementById("page-loader");
+        if (loader) {
+          setTimeout(function () {
+            loader.classList.add("hidden");
+            setTimeout(function () {
+              loader.style.display = "none";
+            }, 300);
+          }, 300);
+        }
+      });
+    </script>
+  </body>
+</html>
