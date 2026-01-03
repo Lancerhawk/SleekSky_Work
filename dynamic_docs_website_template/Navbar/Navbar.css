@@ -1,0 +1,55 @@
+
+  .navbar-dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    max-width: 900px;
+  }
+  
+  /* Limit to max 3 columns, then wrap to new rows */
+  @media (min-width: 700px) {
+    .navbar-dropdown-grid {
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+  }
+  
+  /* For smaller screens, use fewer columns */
+  @media (max-width: 699px) {
+    .navbar-dropdown-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+  }
+  
+  /* Navigation link hover effects */
+  .nav-main-link {
+    position: relative;
+  }
+  
+  .nav-section-link {
+    cursor: pointer;
+  }
+  
+  .nav-section-link:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-subsection-link {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .nav-subsection-link:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Smooth transitions for all nav links */
+  .nav-main-link,
+  .nav-section-link,
+  .nav-subsection-link {
+    will-change: transform, background-color, color;
+  }
+  
+  /* Group hover effect for dropdown arrow */
+  .group:hover .nav-main-link svg {
+    transform: rotate(180deg);
+  }
